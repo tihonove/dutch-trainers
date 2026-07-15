@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Тренажёр · Nederlands (уроки 6–7)</title>
+<style>
+:root {
+  --bg: #fdfdfc; --fg: #1c1b19; --muted: #6b6862; --rule: #e3e0d8;
+  --accent: #9a3412; --card: #f6f4ef; --code-bg: #efece4;
+  --warn: #b45309; --warn-bg: #fef6e7; --tip: #0369a1; --tip-bg: #eaf4fb;
+  --star: #7c3aed; --star-bg: #f3eefe; --audio: #0f766e; --audio-bg: #e8f5f3;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16150f; --fg: #e8e4da; --muted: #a09a8c; --rule: #33302a;
+    --accent: #fb923c; --card: #1f1d16; --code-bg: #24211a;
+    --warn: #fbbf24; --warn-bg: #2a2114; --tip: #7dd3fc; --tip-bg: #12222c;
+    --star: #c4b5fd; --star-bg: #201a2e; --audio: #5eead4; --audio-bg: #10241f;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 17px/1.65 -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap { max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem; }
+h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 .4em; letter-spacing: -.01em; }
+h2 {
+  font-size: 1.35rem; margin: 2.6em 0 .7em; padding-top: .8em;
+  border-top: 2px solid var(--rule); letter-spacing: -.01em;
+}
+h3 { font-size: 1.1rem; margin: 2em 0 .5em; color: var(--accent); }
+p, li { overflow-wrap: break-word; }
+a { color: var(--accent); }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5em 0; }
+code {
+  background: var(--code-bg); padding: .12em .38em; border-radius: 4px;
+  font: 0.88em/1.4 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  white-space: nowrap;
+}
+u { text-decoration-color: var(--accent); text-underline-offset: 2px; }
+/* таблицы (словарные блоки) — на узком экране скроллятся сами, страница нет */
+.tw { overflow-x: auto; margin: 1.2em 0; }
+table { border-collapse: collapse; width: 100%; font-size: .95em; }
+th, td { text-align: left; padding: .45em .7em; border-bottom: 1px solid var(--rule); }
+th { font-size: .8em; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+tbody tr:nth-child(odd) { background: var(--card); }
+/* цитаты-плашки */
+blockquote {
+  margin: 1.2em 0; padding: .7em 1em; border-left: 3px solid var(--rule);
+  background: var(--card); border-radius: 0 6px 6px 0;
+}
+blockquote p { margin: .4em 0; }
+blockquote.warn { border-color: var(--warn); background: var(--warn-bg); }
+blockquote.tip { border-color: var(--tip); background: var(--tip-bg); }
+blockquote.star { border-color: var(--star); background: var(--star-bg); }
+blockquote.audio, blockquote.note, blockquote.img {
+  border-color: var(--audio); background: var(--audio-bg);
+}
+/* пропуски для ответов */
+.blank {
+  display: inline-block; min-width: 5.5em; border-bottom: 1.5px solid var(--muted);
+  vertical-align: baseline;
+}
+.meta { color: var(--muted); font-size: .9em; margin: -.2em 0 2em; }
+.home { display: inline-block; margin-bottom: 1.5rem; font-size: .9em; }
+.idx { list-style: none; padding: 0; }
+.idx li { margin: .5em 0; padding: .8em 1em; background: var(--card); border-radius: 8px; }
+.idx a { font-weight: 600; text-decoration: none; }
+@media print {
+  :root { --bg: #fff; --fg: #000; --card: #fff; --code-bg: #f2f2f2; }
+  .wrap { max-width: none; padding: 0; }
+  .home { display: none; }
+  h2 { page-break-after: avoid; } blockquote, table { page-break-inside: avoid; }
+}
+</style>
+</head>
+<body><div class="wrap"><a class="home" href="index.html">← ко всем материалам</a><h1>Тренажёр · Nederlands (уроки 6–7)</h1>
+<p><strong>Как выполнять:</strong>
+- Пиши ответы <strong>на отдельном листе</strong>. Перед каждым ответом ставь номер задания и
+  пункта (<code>3.2</code>, <code>8.4</code>).
+- В заданиях с пропусками (<code><span class="blank"></span></code>) нумеруй пропуски <strong>по порядку — слева направо,
+  сверху вниз</strong> (<code>2.1</code>, <code>2.2</code> …) и пиши <strong>только то слово, которое вставляешь</strong>.
+  Там, где просят переписать, составить, объединить или перевести предложение, —
+  пиши предложение <strong>целиком</strong>.
+- <strong>Словарём</strong> пользоваться можно. Грамматику (окончания, порядок слов, времена) — по памяти.
+- Пометки <code>RU→NL</code> / <code>NL→RU</code> показывают направление перевода.
+- Если не уверен в ответе — поставь рядом <code>?</code>, а не пиши наугад.
+- Условные знаки: <code>⚠️</code> — ловушка (это <strong>не ответ</strong>, а предупреждение), <code>💡</code> — подсказка,
+  <code>⭐</code> — задание посложнее.
+- Работа большая — она разбита на <strong>5 сессий</strong> примерно по часу. Делай по одной
+  сессии за раз, с перерывами. Всего ~4–5 часов.</p>
+<hr />
+<h1>Новые слова: продуктовый магазин (<code>de supermarkt</code>)</h1>
+<p>Сначала <strong>выучи</strong> эти слова — они понадобятся почти во всех заданиях. Обрати
+внимание на артикль <strong>de</strong> или <strong>het</strong>: от него зависят окончания, местоимения и
+указательные слова (см. Урок 7).</p>
+<p><strong>Место и люди</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Nederlands</th>
+<th>Русский</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>de supermarkt</td>
+<td>супермаркет</td>
+</tr>
+<tr>
+<td>de winkel</td>
+<td>магазин</td>
+</tr>
+<tr>
+<td>de kassa</td>
+<td>касса</td>
+</tr>
+<tr>
+<td>de caissière (<em>пр.</em> ke-si-JÈ-re)</td>
+<td>кассир(ша)</td>
+</tr>
+<tr>
+<td>de klant (-en)</td>
+<td>покупатель, клиент</td>
+</tr>
+<tr>
+<td>de winkelwagen</td>
+<td>тележка</td>
+</tr>
+<tr>
+<td>het mandje</td>
+<td>корзинка</td>
+</tr>
+<tr>
+<td>de boodschappenlijst</td>
+<td>список покупок</td>
+</tr>
+<tr>
+<td>het schap (schappen)</td>
+<td>полка</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Молочное и белковое</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Nederlands</th>
+<th>Русский</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>de kaas</td>
+<td>сыр</td>
+</tr>
+<tr>
+<td>de boter</td>
+<td>масло (сливочное)</td>
+</tr>
+<tr>
+<td>de yoghurt</td>
+<td>йогурт</td>
+</tr>
+<tr>
+<td>de room</td>
+<td>сливки</td>
+</tr>
+<tr>
+<td>het ei (de eieren)</td>
+<td>яйцо</td>
+</tr>
+<tr>
+<td>de ham</td>
+<td>ветчина</td>
+</tr>
+<tr>
+<td>de vis</td>
+<td>рыба</td>
+</tr>
+<tr>
+<td>het vlees</td>
+<td>мясо</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Овощи</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Nederlands</th>
+<th>Русский</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>de groente</td>
+<td>овощи</td>
+</tr>
+<tr>
+<td>de aardappel (-s/-en)</td>
+<td>картофель</td>
+</tr>
+<tr>
+<td>de tomaat (tomaten)</td>
+<td>помидор</td>
+</tr>
+<tr>
+<td>de ui (uien)</td>
+<td>лук(овица)</td>
+</tr>
+<tr>
+<td>de wortel (-s)</td>
+<td>морковь</td>
+</tr>
+<tr>
+<td>de komkommer</td>
+<td>огурец</td>
+</tr>
+<tr>
+<td>de paprika</td>
+<td>(болгарский) перец</td>
+</tr>
+<tr>
+<td>de sla</td>
+<td>салат (листовой)</td>
+</tr>
+<tr>
+<td>de champignon (<em>пр.</em> sham-pin-JON)</td>
+<td>шампиньон</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Фрукты</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Nederlands</th>
+<th>Русский</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>het fruit</td>
+<td>фрукты</td>
+</tr>
+<tr>
+<td>de appel (-s)</td>
+<td>яблоко</td>
+</tr>
+<tr>
+<td>de peer (peren)</td>
+<td>груша</td>
+</tr>
+<tr>
+<td>de banaan (bananen)</td>
+<td>банан</td>
+</tr>
+<tr>
+<td>de sinaasappel</td>
+<td>апельсин</td>
+</tr>
+<tr>
+<td>de citroen</td>
+<td>лимон</td>
+</tr>
+<tr>
+<td>de druif (de druiven)</td>
+<td>виноград(ина)</td>
+</tr>
+<tr>
+<td>de aardbei (-en)</td>
+<td>клубника</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Бакалея</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Nederlands</th>
+<th>Русский</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>de suiker</td>
+<td>сахар</td>
+</tr>
+<tr>
+<td>de peper</td>
+<td>перец (молотый)</td>
+</tr>
+<tr>
+<td>het meel</td>
+<td>мука</td>
+</tr>
+<tr>
+<td>de koffie</td>
+<td>кофе</td>
+</tr>
+<tr>
+<td>de thee</td>
+<td>чай</td>
+</tr>
+<tr>
+<td>het sap</td>
+<td>сок</td>
+</tr>
+<tr>
+<td>de chocolade</td>
+<td>шоколад</td>
+</tr>
+<tr>
+<td>het snoep</td>
+<td>конфеты, сладости</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Упаковка и количество</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Nederlands</th>
+<th>Русский</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>het pak</td>
+<td>пачка, пакет (напр. молока)</td>
+</tr>
+<tr>
+<td>de doos (dozen)</td>
+<td>коробка</td>
+</tr>
+<tr>
+<td>het blik</td>
+<td>(консервная) банка</td>
+</tr>
+<tr>
+<td>de zak</td>
+<td>пакет, мешок</td>
+</tr>
+<tr>
+<td>de kilo</td>
+<td>килограмм</td>
+</tr>
+<tr>
+<td>het pond</td>
+<td>полкило (500 г)</td>
+</tr>
+<tr>
+<td>het stuk (-ken)</td>
+<td>штука</td>
+</tr>
+<tr>
+<td>de prijs (prijzen)</td>
+<td>цена</td>
+</tr>
+<tr>
+<td>de korting</td>
+<td>скидка</td>
+</tr>
+<tr>
+<td>de aanbieding</td>
+<td>(специальное) предложение, акция</td>
+</tr>
+<tr>
+<td>de euro</td>
+<td>евро</td>
+</tr>
+<tr>
+<td>de cent</td>
+<td>цент</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Признаки и действия</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Nederlands</th>
+<th>Русский</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vers</td>
+<td>свежий</td>
+</tr>
+<tr>
+<td>duur</td>
+<td>дорогой</td>
+</tr>
+<tr>
+<td>goedkoop</td>
+<td>дешёвый</td>
+</tr>
+<tr>
+<td>rijp</td>
+<td>спелый</td>
+</tr>
+<tr>
+<td>kopen (kocht — gekocht)</td>
+<td>покупать</td>
+</tr>
+<tr>
+<td>kosten</td>
+<td>стоить</td>
+</tr>
+<tr>
+<td>wegen</td>
+<td>взвешивать; весить</td>
+</tr>
+<tr>
+<td>kiezen (koos — gekozen)</td>
+<td>выбирать</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote class="tip">
+<p>💡 Уже знакомые из учебника слова, которые тоже пригодятся: <strong>de melk, het brood,
+de rijst, het zout, de worst, de kip, de fles, lekker, betalen</strong>.</p>
+</blockquote>
+<hr />
+<h1>Часть A. Слова и род de/het</h1>
+<p><em>(Сессия 1 — выучи слова из блока выше, потом сделай задания 1–2)</em></p>
+<h2>Задание 1. Разложи по колонкам de / het</h2>
+<p>Выпиши слова в <strong>две колонки</strong>: слева — какие с <code>de</code>, справа — какие с <code>het</code>.
+Артикль <strong>не</strong> пиши, слова уже знаешь из словаря выше:</p>
+<p><code>appel · brood · ei · kaas · mandje · vlees · tomaat · sap · winkelwagen · snoep ·
+prijs · pak · wortel · blik · banaan · meel · klant · stuk</code></p>
+<blockquote class="warn">
+<p>⚠️ Все уменьшительные на <code>-je</code> — всегда <strong>het</strong> (Урок 6).</p>
+</blockquote>
+<hr />
+<h2>Задание 2. Множественное число и уменьшительное</h2>
+<p>Для каждого слова напиши <strong>(а)</strong> форму множественного числа и <strong>(б)</strong> уменьшительное
+с <code>-je</code>:</p>
+<p>1) de appel<br />
+2) de tomaat<br />
+3) de ui<br />
+4) het ei<br />
+5) de aardbei<br />
+6) de doos<br />
+7) de prijs<br />
+8) de banaan  </p>
+<blockquote class="warn">
+<p>⚠️ Здесь есть ловушки: <code>de ui →</code> (не «uis»), <code>het ei →</code> (особая форма),
+<code>de aardbei →</code>. Вспомни, как во мн.ч. ведут себя слова на <code>-s</code> после краткого
+гласного (<code>de prijs</code>, <code>de doos</code>).</p>
+</blockquote>
+<hr />
+<h1>Часть B. Прилагательные, цвета, числа</h1>
+<p><em>(Сессия 2 — примерно час)</em></p>
+<h2>Задание 3. Обе формы прилагательного</h2>
+<p>Для каждого запиши <strong>две</strong> формы: с <code>een</code> и с артиклем <code>de/het</code>:</p>
+<p>1) appel + groen → een <span class="blank"></span> / de <span class="blank"></span><br />
+2) brood + vers → een <span class="blank"></span> / het <span class="blank"></span><br />
+3) tomaat + rood → een <span class="blank"></span> / de <span class="blank"></span><br />
+4) ei + goedkoop → een <span class="blank"></span> / het <span class="blank"></span><br />
+5) kaas + duur → een <span class="blank"></span> / de <span class="blank"></span><br />
+6) koekje + lekker → een <span class="blank"></span> / het <span class="blank"></span>  </p>
+<blockquote class="warn">
+<p>⚠️ У слов <strong>het</strong> после <code>een</code> прилагательное <strong>без</strong> <code>-e</code> (<code>een vers brood</code>), но с
+артиклем <code>het</code> — <strong>с</strong> <code>-e</code> (<code>het verse brood</code>). Проверь пункты 2, 4, 6.<br />
+⚠️ Пиши по современным правилам: <code>grote</code>, <code>rode</code> (одна гласная), а <strong>не</strong> «groote»,
+«roode».</p>
+</blockquote>
+<hr />
+<h2>Задание 4. Цвета продуктов — RU→NL</h2>
+<p>Переведи словосочетания целиком (форма с <code>een</code> или без артикля, как в русском):</p>
+<p>1) красное яблоко<br />
+2) жёлтый банан<br />
+3) зелёная паприка<br />
+4) фиолетовый виноград<br />
+5) оранжевая морковка<br />
+6) коричневый хлеб  </p>
+<blockquote class="tip">
+<p>💡 Цвета <code>oranje</code> и <code>roze</code> <strong>никогда</strong> не меняются: <code>een oranje wortel</code> (Урок 7).</p>
+</blockquote>
+<hr />
+<h2>Задание 5. Приставка on-</h2>
+<p>Образуй противоположное по смыслу прилагательное. Но будь внимателен:</p>
+<p>1) belangrijk (важный) → <span class="blank"></span><br />
+2) eerlijk (честный) → <span class="blank"></span><br />
+3) gezond (здоровый) → <span class="blank"></span><br />
+4) prettig (приятный) → <span class="blank"></span><br />
+5) duur (дорогой) → <span class="blank"></span><br />
+6) lekker (вкусный) → <span class="blank"></span>  </p>
+<blockquote class="warn">
+<p>⚠️ Приставка <code>on-</code> присоединяется <strong>далеко не ко всем</strong> прилагательным. Там, где
+<code>on-</code> не подходит, пиши через <code>niet …</code> или подбери антоним (вспомни: «нешироко» =
+<code>niet breed</code>). Проверь пункты 5 и 6.</p>
+</blockquote>
+<hr />
+<h2>Задание 6. Числительные и цены</h2>
+<p><strong>(а)</strong> Напиши прописью по-нидерландски:<br />
+17 · 60 · 78 · 95 · 100 · 340 · 512</p>
+<p><strong>(б)</strong> Напиши цену прописью (образец: €2,50 → <code>twee euro vijftig</code>):<br />
+1) €5,99<br />
+2) €12,20<br />
+3) €1,75  </p>
+<p><strong>(в)</strong> Переведи обороты (RU→NL):<br />
+1) Часов в восемь <em>(приду в магазин)</em>.<br />
+2) Килограмм яблок стоит около двух евро.<br />
+3) Уже почти шесть часов.<br />
+4) Возьму штук десять помидоров.  </p>
+<blockquote class="tip">
+<p>💡 Обороты <code>om een uur of acht</code>, <code>een euro of twee</code>, <code>tegen de …</code>, <code>tegen zessen</code>,
+<code>een stuk of tien</code> — см. Урок 7, раздел «Числительные».</p>
+</blockquote>
+<hr />
+<h1>Часть C. Перфект и глаголы</h1>
+<p><em>(Сессия 3 — это ядро, не торопись)</em></p>
+<h2>Задание 7. Переделай в перфект</h2>
+<p>Перепиши в <strong>перфекте</strong>. Помни: <strong>причастие — в самый конец</strong>, а вспомогательный
+глагол — <code>hebben</code> <strong>или</strong> <code>zijn</code>:</p>
+<p>1) Ik koop brood.<br />
+2) Wij gaan naar de supermarkt.<br />
+3) Zij betaalt bij de kassa.<br />
+4) De prijs wordt hoog.<br />
+5) Hij neemt een mandje.<br />
+6) Ik blijf thuis.<br />
+7) Wij eten het fruit op.<br />
+8) Klaas brengt de boodschappen mee.  </p>
+<blockquote class="warn">
+<p>⚠️ Глаголы <strong>движения</strong> и <strong>смены состояния</strong> (<code>gaan, komen, worden, blijven</code>)
+образуют перфект с <code>zijn</code>, а не <code>hebben</code>. Проверь пункты 2, 4, 6.<br />
+<strong>+ Почему:</strong> в пунктах 2 и 4 объясни <strong>одним словом</strong>, почему там <code>zijn</code>, а не <code>hebben</code>.</p>
+</blockquote>
+<hr />
+<h2>Задание 8. Формы неправильных глаголов</h2>
+<p>Заполни таблицу (инфинитив → имперфект → причастие). Все глаголы — из уроков 6–7:</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>инфинитив</th>
+<th>имперфект</th>
+<th>причастие</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gaan</td>
+<td><span class="blank"></span></td>
+<td><span class="blank"></span></td>
+</tr>
+<tr>
+<td>nemen</td>
+<td>nam</td>
+<td><span class="blank"></span></td>
+</tr>
+<tr>
+<td>eten</td>
+<td><span class="blank"></span></td>
+<td>gegeten</td>
+</tr>
+<tr>
+<td>drinken</td>
+<td>dronk</td>
+<td><span class="blank"></span></td>
+</tr>
+<tr>
+<td>zitten</td>
+<td><span class="blank"></span></td>
+<td>gezeten</td>
+</tr>
+<tr>
+<td>worden</td>
+<td>werd</td>
+<td><span class="blank"></span></td>
+</tr>
+<tr>
+<td>lezen</td>
+<td>las</td>
+<td><span class="blank"></span></td>
+</tr>
+<tr>
+<td>blijven</td>
+<td><span class="blank"></span></td>
+<td>gebleven</td>
+</tr>
+<tr>
+<td>komen</td>
+<td>kwam</td>
+<td><span class="blank"></span></td>
+</tr>
+<tr>
+<td>rijden</td>
+<td><span class="blank"></span></td>
+<td>gereden</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote class="tip">
+<p>💡 Два важных глагола для магазина запомни отдельно (они тебе нужны дальше):
+<code>kopen → kocht → gekocht</code> и <code>brengen → bracht → gebracht</code>.</p>
+</blockquote>
+<hr />
+<h2>Задание 9. Глаголы с отделяемыми приставками (Урок 7)</h2>
+<p><strong>(а)</strong> Впиши глагол в наст.вр., поставив <strong>приставку в конец</strong> предложения:</p>
+<p>1) <em>(opstaan)</em> Ik <span class="blank"></span> om acht uur <span class="blank"></span>.<br />
+2) <em>(meenemen)</em> Wij <span class="blank"></span> een mandje <span class="blank"></span>.<br />
+3) <em>(opeten)</em> Hij <span class="blank"></span> alle koekjes <span class="blank"></span>.  </p>
+<p><strong>(б)</strong> Поставь в <strong>перфект</strong>:</p>
+<p>4) <em>(opbellen)</em> Ik heb mijn moeder <span class="blank"></span>.<br />
+5) <em>(meebrengen)</em> Zij heeft chocolade <span class="blank"></span>.<br />
+6) <em>(aankomen)</em> Wij <span class="blank"></span> om zes uur <span class="blank"></span>.  </p>
+<p><strong>(в)</strong> Дострой оборот <code>om … te</code>:</p>
+<p>7) Ik ga naar de winkel om brood <span class="blank"></span> <span class="blank"></span> <span class="blank"></span>. <em>(meenemen)</em>  </p>
+<blockquote class="warn">
+<p>⚠️ В пункте 6 <code>aankomen</code> — глагол движения → перфект с <code>zijn</code>.<br />
+💡 Частица <code>te</code> ставится <strong>между</strong> приставкой и глаголом (<code>om op te staan</code>); в
+причастии <code>ge-</code> стоит <strong>между</strong> приставкой и основой, и всё пишется слитно
+(<code>opgestaan</code>). См. Урок 7.</p>
+</blockquote>
+<hr />
+<h1>Часть D. Предлоги, er, местоимения, тело</h1>
+<p><em>(Сессия 4)</em></p>
+<h2>Задание 10. Предлоги и послелоги</h2>
+<p>Впиши подходящее слово. Выбирай из: <code>over · uit · tegen · achter · door · langs · na</code>,
+а для «движения внутрь/за угол» — послелоги <code>in · om</code>:</p>
+<p>1) Ik kom <span class="blank"></span> de supermarkt. <em>(из магазина)</em><br />
+2) De winkelwagens staan <span class="blank"></span> de winkel. <em>(за магазином)</em><br />
+3) Wij lopen de winkel <span class="blank"></span>. <em>(входим внутрь)</em><br />
+4) <span class="blank"></span> het eten koop ik nog koffie. <em>(после еды)</em><br />
+5) Zij praat de hele dag <span class="blank"></span> de prijzen. <em>(о ценах)</em><br />
+6) Dit medicijn is <span class="blank"></span> de hoofdpijn. <em>(от головной боли)</em><br />
+7) Wij rijden <span class="blank"></span> de winkel, maar stoppen niet. <em>(мимо магазина)</em><br />
+8) Bij de kassa loop ik de hoek <span class="blank"></span>. <em>(за угол)</em>  </p>
+<blockquote class="tip">
+<p>💡 Послелог (слово <strong>после</strong> существительного) означает пересечение границы:
+<code>de winkel in</code>, <code>de hoek om</code> (Урок 6, «Послелоги»).</p>
+</blockquote>
+<hr />
+<h2>Задание 11. Конструкция er (количество)</h2>
+<p>Ответь, используя <code>er</code> и число в скобках:</p>
+<p>1) 'Heb je appels gekocht?' (6) → Ja, ik heb <span class="blank"></span> <span class="blank"></span> gekocht.<br />
+2) 'Zijn er nog eieren?' (0) → Nee, ik heb <span class="blank"></span> <span class="blank"></span> <span class="blank"></span>.<br />
+3) 'Hoeveel tomaten wil je?' (4) → Ik wil <span class="blank"></span> <span class="blank"></span>.<br />
+4) 'Heeft zij koekjes gegeten?' (10) → Ja, zij heeft <span class="blank"></span> <span class="blank"></span> gegeten.  </p>
+<blockquote class="tip">
+<p>💡 <code>er</code> = «их / этого» при обозначении количества; ставится <strong>перед</strong> числом
+(<code>Ik zie er maar drie</code>). См. Урок 6, раздел «ER».</p>
+</blockquote>
+<hr />
+<h2>Задание 12. Неопределённые и отрицательные местоимения</h2>
+<p>Впиши по смыслу: <code>iemand · iets · niemand · niets · ergens · nergens · al · alles ·
+allerlei</code>. Где нужно — перестрой предложение:</p>
+<p>1) Er staat <span class="blank"></span> bij de kassa. <em>(кто-то)</em><br />
+2) Ik heb <span class="blank"></span> gekocht, maar ik weet niet meer wat. <em>(что-то)</em><br />
+3) In deze supermarkt is van <span class="blank"></span> te koop. <em>(много всего)</em><br />
+4) Ik zie de kaas <span class="blank"></span>. <em>(нигде)</em><br />
+5) Heb jij <span class="blank"></span> boodschappen al gedaan? <em>(все эти)</em><br />
+6) Er zit <span class="blank"></span> meer in de winkelwagen. <em>(ничего)</em>  </p>
+<blockquote class="warn">
+<p>⚠️ В нидерландском предложении может быть <strong>только одно</strong> отрицательное слово
+(Урок 7). Проверь пункты 4 и 6.</p>
+</blockquote>
+<hr />
+<h2>Задание 13. Части тела и здоровье (Урок 6)</h2>
+<p><strong>(а)</strong> Напиши форму множественного числа:<br />
+1) de arm  2) de voet  3) het oog  4) de hand  5) de tand  6) de knie  </p>
+<p><strong>(б)</strong> Переведи (RU→NL):<br />
+1) У меня болит голова.<br />
+2) Это лекарство от боли в животе.<br />
+3) У меня болит нога.<br />
+4) Он заболел.<br />
+5) Тебе больно?  </p>
+<p><strong>(в)</strong> Впиши слова в мини-диалог у врача:<br />
+— Goedemorgen dokter, ik ben <span class="blank"></span> <em>(болен)</em>. Ik heb <span class="blank"></span> <em>(температура)</em> en
+<span class="blank"></span> <em>(боль в горле)</em>.<br />
+— Heb je al <span class="blank"></span> <em>(лекарство)</em> genomen?</p>
+<blockquote class="tip">
+<p>💡 Обороты: <code>Ik heb hoofdpijn</code> (без артикля), <code>tegen de buikpijn</code>, <code>pijn aan mijn …</code>,
+<code>ziek worden</code>. Вспомни особое мн.ч.: <code>de knie → …</code> (с двумя точками над <code>e</code>).</p>
+</blockquote>
+<hr />
+<h1>Часть E. Речь: приказ, текст, перевод</h1>
+<p><em>(Сессия 5 — финал)</em></p>
+<h2>Задание 14. Дай команду (императив)</h2>
+<p>Переделай в приказ (<code>ты</code>-форма):</p>
+<p>1) Je staat op.<br />
+2) Je neemt een mandje mee.<br />
+3) Je betaalt bij de kassa.<br />
+4) Je bent rustig.<br />
+5) Je eet je groente op.<br />
+6) Je koopt vers brood.  </p>
+<blockquote class="warn">
+<p>⚠️ Императив глагола <code>zijn</code> — особая форма (не «ben», не «weeg»!). Проверь пункт 4.<br />
+💡 У отделяемых глаголов приставка уходит <strong>в конец</strong>: <code>Sta op!</code> (Урок 7).</p>
+</blockquote>
+<hr />
+<h2>Задание 15. Прочитай и ответь по-нидерландски (NL)</h2>
+<p>Прочитай текст и ответь на вопросы <strong>по-нидерландски, полными предложениями</strong>:</p>
+<blockquote>
+<p>Vandaag is Klaas naar de supermarkt gegaan. Hij heeft een winkelwagen genomen
+en boodschappen gedaan. Hij heeft brood, kaas en zes eieren gekocht. De appels
+waren in de aanbieding, en hij heeft er tien meegenomen. De tomaten waren rood
+en vers. Bij de kassa heeft hij vijftien euro betaald. «Wat is het duur geworden!»
+zei hij.</p>
+</blockquote>
+<p>1) Wat heeft Klaas in de supermarkt genomen?<br />
+2) Wat heeft hij allemaal gekocht?<br />
+3) Hoeveel appels heeft hij meegenomen?<br />
+4) Hoeveel heeft hij bij de kassa betaald?  </p>
+<blockquote class="warn">
+<p>⚠️ Отвечай <strong>целыми предложениями</strong>, а не одним словом (напр. <code>Hij heeft … genomen</code>).</p>
+</blockquote>
+<hr />
+<h2>Задание 16. Связный перевод — RU→NL</h2>
+<p>Переведи рассказ целиком:</p>
+<p>1) Вчера мама пошла в супермаркет.<br />
+2) Она взяла тележку и сделала покупки.<br />
+3) Она купила хлеб, сыр и десять яиц.<br />
+4) Помидоры были красные и свежие.<br />
+5) «Возьми с собой ещё пачку молока!» — сказала она.<br />
+6) У кассы она заплатила пять евро.<br />
+7) Дома мы всё съели.  </p>
+<blockquote>
+<p><strong>+ Почему:</strong> в пункте 1 объясни <strong>одним словом</strong>, почему вспомогательный глагол —
+<code>is</code>, а не <code>heeft</code>.</p>
+</blockquote>
+<hr />
+<h2>Задание 17. Напиши рассказ (по-нидерландски) ⭐</h2>
+<p>Напиши <strong>6–8 предложений</strong> на тему <strong>«Мой поход в супермаркет»</strong>
+(<code>Mijn boodschappen</code>). В рассказе обязательно должны быть:</p>
+<ul>
+<li>рассказ в <strong>прошедшем времени</strong> (в основном перфект);</li>
+<li>хотя бы одно предложение с глаголом на <strong><code>zijn</code></strong> в перфекте (напр. <code>ik ben … gegaan</code>);</li>
+<li>хотя бы один <strong>отделяемый</strong> глагол (<code>meenemen</code>, <code>opeten</code>, <code>opbellen</code> …);</li>
+<li>один оборот <strong><code>om … te</code></strong> («чтобы»);</li>
+<li>один <strong>приказ</strong> в кавычках (что-нибудь кому-то скажи);</li>
+<li>хотя бы один <strong>цвет</strong> продукта и одно <strong>число</strong> (или цена);</li>
+<li>одно предложение с <strong><code>er</code></strong> и количеством.</li>
+</ul>
+<hr />
+<p><strong>Готово!</strong> Проверь работу перед сдачей: место глагола, окончания <code>-e</code>, вспомогательный
+глагол (<code>hebben</code>/<code>zijn</code>) и что в предложении не больше одного отрицания.</p></div></body>
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Nederlands — материалы</title>
+<style>
+:root {
+  --bg: #fdfdfc; --fg: #1c1b19; --muted: #6b6862; --rule: #e3e0d8;
+  --accent: #9a3412; --card: #f6f4ef; --code-bg: #efece4;
+  --warn: #b45309; --warn-bg: #fef6e7; --tip: #0369a1; --tip-bg: #eaf4fb;
+  --star: #7c3aed; --star-bg: #f3eefe; --audio: #0f766e; --audio-bg: #e8f5f3;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16150f; --fg: #e8e4da; --muted: #a09a8c; --rule: #33302a;
+    --accent: #fb923c; --card: #1f1d16; --code-bg: #24211a;
+    --warn: #fbbf24; --warn-bg: #2a2114; --tip: #7dd3fc; --tip-bg: #12222c;
+    --star: #c4b5fd; --star-bg: #201a2e; --audio: #5eead4; --audio-bg: #10241f;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 17px/1.65 -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap { max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem; }
+h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 .4em; letter-spacing: -.01em; }
+h2 {
+  font-size: 1.35rem; margin: 2.6em 0 .7em; padding-top: .8em;
+  border-top: 2px solid var(--rule); letter-spacing: -.01em;
+}
+h3 { font-size: 1.1rem; margin: 2em 0 .5em; color: var(--accent); }
+p, li { overflow-wrap: break-word; }
+a { color: var(--accent); }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5em 0; }
+code {
+  background: var(--code-bg); padding: .12em .38em; border-radius: 4px;
+  font: 0.88em/1.4 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  white-space: nowrap;
+}
+u { text-decoration-color: var(--accent); text-underline-offset: 2px; }
+/* таблицы (словарные блоки) — на узком экране скроллятся сами, страница нет */
+.tw { overflow-x: auto; margin: 1.2em 0; }
+table { border-collapse: collapse; width: 100%; font-size: .95em; }
+th, td { text-align: left; padding: .45em .7em; border-bottom: 1px solid var(--rule); }
+th { font-size: .8em; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+tbody tr:nth-child(odd) { background: var(--card); }
+/* цитаты-плашки */
+blockquote {
+  margin: 1.2em 0; padding: .7em 1em; border-left: 3px solid var(--rule);
+  background: var(--card); border-radius: 0 6px 6px 0;
+}
+blockquote p { margin: .4em 0; }
+blockquote.warn { border-color: var(--warn); background: var(--warn-bg); }
+blockquote.tip { border-color: var(--tip); background: var(--tip-bg); }
+blockquote.star { border-color: var(--star); background: var(--star-bg); }
+blockquote.audio, blockquote.note, blockquote.img {
+  border-color: var(--audio); background: var(--audio-bg);
+}
+/* пропуски для ответов */
+.blank {
+  display: inline-block; min-width: 5.5em; border-bottom: 1.5px solid var(--muted);
+  vertical-align: baseline;
+}
+.meta { color: var(--muted); font-size: .9em; margin: -.2em 0 2em; }
+.home { display: inline-block; margin-bottom: 1.5rem; font-size: .9em; }
+.idx { list-style: none; padding: 0; }
+.idx li { margin: .5em 0; padding: .8em 1em; background: var(--card); border-radius: 8px; }
+.idx a { font-weight: 600; text-decoration: none; }
+@media print {
+  :root { --bg: #fff; --fg: #000; --card: #fff; --code-bg: #f2f2f2; }
+  .wrap { max-width: none; padding: 0; }
+  .home { display: none; }
+  h2 { page-break-after: avoid; } blockquote, table { page-break-inside: avoid; }
+}
+</style>
+</head>
+<body><div class="wrap"><h1>Nederlands</h1>
+<p class="meta">Тренажёры и материалы. Открывается с телефона, можно печатать.</p>
+<ul class="idx"><li><a href="trenazher-4-kino-i-muzei-upor-na-pridatochnye.html">Тренажёр 4 · Nederlands (кино и музеи · упор на придаточные предложения)</a></li>
+<li><a href="trenazher-3-dom-i-uborka-upor-na-chisla.html">Тренажёр 3 · Nederlands (дом и уборка · упор на числа и обороты количества)</a></li>
+<li><a href="trenazher-2-upor-na-urok-7.html">Тренажёр 2 · Nederlands (упор на урок 7)</a></li>
+<li><a href="trenazher-uroki-6-7.html">Тренажёр · Nederlands (уроки 6–7)</a></li></ul></div></body>
+</html>

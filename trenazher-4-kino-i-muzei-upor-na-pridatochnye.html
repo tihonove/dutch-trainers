@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Тренажёр 4 · Nederlands (кино и музеи · упор на придаточные предложения)</title>
+<style>
+:root {
+  --bg: #fdfdfc; --fg: #1c1b19; --muted: #6b6862; --rule: #e3e0d8;
+  --accent: #9a3412; --card: #f6f4ef; --code-bg: #efece4;
+  --warn: #b45309; --warn-bg: #fef6e7; --tip: #0369a1; --tip-bg: #eaf4fb;
+  --star: #7c3aed; --star-bg: #f3eefe; --audio: #0f766e; --audio-bg: #e8f5f3;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16150f; --fg: #e8e4da; --muted: #a09a8c; --rule: #33302a;
+    --accent: #fb923c; --card: #1f1d16; --code-bg: #24211a;
+    --warn: #fbbf24; --warn-bg: #2a2114; --tip: #7dd3fc; --tip-bg: #12222c;
+    --star: #c4b5fd; --star-bg: #201a2e; --audio: #5eead4; --audio-bg: #10241f;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 17px/1.65 -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap { max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem; }
+h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 .4em; letter-spacing: -.01em; }
+h2 {
+  font-size: 1.35rem; margin: 2.6em 0 .7em; padding-top: .8em;
+  border-top: 2px solid var(--rule); letter-spacing: -.01em;
+}
+h3 { font-size: 1.1rem; margin: 2em 0 .5em; color: var(--accent); }
+p, li { overflow-wrap: break-word; }
+a { color: var(--accent); }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5em 0; }
+code {
+  background: var(--code-bg); padding: .12em .38em; border-radius: 4px;
+  font: 0.88em/1.4 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  white-space: nowrap;
+}
+u { text-decoration-color: var(--accent); text-underline-offset: 2px; }
+/* таблицы (словарные блоки) — на узком экране скроллятся сами, страница нет */
+.tw { overflow-x: auto; margin: 1.2em 0; }
+table { border-collapse: collapse; width: 100%; font-size: .95em; }
+th, td { text-align: left; padding: .45em .7em; border-bottom: 1px solid var(--rule); }
+th { font-size: .8em; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+tbody tr:nth-child(odd) { background: var(--card); }
+/* цитаты-плашки */
+blockquote {
+  margin: 1.2em 0; padding: .7em 1em; border-left: 3px solid var(--rule);
+  background: var(--card); border-radius: 0 6px 6px 0;
+}
+blockquote p { margin: .4em 0; }
+blockquote.warn { border-color: var(--warn); background: var(--warn-bg); }
+blockquote.tip { border-color: var(--tip); background: var(--tip-bg); }
+blockquote.star { border-color: var(--star); background: var(--star-bg); }
+blockquote.audio, blockquote.note, blockquote.img {
+  border-color: var(--audio); background: var(--audio-bg);
+}
+/* пропуски для ответов */
+.blank {
+  display: inline-block; min-width: 5.5em; border-bottom: 1.5px solid var(--muted);
+  vertical-align: baseline;
+}
+.meta { color: var(--muted); font-size: .9em; margin: -.2em 0 2em; }
+.home { display: inline-block; margin-bottom: 1.5rem; font-size: .9em; }
+.idx { list-style: none; padding: 0; }
+.idx li { margin: .5em 0; padding: .8em 1em; background: var(--card); border-radius: 8px; }
+.idx a { font-weight: 600; text-decoration: none; }
+@media print {
+  :root { --bg: #fff; --fg: #000; --card: #fff; --code-bg: #f2f2f2; }
+  .wrap { max-width: none; padding: 0; }
+  .home { display: none; }
+  h2 { page-break-after: avoid; } blockquote, table { page-break-inside: avoid; }
+}
+</style>
+</head>
+<body><div class="wrap"><a class="home" href="index.html">← ко всем материалам</a><h1>Тренажёр 4 · Nederlands (кино и музеи · упор на придаточные предложения)</h1>
+<p>Четвёртый тренажёр — <strong>большой</strong> (5 сессий по ~50–60 минут, всего часов на пять). Главная
+тема — <strong>придаточное предложение</strong> (первая половина урока 8):</p>
+<ul>
+<li><strong>порядок слов в придаточном</strong> (подлежащее сразу после союза, сказуемое — в самый конец);</li>
+<li><strong>союзы</strong>: <code>dat</code>, <code>toen/als</code>, <code>omdat</code>, <code>hoewel</code>, <code>sinds</code>, <code>terwijl</code>, <code>voordat</code>, <code>zodat</code>, <code>zodra</code>;</li>
+<li><strong>косвенные вопросы</strong> (<code>of</code> = «ли»);</li>
+<li><strong><code>(ook) al</code></strong> и <strong><code>wanneer</code></strong>;</li>
+<li><strong>относительные местоимения</strong> <code>die</code> / <code>dat</code> / <code>wie</code>.</li>
+</ul>
+<p>По контрольной работе (≈70 %, лучшая работа из всех) три темы <strong>закрылись</strong>: <code>om … te</code> с
+отделяемым — 5/5, оборот <code>een … of</code> — применяешь, отделяемый в наст. времени — держишь.
+Молодец. Поэтому здесь их отдельно нет — они работают <strong>внутри</strong> новых тем:</p>
+<ul>
+<li><strong>прошедшее время в рассказе</strong> (была главная дыра) — союз <code>toen</code> <strong>требует</strong> прошедшего
+  времени, так что вся сессия 2 — это прошедшее, но под видом союзов;</li>
+<li><strong>артикль <code>de/het</code></strong> (была 🟠) — от него зависит выбор <code>die</code> / <code>dat</code>, так что вся сессия 4
+  заставляет сначала определить род, а потом уже строить предложение;</li>
+<li><strong>часы во мн. ч.</strong> (<code>tegen achten</code>, <code>na zessen</code>) — живут в придаточных времени: «Когда было
+  почти восемь, …»;</li>
+<li><strong><code>tegen de</code> ↔ <code>over de</code></strong> — в рассказах про возраст режиссёров и художников;</li>
+<li><strong>отделяемые глаголы</strong> (золотая нить всех тренажёров) — новый поворот: <strong>в придаточном
+  приставка НЕ отделяется</strong> (сессия 1).</li>
+</ul>
+<p><strong>Новая тема слов — кино и музеи</strong> (блок ниже). Выбрана не случайно: там поровну <code>de</code>- и
+<code>het</code>-слов (<code>de film</code> ↔ <code>het museum</code>, <code>de tentoonstelling</code> ↔ <code>het schilderij</code>), а значит,
+<code>die</code>/<code>dat</code> и окончание <code>-e</code> тренируются на каждом шагу.</p>
+<p><strong>Как выполнять:</strong>
+- Пиши ответы <strong>на отдельном листе</strong>, перед каждым — номер задания и пункта (<code>3.2</code>).
+- Где просят построить/перевести предложение — пиши предложение <strong>целиком</strong>.
+  (В прошлый раз за односложные ответы терялись баллы.)
+- <strong>Словарём</strong> пользоваться можно; грамматику (порядок слов, окончания, союзы) — по памяти.
+- <code>RU→NL</code> — переводишь с русского. Не уверен — ставь <code>?</code>, а не пиши наугад.
+- <code>⚠️</code> — ловушка, <code>💡</code> — подсказка, <code>⭐</code> — задание посложнее.
+- Не спеши: тренажёр длинный, можно разбить на 5 дней по сессии.</p>
+<hr />
+<h1>Новые слова: кино и музеи (<code>de bioscoop</code> · <code>het museum</code>)</h1>
+<p>Сначала <strong>выучи</strong> слова. Артикль <strong>de</strong> / <strong>het</strong> учи вместе со словом — в этом тренажёре от
+него зависит почти всё (и <code>die</code>/<code>dat</code>, и окончание <code>-e</code>).</p>
+<p><strong>Кинотеатр</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Nederlands</th>
+<th>Русский</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>de bioscoop (bioscopen)</td>
+<td>кинотеатр</td>
+</tr>
+<tr>
+<td>de film (-s)</td>
+<td>фильм</td>
+</tr>
+<tr>
+<td>de voorstelling (-en)</td>
+<td>сеанс, представление</td>
+</tr>
+<tr>
+<td>het kaartje (-s)</td>
+<td>билет</td>
+</tr>
+<tr>
+<td>de kassa (kassa's)</td>
+<td>касса</td>
+</tr>
+<tr>
+<td>de zaal (zalen)</td>
+<td>зал</td>
+</tr>
+<tr>
+<td>het scherm (-en)</td>
+<td>экран</td>
+</tr>
+<tr>
+<td>de rij (-en)</td>
+<td>ряд</td>
+</tr>
+<tr>
+<td>de plaats (-en)</td>
+<td>место</td>
+</tr>
+<tr>
+<td>de pauze (-s)</td>
+<td>антракт, перерыв</td>
+</tr>
+<tr>
+<td>de ondertitel (-s)</td>
+<td>субтитр</td>
+</tr>
+<tr>
+<td>de hoofdrol (-len)</td>
+<td>главная роль</td>
+</tr>
+<tr>
+<td>de acteur (-s) / de actrice (-s)</td>
+<td>актёр / актриса</td>
+</tr>
+<tr>
+<td>de regisseur (-s)</td>
+<td>режиссёр</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Музей</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Nederlands</th>
+<th>Русский</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>het museum (musea)</td>
+<td>музей</td>
+</tr>
+<tr>
+<td>het schilderij (-en)</td>
+<td>картина</td>
+</tr>
+<tr>
+<td>de schilder (-s)</td>
+<td>художник</td>
+</tr>
+<tr>
+<td>het beeld (-en)</td>
+<td>скульптура; изображение</td>
+</tr>
+<tr>
+<td>de tentoonstelling (-en)</td>
+<td>выставка</td>
+</tr>
+<tr>
+<td>de rondleiding (-en)</td>
+<td>экскурсия</td>
+</tr>
+<tr>
+<td>de gids (-en)</td>
+<td>гид; путеводитель</td>
+</tr>
+<tr>
+<td>de ingang / de uitgang</td>
+<td>вход / выход</td>
+</tr>
+<tr>
+<td>de kunst</td>
+<td>искусство</td>
+</tr>
+<tr>
+<td>het kunstwerk (-en)</td>
+<td>произведение искусства</td>
+</tr>
+<tr>
+<td>de bezoeker (-s)</td>
+<td>посетитель</td>
+</tr>
+<tr>
+<td>de collectie (-s)</td>
+<td>коллекция</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote class="warn">
+<p>⚠️ Мн. число с ловушками: <code>het museum → **musea**</code>, <code>de bioscoop → **bioscopen**</code>,
+<code>de zaal → **zalen**</code>, <code>de kassa → **kassa's**</code>, <code>het schilderij → **schilderijen**</code>.</p>
+</blockquote>
+<p><strong>Действия</strong> <em>(жирным — отделяемая приставка)</em></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Nederlands</th>
+<th>Русский</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>uit</strong>gaan (ging uit — uitgegaan, <em>z</em>)</td>
+<td>пойти развлечься, выйти в свет</td>
+</tr>
+<tr>
+<td><strong>mee</strong>gaan (ging mee — meegegaan, <em>z</em>)</td>
+<td>пойти вместе</td>
+</tr>
+<tr>
+<td><strong>af</strong>lopen (liep af — afgelopen, <em>z</em>)</td>
+<td>заканчиваться (о фильме)</td>
+</tr>
+<tr>
+<td><strong>dicht</strong>gaan (ging dicht — dichtgegaan, <em>z</em>)</td>
+<td>закрываться</td>
+</tr>
+<tr>
+<td><strong>terug</strong>komen (kwam terug — teruggekomen, <em>z</em>)</td>
+<td>возвращаться</td>
+</tr>
+<tr>
+<td><strong>op</strong>bellen (belde op — opgebeld)</td>
+<td>звонить (по телефону)</td>
+</tr>
+<tr>
+<td>beginnen (begon — begonnen, <em>z</em>)</td>
+<td>начинаться</td>
+</tr>
+<tr>
+<td>duren (duurde — geduurd)</td>
+<td>длиться</td>
+</tr>
+<tr>
+<td>bezoeken (bezocht — bezocht)</td>
+<td>посещать</td>
+</tr>
+<tr>
+<td>bekijken (bekeek — bekeken)</td>
+<td>рассматривать</td>
+</tr>
+<tr>
+<td>reserveren (reserveerde — gereserveerd)</td>
+<td>бронировать</td>
+</tr>
+<tr>
+<td>huren (huurde — gehuurd)</td>
+<td>брать напрокат</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote class="warn">
+<p>⚠️ <code>bezoeken</code> и <code>bekijken</code> — приставка <code>be-</code> <strong>неотделяемая</strong>: она никогда не уходит в
+конец, и причастие идёт <strong>без</strong> <code>ge-</code>: <code>Ik heb het museum **bezocht**</code> (не «gebezocht»,
+не «zoek … be»). Не путай с <code>**op**bellen</code> → <code>**op**gebeld</code>.</p>
+</blockquote>
+<p><strong>Признаки</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Nederlands</th>
+<th>Русский</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>spannend</td>
+<td>захватывающий</td>
+</tr>
+<tr>
+<td>saai</td>
+<td>скучный</td>
+</tr>
+<tr>
+<td>beroemd</td>
+<td>знаменитый</td>
+</tr>
+<tr>
+<td>modern</td>
+<td>современный</td>
+</tr>
+<tr>
+<td>uitverkocht</td>
+<td>распродан</td>
+</tr>
+<tr>
+<td>gesloten / open</td>
+<td>закрыт / открыт</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote class="tip">
+<p>💡 Полезное: <code>Er **draait** een goede film</code> — «Идёт хороший фильм».
+<code>De film is **uitverkocht**</code> — «На фильм всё продано».</p>
+</blockquote>
+<hr />
+<h1>Сессия 1 — Придаточное с <code>dat</code>: порядок слов</h1>
+<h2>Задание 1. de / het (кино и музеи)</h2>
+<p>Разложи по колонкам <strong>de</strong> / <strong>het</strong> (артикль не пиши):
+<code>bioscoop · museum · film · schilderij · zaal · kaartje · tentoonstelling · beeld · scherm ·
+gids · kunstwerk · rij · collectie · pauze</code></p>
+<blockquote class="warn">
+<p>⚠️ Пять слов здесь — <code>het</code>. Это задание — фундамент: от него зависят задания 17–21.
+Не угадывай, загляни в блок и <strong>выучи</strong>.</p>
+</blockquote>
+<hr />
+<h2>Задание 2. Множественное число</h2>
+<p>1) het museum  2) de bioscoop  3) het schilderij  4) de zaal  5) de kassa<br />
+6) de film  7) het beeld  8) de acteur  9) de rij  10) het kaartje  </p>
+<blockquote class="warn">
+<p>⚠️ <code>het museum → musea</code> (латинское!), <code>de kassa → kassa's</code> (с апострофом),
+<code>de zaal → zalen</code> (одна гласная), <code>de rij → rijen</code>.</p>
+</blockquote>
+<hr />
+<h2>Задание 3. Придаточное с <code>dat</code> — сказуемое в конец</h2>
+<p>Главное правило урока 8: <strong>подлежащее сразу после союза, сказуемое — в самый конец.</strong></p>
+<blockquote>
+<p><strong>Образец:</strong> <em>Hij gaat naar de bioscoop.</em> → <strong>Ik weet dat hij naar de bioscoop gaat.</strong></p>
+</blockquote>
+<p>1) De film begint om acht uur. → Ik weet dat <span class="blank"></span><br />
+2) Het museum is vandaag gesloten. → Hij zegt dat <span class="blank"></span><br />
+3) Zij houdt van moderne schilderijen. → Ik denk dat <span class="blank"></span><br />
+4) De kaartjes zijn te duur. → Ik vind dat <span class="blank"></span><br />
+5) Wij hebben geen plaatsen meer. → De kassa zegt dat <span class="blank"></span><br />
+6) Deze film duurt twee uur. → Ik lees dat <span class="blank"></span>  </p>
+<blockquote class="tip">
+<p>💡 Порядок: <code>dat</code> + подлежащее + всё остальное + <strong>глагол в самом конце</strong>.
+⚠️ Инверсии в придаточном <strong>не бывает</strong>: нельзя «dat begint de film…».</p>
+</blockquote>
+<hr />
+<h2>Задание 4. Отделяемый глагол в придаточном ⭐ (новый поворот)</h2>
+<p>В главном предложении приставка уходит <strong>в конец, отдельно</strong>: <code>De film loopt om tien uur **af**</code>.
+А в придаточном — <strong>наоборот</strong>: приставка <strong>возвращается</strong> к глаголу, и всё вместе уходит в конец
+одним словом.</p>
+<blockquote>
+<p><strong>Образец:</strong> <em>Zij gaan morgen weg.</em> → <strong>Hij zegt dat zij morgen weggaan.</strong></p>
+</blockquote>
+<p>1) De film loopt om tien uur af. → Ik weet dat <span class="blank"></span><br />
+2) Wij gaan zaterdag uit. → Hij zegt dat <span class="blank"></span><br />
+3) Zij komt om zes uur terug. → Ik denk dat <span class="blank"></span><br />
+4) Het museum gaat om vijf uur dicht. → In de gids staat dat <span class="blank"></span><br />
+5) Hij belt de kassa op. → Ik hoor dat <span class="blank"></span><br />
+6) Jij gaat met ons mee. → Ik hoop dat <span class="blank"></span>  </p>
+<blockquote class="warn">
+<p>⚠️ Это <strong>ровно наоборот</strong>, чем то, что ты уже хорошо умеешь.
+Главное: <code>Wij gaan zaterdag **uit**</code> (приставка отдельно, в конце).
+Придаточное: <code>…dat wij zaterdag **uitgaan**</code> (приставка приросла обратно).
+Сравни оба варианта вслух — разница только в наличии союза.</p>
+</blockquote>
+<hr />
+<h2>Задание 5. Модальный глагол + инфинитив в придаточном</h2>
+<p>Если сказуемое = спрягаемая часть + инфинитив, то <strong>в конце они стоят именно в таком порядке</strong>.</p>
+<blockquote>
+<p><strong>Образец:</strong> <em>Hij wil morgen beginnen.</em> → <strong>Hij zegt dat hij morgen wil beginnen.</strong></p>
+</blockquote>
+<p>1) Zij kan vanavond meegaan. → Ik denk dat <span class="blank"></span><br />
+2) Wij moeten de kaartjes reserveren. → Hij vindt dat <span class="blank"></span><br />
+3) Jij hoeft niet te betalen. → Ik zeg dat <span class="blank"></span><br />
+4) Ik mag het schilderij niet aanraken. → De gids zegt dat <span class="blank"></span><br />
+5) Zij begint om acht uur te werken. → Ik weet dat <span class="blank"></span>  </p>
+<blockquote class="warn">
+<p>⚠️ Пункт 4 — отделяемый <strong>внутри</strong> инфинитива: <code>…dat ik het schilderij niet **mag aanraken**</code>.</p>
+</blockquote>
+<hr />
+<h2>Задание 6. Перфект в придаточном (два варианта)</h2>
+<p>Если сказуемое в перфекте, возможны <strong>оба</strong> порядка: вспомогательный + причастие <strong>или</strong>
+причастие + вспомогательный. Напиши <strong>оба</strong>.</p>
+<blockquote>
+<p><strong>Образец:</strong> <em>Hij is naar Delft geweest.</em> → <strong>Geloof je dat hij naar Delft is geweest /
+geweest is?</strong></p>
+</blockquote>
+<p>1) Zij heeft die film al gezien. → Ik weet dat <span class="blank"></span> / <span class="blank"></span><br />
+2) Wij zijn in het Rijksmuseum geweest. → Hij zegt dat <span class="blank"></span> / <span class="blank"></span><br />
+3) Jij hebt het kaartje gekocht. → Ik hoop dat <span class="blank"></span> / <span class="blank"></span><br />
+4) Zij zijn gisteren uitgegaan. → Ik hoor dat <span class="blank"></span> / <span class="blank"></span>  </p>
+<blockquote class="tip">
+<p>💡 В пункте 4 у отделяемого в перфекте есть даже <strong>три</strong> варианта:
+<code>…dat zij gisteren **zijn uitgegaan** / **uitgegaan zijn** / **uit zijn gegaan**</code>.
+Хватит любых двух.</p>
+</blockquote>
+<hr />
+<h1>Сессия 2 — Союзы: <code>toen</code> и прошедшее время ⭐</h1>
+<blockquote>
+<p>Эта сессия — про союзы. Но <code>toen</code> работает <strong>только</strong> с прошедшим временем, так что на
+самом деле мы весь час чиним ту самую дыру из контрольной: <strong>рассказ о прошлом = прошедшее
+время</strong>, а не настоящее.</p>
+</blockquote>
+<h2>Задание 7. <code>toen</code> или <code>als</code>?</h2>
+<p>Правило урока 8:
+- <strong><code>toen</code></strong> — только <strong>однократное действие в прошлом</strong>;
+- <strong><code>als</code></strong> — всё остальное: многократное в прошлом («каждый раз, когда»), любое действие
+  в настоящем и будущем, а также значение <strong>«если»</strong>.</p>
+<p>Впиши <code>toen</code> или <code>als</code> и переведи:</p>
+<p>1) <span class="blank"></span> ik gisteren wakker werd, was het al negen uur.<br />
+2) <span class="blank"></span> ik in Amsterdam woonde, ging ik elke week naar de bioscoop.<br />
+3) <span class="blank"></span> de film afgelopen is, gaan we naar een café.<br />
+4) <span class="blank"></span> hij die film zag, begon hij bijna te huilen.<br />
+5) <span class="blank"></span> het regent, blijf ik thuis.<br />
+6) <span class="blank"></span> wij het museum bezochten, was er een tentoonstelling.  </p>
+<blockquote class="warn">
+<p>⚠️ Пункты 2 и 4 оба про прошлое! Но 2 — <strong>многократно</strong> («каждую неделю») → <code>als</code>,
+а 4 — <strong>один раз</strong> → <code>toen</code>. Вот и вся разница.</p>
+</blockquote>
+<hr />
+<h2>Задание 8. <code>toen</code> + имперфект ⭐ (главная дыра контрольной)</h2>
+<p><strong>В придаточном с <code>toen</code> перфект не используется — только имперфект.</strong> Переведи целиком
+(RU→NL). Все предложения — про прошлое, значит <strong>никакого настоящего времени</strong>.</p>
+<p>1) Когда я проснулся, было уже почти восемь. <em>(tegen achten!)</em><br />
+2) Когда фильм закончился, мы пошли домой.<br />
+3) Когда мне было двадцать, я часто ходил в музеи. <em>(⚠️ «часто» — а какой тут союз?)</em><br />
+4) Когда она купила билеты, зал уже был полон <em>(vol)</em>.<br />
+5) Когда мы пришли, сеанс уже начался.<br />
+6) Когда он это сказал, все засмеялись.  </p>
+<blockquote class="warn">
+<p>⚠️ Ровно здесь в контрольной было написано настоящим временем («Vandaag <strong>maak</strong> ik…»
+вместо <code>heb … gekookt</code>). Рассказ о прошлом → <code>werd</code>, <code>liep af</code>, <code>kocht</code>, <code>zei</code>, <code>lachten</code>.
+⚠️ Пункт 1: «почти восемь» — это <strong><code>tegen achten</code></strong>, а не «bijna acht uur» (час во мн. ч.).
+⚠️ Пункт 3 — ловушка: «часто» = многократно → <code>als</code>, не <code>toen</code>.</p>
+</blockquote>
+<hr />
+<h2>Задание 9. Инверсия в главном после придаточного ⭐</h2>
+<p>Если придаточное стоит <strong>первым</strong>, то в главном происходит <strong>инверсия</strong>: сказуемое идёт
+<strong>сразу за придаточным</strong>, перед подлежащим.</p>
+<blockquote>
+<p><strong>Образец:</strong> <em>Ze lachte. Hij zei dat.</em> → <strong>Toen hij dat zei, lachte ze.</strong></p>
+</blockquote>
+<p>Переставь придаточное вперёд:</p>
+<p>1) Wij gingen naar huis toen de film afliep. → Toen de film afliep, <span class="blank"></span><br />
+2) Ik kocht een kaartje toen ik bij de kassa stond. → Toen ik bij de kassa stond, <span class="blank"></span><br />
+3) Zij was heel blij toen zij dat schilderij zag. → Toen zij dat schilderij zag, <span class="blank"></span><br />
+4) Het museum ging dicht toen wij aankwamen. → Toen wij aankwamen, <span class="blank"></span>  </p>
+<blockquote class="warn">
+<p>⚠️ Считай запятую границей: сразу после неё — <strong>глагол</strong>, потом подлежащее.
+<code>Toen de film afliep, **gingen wij** naar huis</code> (а не «wij gingen»).</p>
+</blockquote>
+<hr />
+<h2>Задание 10. <code>omdat</code> или <code>want</code>?</h2>
+<p>По смыслу они одинаковы («потому что»), но синтаксис разный:
+- <strong><code>want</code></strong> — сочинительный: после него <strong>обычный</strong> порядок слов;
+- <strong><code>omdat</code></strong> — подчинительный: сказуемое <strong>в конец</strong>.</p>
+<p>Впиши и переведи:</p>
+<p>1) Hij ging weg <span class="blank"></span> hij zich niet goed voelde. <em>(omdat)</em><br />
+2) Hij ging weg, <span class="blank"></span> hij voelde zich niet goed. <em>(want)</em><br />
+3) Ik ga niet mee <span class="blank"></span> ik geen geld heb.<br />
+4) Wij bleven thuis, <span class="blank"></span> de film was uitverkocht.<br />
+5) <span class="blank"></span> het museum gesloten was, gingen wij naar de bioscoop.  </p>
+<blockquote class="warn">
+<p>⚠️ Пункт 5 — ловушка: если придаточное причины стоит <strong>впереди</strong>, <code>want</code> там <strong>невозможен</strong>
+в принципе. Только <code>omdat</code>. (И не забудь инверсию в главном!)</p>
+</blockquote>
+<hr />
+<h2>Задание 11. Все союзы — вставь по смыслу</h2>
+<p>Впиши: <code>toen · als · omdat · hoewel · sinds · terwijl · voordat · zodat · zodra</code>
+(каждый по одному разу) и переведи:</p>
+<p>1) <span class="blank"></span> ik hier woon, ga ik elke maand naar het museum. <em>(с тех пор как)</em><br />
+2) Ik koop de kaartjes <span class="blank"></span> de film uitverkocht is. <em>(до того как)</em><br />
+3) Hij keek naar het schilderij <span class="blank"></span> ik met de gids praatte. <em>(в то время как)</em><br />
+4) <span class="blank"></span> de film saai was, bleven wij tot het einde. <em>(хотя)</em><br />
+5) Wij gingen niet mee <span class="blank"></span> wij geen tijd hadden. <em>(потому что)</em><br />
+6) <span class="blank"></span> hij binnenkwam, begon de voorstelling. <em>(когда — один раз, в прошлом)</em><br />
+7) Ik bel je op <span class="blank"></span> ik thuis ben. <em>(как только)</em><br />
+8) De zaal was vol, <span class="blank"></span> wij moesten staan. <em>(так что)</em><br />
+9) <span class="blank"></span> het regent, gaan wij naar de bioscoop. <em>(если)</em>  </p>
+<blockquote class="tip">
+<p>💡 В придаточных с <code>terwijl</code> и с <code>toen</code>/<code>als</code> о прошлом перфект <strong>не</strong> используется.
+⚠️ У <code>voordat</code> и <code>totdat</code> есть короткие варианты <code>voor</code> и <code>tot</code> — тоже верно.</p>
+</blockquote>
+<hr />
+<h1>Сессия 3 — Косвенные вопросы, <code>(ook) al</code>, <code>wanneer</code></h1>
+<h2>Задание 12. Прямой вопрос → косвенный (с вопросительным словом)</h2>
+<p>Косвенный вопрос — это придаточное, значит <strong>сказуемое в конец</strong>.</p>
+<blockquote>
+<p><strong>Образец:</strong> <em>Hoe heet je?</em> → <strong>Hij vraagt hoe je heet.</strong></p>
+</blockquote>
+<p>Начни каждый с <code>Hij vraagt …</code>:</p>
+<p>1) Hoe laat begint de film?<br />
+2) Waar is de ingang?<br />
+3) Welk schilderij vind jij het mooist?<br />
+4) Wanneer gaat het museum dicht?<br />
+5) Waarom ben je niet meegegaan?<br />
+6) Hoeveel kaartjes heeft zij gekocht?  </p>
+<blockquote class="warn">
+<p>⚠️ В пункте 4 — отделяемый: <code>…vraagt wanneer het museum **dichtgaat**</code> (приставка приросла).</p>
+</blockquote>
+<hr />
+<h2>Задание 13. Косвенный вопрос без вопросительного слова: <code>of</code></h2>
+<p>Если прямой вопрос задан <strong>без</strong> вопросительного слова (то есть ответ «да/нет»), то в
+косвенном появляется союз <strong><code>of</code></strong> = «ли».</p>
+<blockquote>
+<p><strong>Образец:</strong> <em>Ben je thuis?</em> → <strong>Hij vraagt of je thuis bent.</strong></p>
+</blockquote>
+<p>Начни каждый с <code>Ik vraag …</code> или <code>Ik weet niet …</code>:</p>
+<p>1) Is de film al begonnen?<br />
+2) Heeft zij de kaartjes gereserveerd?<br />
+3) Gaat het museum om vijf uur dicht?<br />
+4) Zijn jullie gisteren uitgegaan?<br />
+5) Kan hij vanavond meegaan?<br />
+6) Was de tentoonstelling interessant?  </p>
+<blockquote class="warn">
+<p>⚠️ <code>of</code> — это «ли», а не «или»! <code>Ik weet niet **of** hij komt</code> = «Я не знаю, придёт <strong>ли</strong> он».
+⚠️ Не путай с <code>dat</code>: <code>dat</code> — когда есть утверждение, <code>of</code> — когда есть вопрос «да/нет».</p>
+</blockquote>
+<hr />
+<h2>Задание 14. <code>dat</code> или <code>of</code>?</h2>
+<p>Впиши и переведи:</p>
+<p>1) Ik weet <span class="blank"></span> de film om acht uur begint.<br />
+2) Ik weet niet <span class="blank"></span> de film om acht uur begint.<br />
+3) Hij zegt <span class="blank"></span> het museum gesloten is.<br />
+4) Hij vraagt <span class="blank"></span> het museum gesloten is.<br />
+5) Ik hoop <span class="blank"></span> jij meegaat.<br />
+6) Ik vraag me af <span class="blank"></span> jij meegaat.  </p>
+<blockquote class="tip">
+<p>💡 Разница чисто смысловая: «я знаю, <strong>что</strong>…» → <code>dat</code>; «я не знаю, … <strong>ли</strong>» → <code>of</code>.
+Обрати внимание на пары 1–2 и 3–4: одно и то же придаточное, союз разный.</p>
+</blockquote>
+<hr />
+<h2>Задание 15. <code>(ook) al</code> — «хотя» с инверсией ⭐</h2>
+<p><code>(ook) al</code> = <code>hoewel</code> («хотя»), но ведёт себя <strong>особенно</strong>:
+<strong>а.</strong> после <code>(ook) al</code> — <strong>инверсия</strong> (глагол сразу за союзом!);
+<strong>б.</strong> если придаточное с <code>al</code> стоит впереди, то в главном сказуемое <strong>остаётся на 2-м месте</strong>
+(инверсии в главном <strong>нет</strong> — в отличие от задания 9!).</p>
+<blockquote>
+<p><strong>Образец:</strong> <em>Ik ga met je mee, </em><em>hoewel ik</em><em> heel moe </em><em>ben</em><em>.</em>
+→ <strong>Ik ga met je mee, ook al ben ik heel moe.</strong>
+→ <strong>Al ben ik heel moe, ik ga met je mee.</strong></p>
+</blockquote>
+<p>Замени <code>hoewel</code> на <code>(ook) al</code>, не забывая о порядке слов:</p>
+<p>1) Ik ga mee, hoewel ik de film al gezien heb.<br />
+2) Hij bleef tot het einde, hoewel de film saai was.<br />
+3) Wij kochten kaartjes, hoewel ze heel duur waren.<br />
+4) Hoewel het museum klein is, is de collectie beroemd.  </p>
+<blockquote class="warn">
+<p>⚠️ Главная ловушка: <code>hoewel ik moe **ben**</code> (глагол в конец), но <code>al **ben** ik moe</code>
+(глагол сразу за союзом). Союз поменялся — порядок слов перевернулся.</p>
+</blockquote>
+<hr />
+<h2>Задание 16. Оборот <code>(ook) al … nog zo …</code></h2>
+<p>Запомни оборот: <strong><code>(Ook) al is ze nog zo lief…</code></strong> = «Как она ни мила…».
+Логическое ударение — на <code>nog</code>.</p>
+<p>Переведи (RU→NL):</p>
+<p>1) Как бы фильм ни был скучен, я досмотрю до конца. <em>(…, ik kijk tot het einde)</em><br />
+2) Как ты этого ни хочешь, билетов больше нет.<br />
+3) Как бы часто я это ни говорил, он не слушает.  </p>
+<blockquote class="tip">
+<p>💡 Формула: <code>(Ook) al</code> + <strong>глагол</strong> + подлежащее + <code>nog zo</code> + прилагательное.
+<code>Ook al is de film nog zo saai, …</code></p>
+</blockquote>
+<hr />
+<h2>Задание 17. <code>wanneer</code></h2>
+<p><code>wanneer</code> = «когда». Работает в двух ролях:
+<strong>а.</strong> вопросительное слово (в том числе в косвенном вопросе);
+<strong>б.</strong> союз времени/условия — синоним <code>als</code> (<strong>но не <code>toen</code>!</strong>).</p>
+<p>Впиши <code>wanneer</code> или <code>toen</code> и объясни одним словом почему:</p>
+<p>1) <span class="blank"></span> ben je aangekomen? <em>(вопрос)</em><br />
+2) Ik weet niet <span class="blank"></span> hij heeft opgebeld. <em>(косвенный вопрос)</em><br />
+3) <span class="blank"></span> ik thuis ben, kijk ik tv. <em>(каждый раз)</em><br />
+4) <span class="blank"></span> ik gisteren thuis kwam, was er niemand. <em>(один раз, в прошлом)</em>  </p>
+<blockquote class="warn">
+<p>⚠️ <code>wanneer</code> <strong>никогда</strong> не заменяет <code>toen</code>. Если действие однократное и в прошлом —
+только <code>toen</code>.</p>
+</blockquote>
+<hr />
+<h1>Сессия 4 — Относительные <code>die</code> / <code>dat</code> / <code>wie</code> (и артикль <code>de</code>/<code>het</code>)</h1>
+<blockquote>
+<p>Эта сессия — про относительные местоимения. Но выбрать <code>die</code> или <code>dat</code> нельзя, не зная
+род слова. Так что заодно чиним вторую дыру контрольной: <strong>сначала <code>de</code>/<code>het</code>, потом всё
+остальное.</strong></p>
+</blockquote>
+<h2>Задание 18. <code>die</code> или <code>dat</code>?</h2>
+<p>Правило: <strong><code>die</code></strong> — к <code>de</code>-словам и ко <strong>всем</strong> словам во мн. ч.; <strong><code>dat</code></strong> — только к
+<code>het</code>-словам в ед. ч.</p>
+<p>Впиши <code>die</code> или <code>dat</code>:</p>
+<p>1) de film <span class="blank"></span> ik gisteren zag<br />
+2) het museum <span class="blank"></span> wij bezochten<br />
+3) het schilderij <span class="blank"></span> daar hangt<br />
+4) de schilderijen <span class="blank"></span> daar hangen<br />
+5) de tentoonstelling <span class="blank"></span> morgen begint<br />
+6) het kaartje <span class="blank"></span> jij gekocht hebt<br />
+7) de bezoekers <span class="blank"></span> in de rij staan<br />
+8) het beeld <span class="blank"></span> voor de ingang staat  </p>
+<blockquote class="warn">
+<p>⚠️ Пункты 3 и 4 — та же картина, но во мн. ч. <code>dat</code> превращается в <code>die</code>.
+Мн. число <strong>всегда</strong> <code>die</code>, какой бы род ни был.</p>
+</blockquote>
+<hr />
+<h2>Задание 19. Соедини в одно предложение ⭐</h2>
+<p>Соедини пару предложений с помощью <code>die</code>/<code>dat</code>. <strong>Не забудь: в придаточном сказуемое — в конец.</strong></p>
+<blockquote>
+<p><strong>Образец:</strong> <em>De fiets was duur. Ik heb de fiets gekocht.</em>
+→ <strong>De fiets die ik heb gekocht was duur.</strong></p>
+</blockquote>
+<p>1) De film was spannend. Ik heb de film gisteren gezien.<br />
+2) Het museum is heel oud. Wij hebben het museum bezocht.<br />
+3) Het schilderij is beroemd. Zij wil het schilderij zien.<br />
+4) De acteur speelt de hoofdrol. Jij kent de acteur.<br />
+5) De kaartjes waren te duur. Wij hebben de kaartjes niet gekocht.<br />
+6) Het beeld staat voor de ingang. Iedereen maakt een foto van het beeld.  </p>
+<blockquote class="tip">
+<p>💡 Сначала определи род (<code>de</code> или <code>het</code>) → выбери <code>die</code>/<code>dat</code> → потом собери придаточное,
+загнав глагол в конец.</p>
+</blockquote>
+<hr />
+<h2>Задание 20. <code>wie</code> и <code>waar</code> + предлог ⭐</h2>
+<ul>
+<li>Если перед относительным местоимением стоит <strong>предлог</strong>, и речь о <strong>человеке</strong> — не <code>die</code>,
+  а <strong><code>wie</code></strong>: <code>de man **over wie** hij het had</code>.</li>
+<li>Если о <strong>предмете</strong> — не <code>die/dat</code>, а <strong><code>waar</code> + предлог</strong>: <code>de film **waarover** hij het had</code>
+  = <code>de film **waar** hij het **over** had</code>.</li>
+</ul>
+<p>Впиши:</p>
+<p>1) de regisseur <span class="blank"></span> <span class="blank"></span> iedereen praat <em>(о котором — человек!)</em><br />
+2) de film <span class="blank"></span> iedereen praat <em>(о котором — предмет; одним словом)</em><br />
+3) de schilder <span class="blank"></span> <span class="blank"></span> zij een boek heeft geschreven <em>(о котором)</em><br />
+4) het schilderij <span class="blank"></span> zij een boek heeft geschreven <em>(о которой)</em><br />
+5) de actrice <span class="blank"></span> <span class="blank"></span> hij wil trouwen <em>(на которой)</em>  </p>
+<blockquote class="tip">
+<p>💡 Человек + предлог → <code>over wie</code>, <code>met wie</code>, <code>van wie</code>.
+Предмет + предлог → <code>waarover</code>, <code>waarmee</code>, <code>waarvan</code> (или раздельно: <code>waar … over</code>).
+⚠️ <code>**Van wie** is dit kaartje?</code> = «Чей это билет?»</p>
+</blockquote>
+<hr />
+<h2>Задание 21. Артикль → окончание <code>-e</code> 🟠 (дыра контрольной)</h2>
+<p>Порядок действий: <strong>1)</strong> какой артикль, <code>de</code> или <code>het</code>? <strong>2)</strong> ставим ли <code>-e</code>?</p>
+<p>Правило: <code>-e</code> <strong>есть почти всегда</strong>, кроме одного случая — <strong><code>het</code>-слово + <code>een</code> → без <code>-e</code></strong>.</p>
+<p><strong>(а)</strong> Впиши форму прилагательного:<br />
+1) de + beroemd + film → de <span class="blank"></span> film<br />
+2) het + beroemd + museum → het <span class="blank"></span> museum<br />
+3) een + beroemd + film → een <span class="blank"></span> film<br />
+4) een + beroemd + museum → een <span class="blank"></span> museum<br />
+5) een + oud + schilderij → een <span class="blank"></span> schilderij<br />
+6) de + modern + kunst → de <span class="blank"></span> kunst  </p>
+<p><strong>(б)</strong> А теперь после <code>is</code>/<code>zijn</code>:<br />
+7) De film is <span class="blank"></span> <em>(spannend)</em><br />
+8) De schilderijen zijn <span class="blank"></span> <em>(beroemd)</em><br />
+9) Het museum is <span class="blank"></span> <em>(gesloten)</em>  </p>
+<blockquote class="warn">
+<p>⚠️ Пункты 3 и 4 — зеркальная пара, и ровно на ней ты споткнулся в контрольной:
+<code>een **beroemde** film</code> (de-слово + een → <strong>с</strong> <code>-e</code>), но
+<code>een **beroemd** museum</code> (het-слово + een → <strong>без</strong> <code>-e</code>).
+⚠️ Часть <strong>(б)</strong> ты сделал идеально (3/3) — после <code>is</code>/<code>zijn</code> прилагательное <strong>голое</strong>.
+Держи планку: <code>De film is **spannend**</code>, а не «spannende».</p>
+</blockquote>
+<hr />
+<h2>Задание 22. Относительное + <code>-e</code> вместе ⭐</h2>
+<p>Переведи целиком (RU→NL). Тут нужно и <code>die</code>/<code>dat</code>, и окончание <code>-e</code>:</p>
+<p>1) Фильм, который я вчера видел, был очень захватывающий.<br />
+2) Знаменитый музей, который мы посетили, был закрыт.<br />
+3) Старая картина, которая там висит, стоит миллион.<br />
+4) Это скучный фильм. <em>(⚠️ <code>een</code> + <code>de</code>-слово)</em><br />
+5) Это скучное произведение искусства. <em>(⚠️ <code>een</code> + <code>het</code>-слово!)</em>  </p>
+<blockquote class="tip">
+<p>💡 В пунктах 4–5 разница только в роде слова (<code>de film</code> ↔ <code>het kunstwerk</code>), а окончание
+меняется. Это и есть суть темы.</p>
+</blockquote>
+<hr />
+<h1>Сессия 5 — Смесь и финал</h1>
+<h2>Задание 23. Найди ошибку</h2>
+<p>В каждом предложении <strong>одна</strong> ошибка. Выпиши <strong>правильный</strong> вариант и переведи:</p>
+<p>1) Ik weet dat begint de film om acht uur.<br />
+2) Hij zegt dat wij zaterdag uit gaan.<br />
+3) Ik vraag dat je thuis bent.<br />
+4) Toen de film afliep, wij gingen naar huis.<br />
+5) Het museum dat wij bezocht hebben was heel oude.<br />
+6) De film dat ik gisteren zag was spannend.<br />
+7) Ik ga mee, ook al ik ben heel moe.<br />
+8) Toen ik jong was, ik ben vaak naar de bioscoop gegaan.  </p>
+<blockquote class="tip">
+<p>💡 Ищи по списку: инверсия в придаточном (нельзя!), отделяемый в придаточном (приставка
+прирастает), <code>dat</code> вместо <code>of</code>, инверсия в главном после придаточного, предикативное <code>-e</code>,
+<code>die</code>/<code>dat</code> по роду, инверсия после <code>al</code>, перфект вместо имперфекта при <code>toen</code>.</p>
+</blockquote>
+<hr />
+<h2>Задание 24. Связный рассказ в прошедшем ⭐⭐ (главное задание)</h2>
+<p>Переведи рассказ целиком. <strong>Это рассказ о прошлом — значит, прошедшее время.</strong>
+В каждом предложении должно быть <strong>придаточное</strong>.</p>
+<p>1) Вчера, когда я проснулся, было уже почти девять. <em>(toen …, tegen negenen)</em><br />
+2) Я позвонил Питу и спросил, хочет ли он пойти со мной в кино. <em>(of … mee wilde gaan)</em><br />
+3) Он сказал, что фильм, который мы хотели посмотреть, уже распродан.<br />
+4) Так что мы пошли в музей, хотя Пит не любит искусство. <em>(zodat … hoewel)</em><br />
+5) Когда мы пришли, экскурсия уже началась.<br />
+6) Гид, которому под шестьдесят, рассказывал о художнике, о котором никто ничего не знал.<br />
+<em>(⚠️ «под шестьдесят» = <code>tegen de …</code>; «о котором» — человек!)</em><br />
+7) Картина, которая висела в последнем зале, была очень знаменитая.<br />
+8) Пит сказал, что музей ему понравился, хотя он этого не ожидал. <em>(al had hij dat niet verwacht)</em><br />
+9) К шести мы вернулись домой. <em>(tegen zessen; «вернулись» — отделяемый!)</em>  </p>
+<blockquote>
+<p><strong>+ Почему:</strong> в пункте 9 объясни <strong>одним словом</strong>, почему <code>zijn teruggekomen</code>, а не <code>hebben</code>.
+⚠️ Собери всё сразу: прошедшее время (не настоящее!), сказуемое в конец придаточного,
+инверсия в главном после придаточного, <code>die</code>/<code>dat</code> по роду, <code>of</code> ≠ <code>dat</code>, часы во мн. ч.,
+<code>tegen de</code> = «под» (не «за»!).</p>
+</blockquote>
+<hr />
+<h2>Задание 25. Ответь целыми предложениями</h2>
+<p>Ответь по-нидерландски <strong>полными предложениями</strong> (в контрольной за односложные ответы
+терялись баллы). Каждый ответ должен содержать придаточное с <code>dat</code> или <code>omdat</code>:</p>
+<p>1) Waarom ga jij graag naar de bioscoop?<br />
+2) Welke film heb je het laatst gezien en wat vond je ervan?<br />
+3) Weet jij of er in jouw stad een goed museum is?<br />
+4) Wat doe je als de film uitverkocht is?<br />
+5) Wat deed je toen je voor het laatst in een museum was?  </p>
+<blockquote class="warn">
+<p>⚠️ Пункт 5 — про прошлое → <strong>прошедшее время</strong>. Пункт 4 — <code>als</code>, не <code>toen</code>.
+💡 Образец: <code>Ik ga graag naar de bioscoop **omdat** ik van spannende films **hou**.</code></p>
+</blockquote>
+<hr />
+<h2>Задание 26. Свой рассказ ⭐ «Toen ik voor het laatst uitging»</h2>
+<p>Напиши <strong>8–10 предложений</strong> о том, как ты в последний раз ходил в кино или в музей.
+<strong>Это рассказ о прошлом.</strong> Обязательно должны быть:</p>
+<ul>
+<li>одно предложение с <strong><code>toen</code></strong> + имперфект (<code>Toen ik aankwam, …</code>);</li>
+<li>одно, где придаточное стоит <strong>впереди</strong>, а в главном — <strong>инверсия</strong>;</li>
+<li>одно с <strong><code>omdat</code></strong> (сказуемое в конец);</li>
+<li>одно с <strong>относительным <code>die</code></strong> и одно с <strong>относительным <code>dat</code></strong> (следи за родом!);</li>
+<li>один <strong>косвенный вопрос с <code>of</code></strong> (<code>Ik vroeg of …</code>);</li>
+<li>одно с <strong><code>(ook) al</code></strong> и инверсией после союза;</li>
+<li>один <strong>отделяемый глагол в придаточном</strong> (<code>…dat de film om tien uur **afliep**</code>);</li>
+<li>одни <strong>часы во мн. ч.</strong> (<code>tegen achten</code>, <code>na zessen</code>).</li>
+</ul>
+<hr />
+<p><strong>Готово!</strong> Перед сдачей пройди по чек-листу:</p>
+<ol>
+<li><strong>Придаточное?</strong> → подлежащее сразу после союза, <strong>сказуемое в самый конец</strong>.
+   Инверсии в придаточном не бывает.</li>
+<li><strong>Отделяемый в придаточном?</strong> → приставка <strong>прирастает</strong> обратно (<code>…dat wij uitgaan</code>),
+   а не уходит отдельно.</li>
+<li><strong>Придаточное стоит впереди?</strong> → в главном <strong>инверсия</strong> (<code>Toen de film afliep, **gingen wij**…</code>).
+   Но после <strong><code>al</code></strong> — инверсии в главном <strong>нет</strong>.</li>
+<li><strong>Рассказ о прошлом?</strong> → <strong>прошедшее время</strong>, не настоящее. При <code>toen</code> — <strong>имперфект</strong>, не перфект.</li>
+<li><strong><code>die</code> или <code>dat</code>?</strong> → сначала определи род: <code>de</code> → <code>die</code>, <code>het</code> → <code>dat</code>, мн. ч. → всегда <code>die</code>.</li>
+<li><strong><code>-e</code>?</strong> → перед сущ. почти всегда с <code>-e</code>; исключение — <strong>het + een → без <code>-e</code></strong>
+   (<code>een beroemd museum</code>); после <code>is</code>/<code>zijn</code> — <strong>без</strong> <code>-e</code>.</li>
+<li><strong>«ли»?</strong> → <code>of</code>, а не <code>dat</code>.</li>
+<li><strong>Просят перевести/ответить?</strong> → пиши <strong>целое предложение</strong>.</li>
+</ol></div></body>
+</html>

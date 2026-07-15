@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Тренажёр 2 · Nederlands (упор на урок 7)</title>
+<style>
+:root {
+  --bg: #fdfdfc; --fg: #1c1b19; --muted: #6b6862; --rule: #e3e0d8;
+  --accent: #9a3412; --card: #f6f4ef; --code-bg: #efece4;
+  --warn: #b45309; --warn-bg: #fef6e7; --tip: #0369a1; --tip-bg: #eaf4fb;
+  --star: #7c3aed; --star-bg: #f3eefe; --audio: #0f766e; --audio-bg: #e8f5f3;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16150f; --fg: #e8e4da; --muted: #a09a8c; --rule: #33302a;
+    --accent: #fb923c; --card: #1f1d16; --code-bg: #24211a;
+    --warn: #fbbf24; --warn-bg: #2a2114; --tip: #7dd3fc; --tip-bg: #12222c;
+    --star: #c4b5fd; --star-bg: #201a2e; --audio: #5eead4; --audio-bg: #10241f;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 17px/1.65 -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap { max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem; }
+h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 .4em; letter-spacing: -.01em; }
+h2 {
+  font-size: 1.35rem; margin: 2.6em 0 .7em; padding-top: .8em;
+  border-top: 2px solid var(--rule); letter-spacing: -.01em;
+}
+h3 { font-size: 1.1rem; margin: 2em 0 .5em; color: var(--accent); }
+p, li { overflow-wrap: break-word; }
+a { color: var(--accent); }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5em 0; }
+code {
+  background: var(--code-bg); padding: .12em .38em; border-radius: 4px;
+  font: 0.88em/1.4 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  white-space: nowrap;
+}
+u { text-decoration-color: var(--accent); text-underline-offset: 2px; }
+/* таблицы (словарные блоки) — на узком экране скроллятся сами, страница нет */
+.tw { overflow-x: auto; margin: 1.2em 0; }
+table { border-collapse: collapse; width: 100%; font-size: .95em; }
+th, td { text-align: left; padding: .45em .7em; border-bottom: 1px solid var(--rule); }
+th { font-size: .8em; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+tbody tr:nth-child(odd) { background: var(--card); }
+/* цитаты-плашки */
+blockquote {
+  margin: 1.2em 0; padding: .7em 1em; border-left: 3px solid var(--rule);
+  background: var(--card); border-radius: 0 6px 6px 0;
+}
+blockquote p { margin: .4em 0; }
+blockquote.warn { border-color: var(--warn); background: var(--warn-bg); }
+blockquote.tip { border-color: var(--tip); background: var(--tip-bg); }
+blockquote.star { border-color: var(--star); background: var(--star-bg); }
+blockquote.audio, blockquote.note, blockquote.img {
+  border-color: var(--audio); background: var(--audio-bg);
+}
+/* пропуски для ответов */
+.blank {
+  display: inline-block; min-width: 5.5em; border-bottom: 1.5px solid var(--muted);
+  vertical-align: baseline;
+}
+.meta { color: var(--muted); font-size: .9em; margin: -.2em 0 2em; }
+.home { display: inline-block; margin-bottom: 1.5rem; font-size: .9em; }
+.idx { list-style: none; padding: 0; }
+.idx li { margin: .5em 0; padding: .8em 1em; background: var(--card); border-radius: 8px; }
+.idx a { font-weight: 600; text-decoration: none; }
+@media print {
+  :root { --bg: #fff; --fg: #000; --card: #fff; --code-bg: #f2f2f2; }
+  .wrap { max-width: none; padding: 0; }
+  .home { display: none; }
+  h2 { page-break-after: avoid; } blockquote, table { page-break-inside: avoid; }
+}
+</style>
+</head>
+<body><div class="wrap"><a class="home" href="index.html">← ко всем материалам</a><h1>Тренажёр 2 · Nederlands (упор на урок 7)</h1>
+<p>Второй тренажёр. Он <strong>короче</strong> первого (3 сессии по ~40 минут) и заточен под то, что
+в прошлый раз шло тяжело:</p>
+<ul>
+<li><strong>отделяемые глаголы в настоящем времени</strong> (приставка — в конец) — главный упор;</li>
+<li><strong>окончание <code>-e</code></strong> у прилагательных и цветов;</li>
+<li><strong>обороты количества</strong> (<code>om een uur of …</code>, <code>een stuk of …</code>, <code>tegen zessen</code>).</li>
+</ul>
+<p>Между ними — повтор урока 6 (неправильные глаголы, перфект, <code>er</code>, послелоги, мн. число),
+чтобы не забывалось. <strong>Новая тема слов — кухня и готовка</strong> (блок ниже): многие глаголы
+готовки — отделяемые, так что заодно потренируем главную тему.</p>
+<p><strong>Как выполнять:</strong>
+- Пиши ответы <strong>на отдельном листе</strong>, перед каждым — номер задания и пункта (<code>3.2</code>).
+- Где просят построить/перевести предложение — пиши предложение <strong>целиком</strong>.
+- <strong>Словарём</strong> пользоваться можно; грамматику (окончания, порядок слов) — по памяти.
+- Слова из супермаркета — те же, что в первом тренажёре. Плюс новый блок «кухня».
+- <code>RU→NL</code> — переводишь с русского. Не уверен — ставь <code>?</code>, а не пиши наугад.
+- <code>⚠️</code> — ловушка (предупреждение, не ответ), <code>💡</code> — подсказка, <code>⭐</code> — задание посложнее.</p>
+<hr />
+<h1>Новые слова: кухня и готовка (<code>de keuken</code>)</h1>
+<p>Сначала <strong>выучи</strong> эти слова. Как всегда, следи за артиклем <strong>de</strong> / <strong>het</strong> — от него
+зависят окончания и мн. число.</p>
+<p><strong>Кухня: посуда и утварь</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Nederlands</th>
+<th>Русский</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>de keuken</td>
+<td>кухня</td>
+</tr>
+<tr>
+<td>de pan (-nen)</td>
+<td>кастрюля, сковорода</td>
+</tr>
+<tr>
+<td>de koekenpan</td>
+<td>сковорода</td>
+</tr>
+<tr>
+<td>de pot (-ten)</td>
+<td>кастрюля, горшок</td>
+</tr>
+<tr>
+<td>het bord (-en)</td>
+<td>тарелка</td>
+</tr>
+<tr>
+<td>het mes (-sen)</td>
+<td>нож</td>
+</tr>
+<tr>
+<td>de vork (-en)</td>
+<td>вилка</td>
+</tr>
+<tr>
+<td>de lepel (-s)</td>
+<td>ложка</td>
+</tr>
+<tr>
+<td>het glas (glazen)</td>
+<td>стакан</td>
+</tr>
+<tr>
+<td>het kopje</td>
+<td>чашка</td>
+</tr>
+<tr>
+<td>de kom (-men)</td>
+<td>миска</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Техника и мойка</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Nederlands</th>
+<th>Русский</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>het fornuis</td>
+<td>(кухонная) плита</td>
+</tr>
+<tr>
+<td>de oven</td>
+<td>духовка</td>
+</tr>
+<tr>
+<td>de koelkast</td>
+<td>холодильник</td>
+</tr>
+<tr>
+<td>de magnetron</td>
+<td>микроволновка</td>
+</tr>
+<tr>
+<td>de kraan</td>
+<td>кран</td>
+</tr>
+<tr>
+<td>de gootsteen</td>
+<td>(кухонная) раковина</td>
+</tr>
+<tr>
+<td>de vaatwasser</td>
+<td>посудомоечная машина</td>
+</tr>
+<tr>
+<td>de theedoek</td>
+<td>кухонное полотенце</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Готовка: действия</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Nederlands</th>
+<th>Русский</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>koken (kookte — gekookt)</td>
+<td>варить; готовить</td>
+</tr>
+<tr>
+<td>bakken (bakte — gebakken)</td>
+<td>жарить; печь</td>
+</tr>
+<tr>
+<td>braden (braadde — gebraden)</td>
+<td>жарить (мясо)</td>
+</tr>
+<tr>
+<td>snijden (sneed — gesneden)</td>
+<td>резать</td>
+</tr>
+<tr>
+<td>schillen</td>
+<td>чистить (овощи)</td>
+</tr>
+<tr>
+<td>roeren</td>
+<td>мешать</td>
+</tr>
+<tr>
+<td>proeven</td>
+<td>пробовать (на вкус)</td>
+</tr>
+<tr>
+<td><strong>op</strong>warmen</td>
+<td>разогревать</td>
+</tr>
+<tr>
+<td><strong>af</strong>wassen (waste af — afgewassen)</td>
+<td>мыть посуду</td>
+</tr>
+<tr>
+<td><strong>klaar</strong>maken</td>
+<td>приготовить</td>
+</tr>
+<tr>
+<td><strong>aan</strong>branden</td>
+<td>пригорать</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Для готовки и признаки</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Nederlands</th>
+<th>Русский</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>het recept</td>
+<td>рецепт</td>
+</tr>
+<tr>
+<td>het gerecht</td>
+<td>блюдо</td>
+</tr>
+<tr>
+<td>de maaltijd</td>
+<td>приём пищи, трапеза</td>
+</tr>
+<tr>
+<td>de olie</td>
+<td>масло (растительное)</td>
+</tr>
+<tr>
+<td>de azijn</td>
+<td>уксус</td>
+</tr>
+<tr>
+<td>de knoflook</td>
+<td>чеснок</td>
+</tr>
+<tr>
+<td>warm</td>
+<td>тёплый, горячий</td>
+</tr>
+<tr>
+<td>heet</td>
+<td>горячий</td>
+</tr>
+<tr>
+<td>koud</td>
+<td>холодный</td>
+</tr>
+<tr>
+<td>rauw</td>
+<td>сырой (не готовый)</td>
+</tr>
+<tr>
+<td>gaar</td>
+<td>готовый (проваренный)</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote class="tip">
+<p>💡 Выделенные приставки (<code>op-</code>, <code>af-</code>, <code>klaar-</code>, <code>aan-</code>) — <strong>отделяемые</strong>:
+<code>Ik warm de soep **op**</code>, <code>Ik was de borden **af**</code>. Это ровно та тема урока 7,
+которую мы тренируем.</p>
+</blockquote>
+<hr />
+<h1>Сессия 1 — Кухня и отделяемые глаголы (главное)</h1>
+<h2>Задание 1. Кухня: de / het и множественное число</h2>
+<p><strong>(а)</strong> Разложи по колонкам <strong>de</strong> / <strong>het</strong> (артикль не пиши):<br />
+<code>keuken · bord · mes · pan · glas · vork · oven · recept · kom · fornuis</code></p>
+<p><strong>(б)</strong> Напиши <strong>множественное число</strong>:<br />
+1) het bord  2) het mes  3) het glas  4) de vork  5) de pan  6) het kopje  </p>
+<blockquote class="warn">
+<p>⚠️ <code>het glas → …</code> меняет гласную (как <code>het huis → huizen</code>).</p>
+</blockquote>
+<hr />
+<h2>Задание 2. Разогрев: неправильные глаголы (повтор + готовка)</h2>
+<p>Заполни: <strong>инфинитив → имперфект → причастие</strong>:</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>инфинитив</th>
+<th>имперфект</th>
+<th>причастие</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kopen</td>
+<td><span class="blank"></span></td>
+<td><span class="blank"></span></td>
+</tr>
+<tr>
+<td>brengen</td>
+<td><span class="blank"></span></td>
+<td><span class="blank"></span></td>
+</tr>
+<tr>
+<td>bakken</td>
+<td><span class="blank"></span></td>
+<td><span class="blank"></span></td>
+</tr>
+<tr>
+<td>snijden</td>
+<td><span class="blank"></span></td>
+<td><span class="blank"></span></td>
+</tr>
+<tr>
+<td>eten</td>
+<td><span class="blank"></span></td>
+<td><span class="blank"></span></td>
+</tr>
+<tr>
+<td>gaan</td>
+<td><span class="blank"></span></td>
+<td><span class="blank"></span></td>
+</tr>
+</tbody>
+</table></div>
+<blockquote class="tip">
+<p>💡 <code>kopen → kocht → gekocht</code>, <code>brengen → bracht → gebracht</code>,
+<code>bakken → bakte → gebakken</code>, <code>snijden → sneed → gesneden</code>.</p>
+</blockquote>
+<hr />
+<h2>Задание 3. Отделяемый глагол в НАСТОЯЩЕМ времени ⭐</h2>
+<p>Построй предложение в настоящем времени. <strong>Личный глагол — на 2-е место, приставку —
+в самый конец.</strong></p>
+<blockquote>
+<p><strong>Образец:</strong> <em>(opstaan)</em> ik / om zeven uur → <strong>Ik sta om zeven uur op.</strong></p>
+</blockquote>
+<p>1) <em>(opwarmen)</em> ik / de soep<br />
+2) <em>(afwassen)</em> wij / de borden<br />
+3) <em>(klaarmaken)</em> moeder / het eten<br />
+4) <em>(opeten)</em> hij / zijn broodje<br />
+5) <em>(aankomen)</em> de gasten / om acht uur<br />
+6) <em>(meebrengen)</em> ik / een fles wijn<br />
+7) <em>(opbellen)</em> zij / haar moeder<br />
+8) <em>(meenemen)</em> jij / een mandje  </p>
+<blockquote class="warn">
+<p>⚠️ Это самое главное задание. Проверь себя: глагол (<code>warm</code>, <code>was</code>, <code>maak</code>…) стоит
+<strong>вторым</strong>, а приставка (<code>op</code>, <code>af</code>, <code>klaar</code>…) — <strong>в самом конце</strong>. Не наоборот!</p>
+</blockquote>
+<hr />
+<h2>Задание 4. Один глагол — три формы</h2>
+<p>Тот же глагол ведёт себя по-разному. Впиши форму для каждой строки:</p>
+<p><strong>(а)</strong> <code>afwassen</code> (мыть посуду)<br />
+1) Наст. время: Ik <span class="blank"></span> de glazen <span class="blank"></span>.<br />
+2) Перфект: Ik heb de glazen <span class="blank"></span>.<br />
+3) <code>om … te</code>: Ik ga naar de keuken om de glazen <span class="blank"></span> <span class="blank"></span> <span class="blank"></span>.  </p>
+<p><strong>(б)</strong> <code>opbellen</code> (позвонить)<br />
+4) Наст. время: Zij <span class="blank"></span> haar vader <span class="blank"></span>.<br />
+5) Перфект: Zij heeft haar vader <span class="blank"></span>.<br />
+6) <code>om … te</code>: Zij pakt de telefoon om haar vader <span class="blank"></span> <span class="blank"></span> <span class="blank"></span>.  </p>
+<blockquote class="tip">
+<p>💡 В настоящем времени глагол <strong>разрывается</strong> (<code>was … af</code>). В инфинитиве и причастии
+он <strong>остаётся целым</strong>: <code>om af te wassen</code>, <code>afgewassen</code> (частица <code>te</code> и <code>ge-</code> встают
+между приставкой и основой). См. Урок 7.</p>
+</blockquote>
+<hr />
+<h1>Сессия 2 — Прилагательные, цвета, числа</h1>
+<h2>Задание 5. Окончание -e</h2>
+<p>Поставь прилагательное в правильную форму (с <code>-e</code> или без):</p>
+<p>1) de + warm + soep → de <span class="blank"></span> soep<br />
+2) een + rood + appel → een <span class="blank"></span> appel<br />
+3) het + heet + water → het <span class="blank"></span> water<br />
+4) een + vers + brood → een <span class="blank"></span> brood<br />
+5) een + rauw + ei → een <span class="blank"></span> ei<br />
+6) de + groot + oven → de <span class="blank"></span> oven<br />
+7) een + koud + maaltijd → een <span class="blank"></span> maaltijd<br />
+8) het + goedkoop + mes → het <span class="blank"></span> mes  </p>
+<blockquote class="warn">
+<p>⚠️ Прилагательное <strong>почти всегда</strong> получает <code>-e</code>. <code>-e</code> <strong>нет</strong> только в одном случае:
+<strong>het-слово с <code>een</code></strong> (пункты 4, 5, 8: <code>een vers brood</code>, <code>een rauw ei</code>, <code>een goedkoop mes</code>).<br />
+⚠️ Пиши по-современному: <code>grote</code>, <code>hete</code>, <code>goedkope</code> (одна гласная), а не «groote».</p>
+</blockquote>
+<hr />
+<h2>Задание 6. Цвета продуктов — RU→NL</h2>
+<p>Переведи целиком (не забудь <code>-e</code>):</p>
+<p>1) красное яблоко<br />
+2) свежий зелёный салат<br />
+3) оранжевая морковка<br />
+4) дорогой жёлтый сыр<br />
+5) спелые красные помидоры<br />
+6) розовый торт <em>(de taart)</em>  </p>
+<blockquote class="tip">
+<p>💡 <code>oranje</code> и <code>roze</code> <strong>никогда</strong> не меняются: <code>een oranje wortel</code>, <code>een roze taart</code>
+(пункты 3 и 6 — ловушка).</p>
+</blockquote>
+<hr />
+<h2>Задание 7. Числа и обороты количества</h2>
+<p><strong>(а)</strong> Напиши прописью <strong>одним словом</strong> (сотни — впереди):<br />
+43 · 87 · 216 · 340 · 512 · 1000</p>
+<p><strong>(б)</strong> Цена прописью (образец: €2,50 → <code>twee euro vijftig</code>):<br />
+1) €4,95  2) €9,50  3) €0,75  </p>
+<p><strong>(в)</strong> Переведи обороты (RU→NL) — это слабое место, будь внимателен:<br />
+1) Часов в семь <em>(приду)</em>.<br />
+2) Килограмм картошки стоит около трёх евро.<br />
+3) Уже почти восемь часов.<br />
+4) Возьму штук пять помидоров.  </p>
+<blockquote class="tip">
+<p>💡 Формулы урока 7: <code>om een uur of zeven</code> (≈ в семь), <code>een euro of drie</code> /
+<code>ongeveer drie euro</code> (≈ три евро), <code>tegen achten</code> (≈ к восьми),
+<code>een stuk of vijf</code> (≈ штук пять).</p>
+</blockquote>
+<hr />
+<h2>Задание 8. Перфект — переделай (повтор урока 6 + готовка)</h2>
+<p>Перепиши в <strong>перфекте</strong>. Причастие — <strong>в самый конец</strong>, вспомогательный — <code>hebben</code>
+<strong>или</strong> <code>zijn</code>:</p>
+<p>1) Ik bak een ei.<br />
+2) Wij wassen de borden af.<br />
+3) Zij gaat naar de keuken.<br />
+4) Hij snijdt de ui.<br />
+5) De soep brandt aan.<br />
+6) Ik breng een fles wijn mee.  </p>
+<blockquote class="warn">
+<p>⚠️ Глаголы движения/состояния (<code>gaan</code>, <code>aanbranden</code>) → перфект с <code>zijn</code> (пункты 3, 5).<br />
+⚠️ У отделяемых причастие пишется <strong>слитно</strong>, <code>ge-</code> — в середине: <code>afgewassen</code>,
+<code>aangebrand</code>, <code>meegebracht</code> (пункт 6 — <strong>не</strong> «mee gebrengen»!).</p>
+</blockquote>
+<hr />
+<h1>Сессия 3 — Смесь и финал</h1>
+<h2>Задание 9. Конструкция er (повтор урока 6)</h2>
+<p>Ответь, используя <code>er</code> + число:</p>
+<p>1) 'Heb je tomaten gekocht?' (5) → Ja, ik heb <span class="blank"></span> <span class="blank"></span> gekocht.<br />
+2) 'Zijn er nog eieren?' (0) → Nee, ik heb <span class="blank"></span> <span class="blank"></span> <span class="blank"></span>.<br />
+3) 'Hoeveel borden wil je?' (8) → Ik wil <span class="blank"></span> <span class="blank"></span>.<br />
+4) 'Heeft zij koekjes gegeten?' (3) → Ja, zij heeft <span class="blank"></span> <span class="blank"></span> gegeten.  </p>
+<blockquote class="warn">
+<p>⚠️ В пункте 2 «ноль» = <strong>geen</strong> (не «nul»): <code>Nee, ik heb er geen meer</code>.</p>
+</blockquote>
+<hr />
+<h2>Задание 10. Предлоги и послелоги (повтор урока 6 + 7)</h2>
+<p>Впиши: <code>over · uit · tegen · achter · langs · na</code> и послелоги <code>in · om</code>:</p>
+<p>1) Ik pak de melk <span class="blank"></span> de koelkast. <em>(из)</em><br />
+2) Dit medicijn is <span class="blank"></span> de hoofdpijn. <em>(от)</em><br />
+3) De vaatwasser staat <span class="blank"></span> de kraan. <em>(за)</em><br />
+4) <span class="blank"></span> het eten wassen wij af. <em>(после)</em><br />
+5) Wij lopen <span class="blank"></span> de keuken, maar stoppen niet. <em>(мимо)</em><br />
+6) Zij praat de hele dag <span class="blank"></span> recepten. <em>(о)</em><br />
+7) Wij lopen de keuken <span class="blank"></span>. <em>(входим внутрь)</em><br />
+8) Bij de kassa loop ik de hoek <span class="blank"></span>. <em>(за угол)</em>  </p>
+<blockquote class="warn">
+<p>⚠️ «От головной боли» — это <code>tegen</code> (пункт 2), а не «uit».</p>
+</blockquote>
+<hr />
+<h2>Задание 11. Множественное и уменьшительное (слабое место)</h2>
+<p><strong>(а)</strong> Множественное число:<br />
+1) de arm  2) de hand  3) het oog  4) de tand  5) de knie  6) de voet  7) de doos  8) het ei  </p>
+<p><strong>(б)</strong> Уменьшительное на <code>-je</code>:<br />
+9) de appel  10) de lepel  11) het brood  12) de pan  </p>
+<blockquote class="warn">
+<p>⚠️ Части тела — <strong>не</strong> по-английски! <code>de arm → …</code>, <code>de hand → …</code> (не «arms/hands»).
+Вспомни особые формы: <code>het oog → ogen</code>, <code>de knie → knieën</code> (с двумя точками).</p>
+</blockquote>
+<hr />
+<h2>Задание 12. Связный перевод — RU→NL ⭐</h2>
+<p>Переведи рассказ целиком:</p>
+<p>1) Сегодня я пошёл в супермаркет.<br />
+2) Я взял тележку и позвонил маме.<br />
+3) «Возьми с собой ещё пачку масла!» — сказала она.<br />
+4) Помидоры были красные и спелые.<br />
+5) Я взял штук шесть помидоров.<br />
+6) Дома я порезал лук и пожарил яйцо.<br />
+7) «Помой посуду!» — сказала мама.  </p>
+<blockquote>
+<p><strong>+ Почему:</strong> в пункте 1 объясни <strong>одним словом</strong>, почему вспомогательный глагол — <code>ben</code>, а не <code>heb</code>.<br />
+⚠️ Пункт 2 — отделяемый глагол в перфекте (<code>opgebeld</code>); пункт 7 — приказ с отделяемым (<code>was … af</code>).</p>
+</blockquote>
+<hr />
+<h2>Задание 13. Напиши рассказ ⭐</h2>
+<p>Напиши <strong>5–6 предложений</strong> на тему <strong>«Vandaag kook ik»</strong> (сегодня я готовлю).
+Обязательно должны быть:</p>
+<ul>
+<li>одно предложение с <strong>отделяемым глаголом в настоящем времени</strong>
+  (<code>Ik warm … op</code>, <code>Ik was … af</code>, <code>Ik maak … klaar</code>);</li>
+<li>один <strong>цвет</strong> или признак продукта с окончанием <code>-e</code> (<code>een rode tomaat</code>, <code>de warme soep</code>);</li>
+<li>один <strong>оборот количества</strong> (<code>een stuk of …</code>, <code>om een uur of …</code>);</li>
+<li>одно предложение в <strong>перфекте</strong> с глаголом на <code>zijn</code> (<code>ik ben … gegaan</code>);</li>
+<li>один <strong>приказ</strong> в кавычках (<code>«Was de borden af!»</code>).</li>
+</ul>
+<hr />
+<p><strong>Готово!</strong> Перед сдачей пройди по чек-листу из файла «Что подтянуть»: отделяемый
+глагол (глагол — 2-й, приставка — в конец), окончание <code>-e</code>, причастие — в конец,
+одно отрицание в предложении.
+</content></p></div></body>
+</html>

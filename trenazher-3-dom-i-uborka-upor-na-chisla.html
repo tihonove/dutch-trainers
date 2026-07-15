@@ -1,0 +1,767 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Тренажёр 3 · Nederlands (дом и уборка · упор на числа и обороты количества)</title>
+<style>
+:root {
+  --bg: #fdfdfc; --fg: #1c1b19; --muted: #6b6862; --rule: #e3e0d8;
+  --accent: #9a3412; --card: #f6f4ef; --code-bg: #efece4;
+  --warn: #b45309; --warn-bg: #fef6e7; --tip: #0369a1; --tip-bg: #eaf4fb;
+  --star: #7c3aed; --star-bg: #f3eefe; --audio: #0f766e; --audio-bg: #e8f5f3;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16150f; --fg: #e8e4da; --muted: #a09a8c; --rule: #33302a;
+    --accent: #fb923c; --card: #1f1d16; --code-bg: #24211a;
+    --warn: #fbbf24; --warn-bg: #2a2114; --tip: #7dd3fc; --tip-bg: #12222c;
+    --star: #c4b5fd; --star-bg: #201a2e; --audio: #5eead4; --audio-bg: #10241f;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 17px/1.65 -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap { max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem; }
+h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 .4em; letter-spacing: -.01em; }
+h2 {
+  font-size: 1.35rem; margin: 2.6em 0 .7em; padding-top: .8em;
+  border-top: 2px solid var(--rule); letter-spacing: -.01em;
+}
+h3 { font-size: 1.1rem; margin: 2em 0 .5em; color: var(--accent); }
+p, li { overflow-wrap: break-word; }
+a { color: var(--accent); }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5em 0; }
+code {
+  background: var(--code-bg); padding: .12em .38em; border-radius: 4px;
+  font: 0.88em/1.4 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  white-space: nowrap;
+}
+u { text-decoration-color: var(--accent); text-underline-offset: 2px; }
+/* таблицы (словарные блоки) — на узком экране скроллятся сами, страница нет */
+.tw { overflow-x: auto; margin: 1.2em 0; }
+table { border-collapse: collapse; width: 100%; font-size: .95em; }
+th, td { text-align: left; padding: .45em .7em; border-bottom: 1px solid var(--rule); }
+th { font-size: .8em; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+tbody tr:nth-child(odd) { background: var(--card); }
+/* цитаты-плашки */
+blockquote {
+  margin: 1.2em 0; padding: .7em 1em; border-left: 3px solid var(--rule);
+  background: var(--card); border-radius: 0 6px 6px 0;
+}
+blockquote p { margin: .4em 0; }
+blockquote.warn { border-color: var(--warn); background: var(--warn-bg); }
+blockquote.tip { border-color: var(--tip); background: var(--tip-bg); }
+blockquote.star { border-color: var(--star); background: var(--star-bg); }
+blockquote.audio, blockquote.note, blockquote.img {
+  border-color: var(--audio); background: var(--audio-bg);
+}
+/* пропуски для ответов */
+.blank {
+  display: inline-block; min-width: 5.5em; border-bottom: 1.5px solid var(--muted);
+  vertical-align: baseline;
+}
+.meta { color: var(--muted); font-size: .9em; margin: -.2em 0 2em; }
+.home { display: inline-block; margin-bottom: 1.5rem; font-size: .9em; }
+.idx { list-style: none; padding: 0; }
+.idx li { margin: .5em 0; padding: .8em 1em; background: var(--card); border-radius: 8px; }
+.idx a { font-weight: 600; text-decoration: none; }
+@media print {
+  :root { --bg: #fff; --fg: #000; --card: #fff; --code-bg: #f2f2f2; }
+  .wrap { max-width: none; padding: 0; }
+  .home { display: none; }
+  h2 { page-break-after: avoid; } blockquote, table { page-break-inside: avoid; }
+}
+</style>
+</head>
+<body><div class="wrap"><a class="home" href="index.html">← ко всем материалам</a><h1>Тренажёр 3 · Nederlands (дом и уборка · упор на числа и обороты количества)</h1>
+<p>Третий тренажёр — <strong>большой</strong> (5 сессий по ~50–60 минут, всего часов на пять). Главный
+упор — на тему, которая <strong>не встала</strong> ни в первом, ни во втором тренажёре:</p>
+<ul>
+<li><strong>числа и обороты количества</strong> (<code>om een uur of acht</code>, <code>een dag of tien</code>, <code>een man of
+  zeven</code>, <code>tegen zessen</code>, <code>bij drieën</code>, <code>tegen de veertig</code>) — этому посвящена вся сессия 3.</li>
+</ul>
+<p>Заодно добиваем две дыры, вылезшие во втором тренажёре, и <strong>держим урок 6 в тонусе</strong>:</p>
+<ul>
+<li><strong><code>om … te</code> с отделяемым</strong> (<code>om de kamer **op te ruimen**</code>) — сессия 2;</li>
+<li><strong>предикативное <code>-e</code></strong> (<code>De kamer is **schoon**</code>, а не <code>schone</code>) — сессия 4;</li>
+<li><strong>урок 6</strong> (неправильные глаголы, перфект, <code>er</code>, предлоги/послелоги, мн. число,
+  местоимения, порядок слов) — вплетён во все сессии.</li>
+</ul>
+<p><strong>Новая тема слов — дом и уборка</strong> (блок ниже): почти все глаголы уборки — отделяемые,
+так что заодно тренируем и главную нить прошлых тренажёров.</p>
+<p><strong>Как выполнять:</strong>
+- Пиши ответы <strong>на отдельном листе</strong>, перед каждым — номер задания и пункта (<code>3.2</code>).
+- Где просят построить/перевести предложение — пиши предложение <strong>целиком</strong>.
+- <strong>Словарём</strong> пользоваться можно; грамматику (окончания, порядок слов, обороты) — по памяти.
+- <code>RU→NL</code> — переводишь с русского. Не уверен — ставь <code>?</code>, а не пиши наугад.
+- <code>⚠️</code> — ловушка, <code>💡</code> — подсказка, <code>⭐</code> — задание посложнее.
+- Не спеши: тренажёр длинный, можно разбить на 5 дней по сессии.</p>
+<hr />
+<h1>Новые слова: дом и уборка (<code>het huis</code> · <code>schoonmaken</code>)</h1>
+<p>Сначала <strong>выучи</strong> слова. Следи за артиклем <strong>de</strong> / <strong>het</strong> — от него зависят окончания
+и мн. число.</p>
+<p><strong>Комнаты и части дома</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Nederlands</th>
+<th>Русский</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>het huis (huizen)</td>
+<td>дом</td>
+</tr>
+<tr>
+<td>de kamer (-s)</td>
+<td>комната</td>
+</tr>
+<tr>
+<td>de woonkamer</td>
+<td>гостиная</td>
+</tr>
+<tr>
+<td>de slaapkamer</td>
+<td>спальня</td>
+</tr>
+<tr>
+<td>de badkamer</td>
+<td>ванная</td>
+</tr>
+<tr>
+<td>de gang</td>
+<td>коридор, прихожая</td>
+</tr>
+<tr>
+<td>de zolder</td>
+<td>чердак</td>
+</tr>
+<tr>
+<td>de kelder</td>
+<td>подвал</td>
+</tr>
+<tr>
+<td>de trap (-pen)</td>
+<td>лестница</td>
+</tr>
+<tr>
+<td>de deur (-en)</td>
+<td>дверь</td>
+</tr>
+<tr>
+<td>het raam (ramen)</td>
+<td>окно</td>
+</tr>
+<tr>
+<td>de muur (muren)</td>
+<td>стена</td>
+</tr>
+<tr>
+<td>de vloer</td>
+<td>пол</td>
+</tr>
+<tr>
+<td>het plafond</td>
+<td>потолок</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Мебель и вещи</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Nederlands</th>
+<th>Русский</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>de tafel (-s)</td>
+<td>стол</td>
+</tr>
+<tr>
+<td>de stoel (-en)</td>
+<td>стул</td>
+</tr>
+<tr>
+<td>de bank (-en)</td>
+<td>диван</td>
+</tr>
+<tr>
+<td>het bed (-den)</td>
+<td>кровать</td>
+</tr>
+<tr>
+<td>de kast (-en)</td>
+<td>шкаф</td>
+</tr>
+<tr>
+<td>de lamp (-en)</td>
+<td>лампа</td>
+</tr>
+<tr>
+<td>de spiegel (-s)</td>
+<td>зеркало</td>
+</tr>
+<tr>
+<td>het gordijn (-en)</td>
+<td>штора</td>
+</tr>
+<tr>
+<td>het tapijt (-en)</td>
+<td>ковёр</td>
+</tr>
+<tr>
+<td>de la (la's)</td>
+<td>ящик (выдвижной)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Уборка: предметы</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Nederlands</th>
+<th>Русский</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>de stofzuiger</td>
+<td>пылесос</td>
+</tr>
+<tr>
+<td>de bezem</td>
+<td>веник, метла</td>
+</tr>
+<tr>
+<td>de emmer</td>
+<td>ведро</td>
+</tr>
+<tr>
+<td>de dweil</td>
+<td>швабра (тряпка для пола)</td>
+</tr>
+<tr>
+<td>de doek (-en)</td>
+<td>тряпка</td>
+</tr>
+<tr>
+<td>het sop</td>
+<td>мыльная вода</td>
+</tr>
+<tr>
+<td>de rommel</td>
+<td>беспорядок, хлам</td>
+</tr>
+<tr>
+<td>de vuilnisbak</td>
+<td>мусорное ведро</td>
+</tr>
+<tr>
+<td>het afval</td>
+<td>отходы, мусор</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Уборка: действия</strong> <em>(жирным — отделяемая приставка)</em></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Nederlands</th>
+<th>Русский</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>schoon</strong>maken (maakte schoon — schoongemaakt)</td>
+<td>убирать, мыть, чистить</td>
+</tr>
+<tr>
+<td><strong>op</strong>ruimen (ruimde op — opgeruimd)</td>
+<td>прибирать, наводить порядок</td>
+</tr>
+<tr>
+<td>stofzuigen (stofzuigde — gestofzuigd)</td>
+<td>пылесосить</td>
+</tr>
+<tr>
+<td><strong>af</strong>stoffen (stofte af — afgestoft)</td>
+<td>вытирать пыль</td>
+</tr>
+<tr>
+<td>dweilen (dweilde — gedweild)</td>
+<td>мыть пол</td>
+</tr>
+<tr>
+<td>poetsen (poetste — gepoetst)</td>
+<td>чистить до блеска</td>
+</tr>
+<tr>
+<td><strong>weg</strong>gooien (gooide weg — weggegooid)</td>
+<td>выбрасывать</td>
+</tr>
+<tr>
+<td><strong>op</strong>hangen (hing op — opgehangen)</td>
+<td>вешать</td>
+</tr>
+<tr>
+<td><strong>aan</strong>doen / <strong>uit</strong>doen</td>
+<td>включать / выключать (свет)</td>
+</tr>
+<tr>
+<td><strong>aan</strong>zetten / <strong>uit</strong>zetten</td>
+<td>включать / выключать (прибор)</td>
+</tr>
+<tr>
+<td><strong>op</strong>bergen (borg op — opgeborgen)</td>
+<td>убрать на место (в шкаф)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Признаки</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Nederlands</th>
+<th>Русский</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>schoon</td>
+<td>чистый</td>
+</tr>
+<tr>
+<td>vies · vuil</td>
+<td>грязный</td>
+</tr>
+<tr>
+<td>netjes</td>
+<td>опрятный, аккуратный</td>
+</tr>
+<tr>
+<td>rommelig</td>
+<td>захламлённый, неубранный</td>
+</tr>
+<tr>
+<td>stoffig</td>
+<td>пыльный</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote class="tip">
+<p>💡 <code>schoon</code> — одновременно и <strong>прилагательное</strong> («чистый»), и <strong>приставка</strong> глагола
+<code>schoonmaken</code>. В настоящем времени глагол разрывается: <code>Ik maak mijn kamer **schoon**</code>.
+А как прилагательное <code>schoon</code> живёт по общим правилам <code>-e</code>: <code>de **schone** kamer</code>,
+но <code>De kamer is **schoon**</code> (об этом — сессия 4).</p>
+</blockquote>
+<hr />
+<h1>Сессия 1 — Дом: слова, род, число, отделяемые глаголы</h1>
+<h2>Задание 1. Дом: de / het</h2>
+<p>Разложи по колонкам <strong>de</strong> / <strong>het</strong> (артикль не пиши):
+<code>huis · kamer · raam · trap · bed · kast · muur · gordijn · tapijt · stoel · plafond · vloer</code></p>
+<blockquote class="warn">
+<p>⚠️ Среди них четыре het-слова. Если не помнишь — загляни в словарный блок.</p>
+</blockquote>
+<hr />
+<h2>Задание 2. Множественное число (повтор урока 6)</h2>
+<p><strong>(а)</strong> Дом и мебель:<br />
+1) het raam  2) de muur  3) het bed  4) de trap  5) de stoel  6) de kast  7) de deur  8) het huis  </p>
+<p><strong>(б)</strong> А теперь части тела (повтор — в прошлый раз были ошибки):<br />
+9) de arm  10) de hand  11) de voet  12) het oog  13) de knie  14) de tand  </p>
+<blockquote class="warn">
+<p>⚠️ <code>het raam → ramen</code>, <code>de muur → muren</code> (одна гласная удлиняется).
+⚠️ Части тела — <strong>не по-английски</strong>! <code>de arm → armen</code> (не «arms»), <code>de hand → handen</code>
+(не «hands»). Особые: <code>het oog → ogen</code>, <code>de knie → knieën</code> (с двумя точками).</p>
+</blockquote>
+<hr />
+<h2>Задание 3. Уменьшительное на <code>-je</code></h2>
+<p>Образуй уменьшительное (маленький …):<br />
+1) het huis  2) de kamer  3) de tafel  4) het bed  5) de lamp  6) de stoel  </p>
+<blockquote class="tip">
+<p>💡 После разных согласных суффикс меняется: <code>-je</code>, <code>-tje</code>, <code>-etje</code>.
+<code>de kamer → het kamertje</code>, <code>de stoel → het stoeltje</code>, <code>de lamp → het lampje</code>.
+<code>het bed → het bedje</code>. Не уверен — поставь <code>-je</code> и не переживай.</p>
+</blockquote>
+<hr />
+<h2>Задание 4. Отделяемый глагол в НАСТОЯЩЕМ времени</h2>
+<p>Построй предложение. <strong>Личный глагол — на 2-е место, приставку — в самый конец.</strong></p>
+<blockquote>
+<p><strong>Образец:</strong> <em>(opruimen)</em> ik / mijn kamer → <strong>Ik ruim mijn kamer op.</strong></p>
+</blockquote>
+<p>1) <em>(opruimen)</em> wij / de woonkamer<br />
+2) <em>(weggooien)</em> ik / het afval<br />
+3) <em>(ophangen)</em> zij / de natte doek<br />
+4) <em>(aandoen)</em> jij / het licht<br />
+5) <em>(uitzetten)</em> moeder / de stofzuiger<br />
+6) <em>(afstoffen)</em> ik / de kast<br />
+7) <em>(schoonmaken)</em> wij / de badkamer<br />
+8) <em>(opbergen)</em> hij / de bezem  </p>
+<blockquote class="warn">
+<p>⚠️ Проверь себя: глагол (<code>ruim</code>, <code>gooi</code>, <code>hang</code>, <code>maak</code>…) — <strong>вторым</strong>, приставка
+(<code>op</code>, <code>weg</code>, <code>aan</code>, <code>schoon</code>…) — <strong>в самом конце</strong>. Это ты уже умеешь — держи планку.</p>
+</blockquote>
+<hr />
+<h2>Задание 5. Приказы по дому (императив с отделяемым)</h2>
+<p>Переведи в повелительном наклонении (<code>ты</code>):<br />
+1) Убери свою комнату!<br />
+2) Выброси мусор!<br />
+3) Вымой пол!<br />
+4) Выключи свет!<br />
+5) Повесь полотенце!<br />
+6) Пропылесось гостиную!  </p>
+<blockquote class="tip">
+<p>💡 Приказ = глагол в начале, приставка — в конец: <code>Ruim je kamer **op**!</code>,
+<code>Gooi het afval **weg**!</code>, <code>Doe het licht **uit**!</code>.</p>
+</blockquote>
+<hr />
+<h1>Сессия 2 — Отделяемый глагол во всех формах (главная нить)</h1>
+<h2>Задание 6. <code>om … te</code> с отделяемым ⭐ (новая тема — было слабо)</h2>
+<p>Впиши глагол в форму <code>om … te …</code>. <strong>Частица <code>te</code> встаёт МЕЖДУ приставкой и основой.</strong></p>
+<blockquote>
+<p><strong>Образец:</strong> <em>(opruimen)</em> Ik pak een doos om mijn kamer <strong>op te ruimen</strong>.</p>
+</blockquote>
+<p>1) <em>(afwassen)</em> Ik ga naar de keuken om de borden <span class="blank"></span> <span class="blank"></span> <span class="blank"></span>.<br />
+2) <em>(weggooien)</em> Ik pak een zak om het afval <span class="blank"></span> <span class="blank"></span> <span class="blank"></span>.<br />
+3) <em>(opbellen)</em> Zij pakt de telefoon om haar moeder <span class="blank"></span> <span class="blank"></span> <span class="blank"></span>.<br />
+4) <em>(schoonmaken)</em> Wij nemen een emmer om de vloer <span class="blank"></span> <span class="blank"></span> <span class="blank"></span>.<br />
+5) <em>(ophangen)</em> Ik pak een hangertje om mijn jas <span class="blank"></span> <span class="blank"></span> <span class="blank"></span>.<br />
+6) <em>(aandoen)</em> Hij loopt naar de muur om het licht <span class="blank"></span> <span class="blank"></span> <span class="blank"></span>.  </p>
+<blockquote class="warn">
+<p>⚠️ Именно здесь в прошлый раз выходило «was te af», «bel te op». Надо: <code>af te wassen</code>,
+<code>op te bellen</code> — <code>te</code> <strong>внутри</strong>, между приставкой и глаголом.</p>
+</blockquote>
+<hr />
+<h2>Задание 7. Один глагол — четыре формы ⭐</h2>
+<p>Возьмём <code>opruimen</code> и <code>weggooien</code> и проведём каждый через четыре формы. Впиши форму:</p>
+<p><strong>(а)</strong> <code>opruimen</code> (прибрать)<br />
+1) Наст. время: Ik <span class="blank"></span> mijn kamer <span class="blank"></span>.<br />
+2) Перфект: Ik heb mijn kamer <span class="blank"></span>.<br />
+3) <code>om … te</code>: Ik pak een doos om mijn kamer <span class="blank"></span> <span class="blank"></span> <span class="blank"></span>.<br />
+4) Приказ: <span class="blank"></span> je kamer <span class="blank"></span>!  </p>
+<p><strong>(б)</strong> <code>weggooien</code> (выбросить)<br />
+5) Наст. время: Wij <span class="blank"></span> de rommel <span class="blank"></span>.<br />
+6) Перфект: Wij hebben de rommel <span class="blank"></span>.<br />
+7) <code>om … te</code>: Wij pakken een zak om de rommel <span class="blank"></span> <span class="blank"></span> <span class="blank"></span>.<br />
+8) Приказ: <span class="blank"></span> de rommel <span class="blank"></span>!  </p>
+<blockquote class="tip">
+<p>💡 В настоящем времени и в приказе глагол <strong>разрывается</strong> (<code>ruim … op</code>, <code>gooi … weg</code>).
+В перфекте и в <code>om … te</code> — приставка и основа <strong>рядом</strong>, но по-разному: причастие
+<strong>слитно</strong> с <code>ge-</code> в середине (<code>opgeruimd</code>, <code>weggegooid</code>), а в <code>om … te</code> между ними
+встаёт <code>te</code> (<code>op te ruimen</code>, <code>weg te gooien</code>).</p>
+</blockquote>
+<hr />
+<h2>Задание 8. Перфект — переделай (повтор урока 6 + уборка)</h2>
+<p>Перепиши в <strong>перфекте</strong>. Причастие — <strong>в самый конец</strong>, вспомогательный — <code>hebben</code>
+<strong>или</strong> <code>zijn</code>:</p>
+<p>1) Ik ruim mijn kamer op.<br />
+2) Wij gooien het afval weg.<br />
+3) Zij hangt de doek op.<br />
+4) Ik maak de badkamer schoon.<br />
+5) Ik ga naar de zolder.<br />
+6) De gasten komen om acht uur.<br />
+7) Ik breng de emmer mee.<br />
+8) Hij doet het licht uit.  </p>
+<blockquote class="warn">
+<p>⚠️ Глаголы движения (<code>gaan</code>, <code>komen</code>) → перфект с <code>zijn</code> (пункты 5, 6).<br />
+⚠️ Сильные причастия: <code>ophangen → **opgehangen**</code>, <code>meebrengen → **meegebracht**</code>
+(не «meegebrengt»!), <code>weggooien → **weggegooid**</code>, <code>opbergen → **opgeborgen**</code>.</p>
+</blockquote>
+<hr />
+<h2>Задание 9. Неправильные глаголы (таблица)</h2>
+<p>Заполни: <strong>инфинитив → имперфект → причастие</strong>:</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>инфинитив</th>
+<th>имперфект</th>
+<th>причастие</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>doen</td>
+<td><span class="blank"></span></td>
+<td><span class="blank"></span></td>
+</tr>
+<tr>
+<td>brengen</td>
+<td><span class="blank"></span></td>
+<td><span class="blank"></span></td>
+</tr>
+<tr>
+<td>hangen</td>
+<td><span class="blank"></span></td>
+<td><span class="blank"></span></td>
+</tr>
+<tr>
+<td>gaan</td>
+<td><span class="blank"></span></td>
+<td><span class="blank"></span></td>
+</tr>
+<tr>
+<td>komen</td>
+<td><span class="blank"></span></td>
+<td><span class="blank"></span></td>
+</tr>
+<tr>
+<td>vinden</td>
+<td><span class="blank"></span></td>
+<td><span class="blank"></span></td>
+</tr>
+<tr>
+<td>staan</td>
+<td><span class="blank"></span></td>
+<td><span class="blank"></span></td>
+</tr>
+<tr>
+<td>worden</td>
+<td><span class="blank"></span></td>
+<td><span class="blank"></span></td>
+</tr>
+</tbody>
+</table></div>
+<blockquote class="tip">
+<p>💡 <code>doen → deed → gedaan</code>, <code>brengen → bracht → gebracht</code>, <code>hangen → hing → gehangen</code>,
+<code>vinden → vond → gevonden</code>, <code>staan → stond → gestaan</code>.</p>
+</blockquote>
+<hr />
+<h2>Задание 10. Найди ошибку (отделяемые глаголы)</h2>
+<p>В каждом предложении <strong>одна</strong> ошибка. Найди, выпиши <strong>правильный</strong> вариант и переведи:</p>
+<p>1) Ik op ruim mijn kamer.<br />
+2) Zij heeft haar vader op gebeld.<br />
+3) Wij pakken een doek om de tafel af stoffen.<br />
+4) Ik heb de rommel weg gegooid gisteren niet.<br />
+5) Doe het licht op!<br />
+6) Hij heeft de jas meegebrengt.  </p>
+<blockquote class="tip">
+<p>💡 Это задание — как в учебнике («найдите ошибку»). Ищи: где приставка стоит не там,
+где <code>te</code> потерялось, где причастие не в конце, где перепутана приставка/вспомогательный.</p>
+</blockquote>
+<hr />
+<h1>Сессия 3 — ЧИСЛА И ОБОРОТЫ КОЛИЧЕСТВА ⭐ (главный упор — тема «не встала»)</h1>
+<h2>Задание 11. Числа прописью — одним словом</h2>
+<p>Напиши прописью <strong>одним словом</strong> (сотни — впереди, между десятками и единицами — <code>en</code><br />
+внутри слова):<br />
+1) 43  2) 76  3) 216  4) 340  5) 512  6) 755  7) 1000  </p>
+<blockquote class="tip">
+<p>💡 <code>43 = drieënveertig</code>, <code>216 = tweehonderdzestien</code>, <code>340 = driehonderdveertig</code>.
+⚠️ <code>40 = veertig</code>, а <strong>не</strong> «viertig». Перед <code>honderd</code> не говорят <code>één</code>: <code>110 = honderdtien</code>.</p>
+</blockquote>
+<hr />
+<h2>Задание 12. «Примерно столько-то»: оборот <code>een … of …</code></h2>
+<p>Формула урока 7: <strong><code>een</code> + [единица счёта] + <code>of</code> + [число]</strong> = «примерно столько-то».
+Переведи целиком (RU→NL):</p>
+<p>1) Приду часов в восемь. <em>(→ om een uur of …)</em><br />
+2) Я пробуду там дней десять.<br />
+3) Я вижу тут человек семь.<br />
+4) Возьму штук пять стульев.<br />
+5) Это стоит евро десять (около десяти).  </p>
+<blockquote class="tip">
+<p>💡 <code>om een uur of acht</code> (≈ в восемь), <code>een dag of tien</code> (≈ дней десять),
+<code>een man of zeven</code> (≈ человек семь), <code>een stuk of vijf</code> (≈ штук пять),
+<code>een euro of tien</code> (≈ около десяти евро).
+⚠️ Это ровно тот оборот, который не пошёл в прошлые разы. Здесь — <strong>только он</strong>.</p>
+</blockquote>
+<hr />
+<h2>Задание 13. «Почти / около / после» такого-то часа</h2>
+<p>Когда речь о <strong>приблизительном времени</strong>, час ставят во <strong>множественное число</strong> с
+предлогом <code>tegen / bij / na / voor</code>. Соотнеси и впиши форму:</p>
+<p><strong>(а)</strong> Образец форм: <code>tweeën · drieën · vieren · vijven · zessen · zevenen · achten ·
+negenen · tienen · elven · twaalven</code>.</p>
+<p><strong>(б)</strong> Переведи (RU→NL):<br />
+1) Уже почти шесть. <em>(tegen …)</em><br />
+2) Уже около трёх. <em>(bij …)</em><br />
+3) Он придёт после пяти. <em>(na …)</em><br />
+4) Он придёт не позже девяти. <em>(voor …)</em><br />
+5) Уже почти двенадцать.  </p>
+<blockquote class="tip">
+<p>💡 <code>Het is al **tegen zessen**</code> (почти шесть), <code>Het is al **bij drieën**</code> (около трёх),
+<code>Hij komt **na vijven**</code> (после пяти), <code>Hij komt nog **voor negenen**</code> (не позже девяти).</p>
+</blockquote>
+<hr />
+<h2>Задание 14. Возраст и границы: <code>tegen de / over de / onder de / boven de</code></h2>
+<p>Впиши нужный оборот и переведи:<br />
+1) Ему под сорок. → Hij is <span class="blank"></span> <span class="blank"></span> veertig.<br />
+2) Ему уже за сорок. → Hij is <span class="blank"></span> <span class="blank"></span> veertig.<br />
+3) Дети до двенадцати не платят. → Kinderen <span class="blank"></span> <span class="blank"></span> twaalf betalen niet.<br />
+4) Люди старше шестидесяти — тоже. → Mensen <span class="blank"></span> <span class="blank"></span> zestig ook niet.  </p>
+<blockquote class="tip">
+<p>💡 <code>tegen de veertig</code> (под 40), <code>over de veertig</code> (за 40), <code>onder de twaalf</code> (до 12),
+<code>boven de zestig</code> (старше 60).</p>
+</blockquote>
+<hr />
+<h2>Задание 15. Связный перевод — только обороты количества ⭐</h2>
+<p>Переведи рассказ целиком. <strong>В каждом предложении должен быть оборот количества.</strong></p>
+<p>1) Я убираюсь часов в десять.<br />
+2) У меня в комнате штук пять стульев.<br />
+3) Уборка длится около двух часов <em>(een uur of …)</em>.<br />
+4) К шести всё чисто <em>(tegen …)</em>.<br />
+5) Гости придут после семи <em>(na …)</em>.<br />
+6) Их будет человек восемь.  </p>
+<blockquote class="warn">
+<p>⚠️ Не переводи числа «в лоб» (<code>vijf stoelen</code>, <code>om zes uur</code>) — используй <strong>обороты</strong>:
+<code>een stuk of vijf</code>, <code>tegen zessen</code>, <code>na zevenen</code>, <code>een man of acht</code>.</p>
+</blockquote>
+<hr />
+<h2>Задание 16. Выбери верную формулу</h2>
+<p>Отметь правильный вариант (один):</p>
+<p>1) «Часов в десять»: <strong>(а)</strong> om tien uur · <strong>(б)</strong> om een uur of tien · <strong>(в)</strong> een tien uur<br />
+2) «Человек пять»: <strong>(а)</strong> vijf mannen · <strong>(б)</strong> een man of vijf · <strong>(в)</strong> een of vijf man<br />
+3) «К шести (почти шесть)»: <strong>(а)</strong> tegen zes uur · <strong>(б)</strong> tegen zessen · <strong>(в)</strong> bij zes<br />
+4) «Ему за сорок»: <strong>(а)</strong> over de veertig · <strong>(б)</strong> boven veertig · <strong>(в)</strong> na veertig<br />
+5) «Дней десять»: <strong>(а)</strong> tien dagen · <strong>(б)</strong> een dag of tien · <strong>(в)</strong> om een dag tien  </p>
+<blockquote class="tip">
+<p>💡 Подумай, где нужен именно <strong>приблизительный</strong> оборот, а не точное число.</p>
+</blockquote>
+<hr />
+<h1>Сессия 4 — Прилагательные, цвета, окончание -e</h1>
+<h2>Задание 17. Атрибутивное <code>-e</code></h2>
+<p>Поставь прилагательное в форму (с <code>-e</code> или без):<br />
+1) de + schoon + kamer → de <span class="blank"></span> kamer<br />
+2) een + vies + vloer → een <span class="blank"></span> vloer<br />
+3) het + groot + raam → het <span class="blank"></span> raam<br />
+4) een + stoffig + tapijt → een <span class="blank"></span> tapijt<br />
+5) de + nieuw + kast → de <span class="blank"></span> kast<br />
+6) een + vuil + bord → een <span class="blank"></span> bord  </p>
+<blockquote class="warn">
+<p>⚠️ <code>-e</code> <strong>нет</strong> только у <strong>het-слова с <code>een</code></strong> (пункты 3, 4, 6: <code>een stoffig tapijt</code>,
+<code>een vuil bord</code>, но <code>het **grote** raam</code>). Пиши по-современному: <code>grote</code>, <code>schone</code>
+(одна гласная), а не «groote».</p>
+</blockquote>
+<hr />
+<h2>Задание 18. Атрибутивное vs предикативное <code>-e</code> ⭐ (новая дыра)</h2>
+<p>Ключевой контраст: <strong>перед существительным</strong> прилагательное почти всегда с <code>-e</code>, а
+<strong>после <code>zijn/worden</code></strong> (как сказуемое) — <strong>без <code>-e</code></strong>. Впиши форму <code>schoon</code>:</p>
+<p>1) de <span class="blank"></span> kamer <em>(перед сущ.)</em><br />
+2) De kamer is <span class="blank"></span>. <em>(после «is»)</em><br />
+3) een <span class="blank"></span> vloer<br />
+4) De vloer is <span class="blank"></span>.<br />
+5) de <span class="blank"></span> ramen<br />
+6) De ramen zijn <span class="blank"></span>.  </p>
+<blockquote class="warn">
+<p>⚠️ Вот где в прошлый раз вышло <code>De tomaten waren **rode**</code>. После <code>is/zijn/waren</code>
+прилагательное-<strong>сказуемое</strong> идёт <strong>голым</strong>: <code>De kamer is **schoon**</code>,
+<code>De ramen zijn **schoon**</code>. <code>-e</code> — только когда прилагательное <strong>перед</strong>
+существительным: <code>de **schone** kamer</code>.</p>
+</blockquote>
+<hr />
+<h2>Задание 19. Цвета в доме — RU→NL</h2>
+<p>Переведи целиком (следи за <code>-e</code> и за ловушками):<br />
+1) серый ковёр<br />
+2) белая дверь<br />
+3) коричневый стол<br />
+4) красные шторы<br />
+5) оранжевая лампа<br />
+6) Окна чистые. <em>(предикатив!)</em>  </p>
+<blockquote class="tip">
+<p>💡 <code>oranje</code>, <code>roze</code> и — внимание — правило <code>-e</code>: <code>een **grijs** tapijt</code> (het-слово с
+<code>een</code> → без <code>-e</code>!), но <code>een **witte** deur</code>, <code>een **bruine** tafel</code>, <code>**rode**
+gordijnen</code>. Пункт 6 — сказуемое: <code>De ramen zijn **schoon**</code>.</p>
+</blockquote>
+<hr />
+<h2>Задание 20. <code>on-</code> или <code>niet</code> (повтор урока 6)</h2>
+<p>Образуй отрицание прилагательного: где приклеивается <code>on-</code>, а где нужно <code>niet</code>:<br />
+1) netjes → <span class="blank"></span> <em>(неопрятный)</em><br />
+2) prettig → <span class="blank"></span> <em>(неприятный)</em><br />
+3) schoon → <span class="blank"></span> <em>(нечистый = грязный, как сказать иначе?)</em><br />
+4) duur → <span class="blank"></span> <em>(недорогой)</em>  </p>
+<blockquote class="warn">
+<p>⚠️ <code>on-</code> лепится не ко всему: <code>onnet</code>/<code>onprettig</code> — да, а «недорогой» — это <code>niet duur</code>,
+и вместо «нечистый» голландец скажет просто <code>vies</code>/<code>vuil</code>. Думай о смысле, а не о кальке.</p>
+</blockquote>
+<hr />
+<h2>Задание 21. Конструкция <code>er</code> + число (повтор урока 6)</h2>
+<p>Ответь, используя <code>er</code> + число:<br />
+1) 'Hoeveel stoelen staan er?' (5) → Er staan <span class="blank"></span> <span class="blank"></span>.<br />
+2) 'Heb je ramen schoongemaakt?' (8) → Ja, ik heb <span class="blank"></span> <span class="blank"></span> schoongemaakt.<br />
+3) 'Zijn er nog doeken?' (0) → Nee, er zijn <span class="blank"></span> <span class="blank"></span> <span class="blank"></span>.<br />
+4) 'Hoeveel lampen wil je?' (3) → Ik wil <span class="blank"></span> <span class="blank"></span>.  </p>
+<blockquote class="warn">
+<p>⚠️ В пункте 3 «ноль» = <strong>geen</strong> (не «nul»): <code>Nee, er zijn er geen meer</code>.</p>
+</blockquote>
+<hr />
+<h1>Сессия 5 — Смесь, предлоги, финал</h1>
+<h2>Задание 22. Предлоги и послелоги в доме (повтор урока 6 + 7)</h2>
+<p>Впиши предлог/послелог: <code>in · op · onder · achter · naast · tussen · naar</code> и послелог <code>op</code>:<br />
+1) De bezem staat <span class="blank"></span> de kast. <em>(в)</em><br />
+2) De lamp staat <span class="blank"></span> de tafel. <em>(на)</em><br />
+3) De schoenen liggen <span class="blank"></span> het bed. <em>(под)</em><br />
+4) De stofzuiger staat <span class="blank"></span> de deur. <em>(за)</em><br />
+5) De stoel staat <span class="blank"></span> de bank. <em>(рядом с)</em><br />
+6) Het tapijt ligt <span class="blank"></span> de tafel en de bank. <em>(между)</em><br />
+7) Ik ga <span class="blank"></span> boven. <em>(наверх)</em><br />
+8) Ik loop de trap <span class="blank"></span>. <em>(вверх по лестнице — послелог)</em>  </p>
+<blockquote class="warn">
+<p>⚠️ «Наверх» — это направление: <code>naar boven</code>. А в пункте 8 — послелог: <code>de trap **op**</code>
+(как <code>de hoek om</code>).</p>
+</blockquote>
+<hr />
+<h2>Задание 23. Неопределённые и отрицательные местоимения (урок 7)</h2>
+<p>Впиши: <code>iemand · niemand · iets · niets · ergens · nergens · allerlei</code> и следи за<br />
+правилом <strong>одного отрицания</strong>:<br />
+1) Is er <span class="blank"></span> thuis? <em>(кто-нибудь)</em><br />
+2) Nee, er is <span class="blank"></span>. <em>(никого)</em><br />
+3) Ik hoor <span class="blank"></span> op zolder. <em>(что-то)</em><br />
+4) Ik zie <span class="blank"></span> de bezem. <em>(нигде не вижу)</em><br />
+5) In de kast ligt <span class="blank"></span> rommel. <em>(всякий, разный)</em><br />
+6) Ik heb <span class="blank"></span> opgeruimd, de kamer is nog vies. <em>(ничего)</em>  </p>
+<blockquote class="warn">
+<p>⚠️ <strong>Одно отрицание</strong> на предложение: <code>Ik zie **nergens** de bezem</code> (не «niet nergens»).</p>
+</blockquote>
+<hr />
+<h2>Задание 24. Порядок слов — исправь (повтор урока 6)</h2>
+<p>В каждом предложении порядок слов сломан. Перепиши правильно и переведи:<br />
+1) Vandaag ik ruim mijn kamer op.<br />
+2) Ik heb gisteren schoongemaakt de badkamer.<br />
+3) Zij gaat naar boven om op te ruimen haar slaapkamer.<br />
+4) Om acht uur de gasten komen aan.  </p>
+<blockquote class="tip">
+<p>💡 Помни: в утвердит. предложении личный глагол — <strong>на 2-м месте</strong> (после обстоятельства
+в начале — инверсия: <code>Vandaag **ruim ik** …</code>); причастие/инфинитив/приставка — <strong>в конец</strong>.</p>
+</blockquote>
+<hr />
+<h2>Задание 25. Связный перевод RU→NL ⭐ (всё вместе)</h2>
+<p>Переведи рассказ целиком:<br />
+1) Сегодня я убирался дома.<br />
+2) Часов в десять я начал <em>(om een uur of …; начал — ik begon)</em>.<br />
+3) Сначала я пропылесосил гостиную и вытер пыль со шкафа.<br />
+4) Потом я вымыл пол и повесил чистые шторы.<br />
+5) Я выбросил штук пять пакетов мусора <em>(een stuk of …)</em>.<br />
+6) К двум часам комната была чистая <em>(tegen tweeën; была чистая — предикатив!)</em>.<br />
+7) «Убери ещё свою кровать!» — сказала мама.<br />
+8) Гости пришли после шести <em>(na zessen)</em>.  </p>
+<blockquote>
+<p><strong>+ Почему:</strong> в пункте 8 объясни <strong>одним словом</strong>, почему <code>zijn gekomen</code>, а не <code>hebben</code>.<br />
+⚠️ Собери в кучу всё: отделяемые (наст./перфект/приказ), обороты количества,
+предикативное <code>-e</code>, причастие в конец, одно отрицание.</p>
+</blockquote>
+<hr />
+<h2>Задание 26. Свой рассказ ⭐ «Vandaag maak ik mijn kamer schoon»</h2>
+<p>Напиши <strong>6–8 предложений</strong> на тему «сегодня я убираю комнату». <strong>Обязательно</strong> должны быть:</p>
+<ul>
+<li>одно предложение с <strong>отделяемым глаголом в настоящем времени</strong> (<code>Ik ruim … op</code>, <code>Ik gooi … weg</code>);</li>
+<li>одно с <strong><code>om … te</code> и отделяемым</strong> (<code>om mijn kamer op te ruimen</code>);</li>
+<li>один <strong>оборот количества</strong> (<code>om een uur of …</code>, <code>een stuk of …</code>, <code>tegen zessen</code>);</li>
+<li>одно <strong>предикативное</strong> прилагательное (<code>De kamer is schoon</code>, <code>Het raam is vies</code>);</li>
+<li>одно предложение в <strong>перфекте</strong> с глаголом на <code>zijn</code> (<code>ik ben naar boven gegaan</code>);</li>
+<li>один <strong>приказ</strong> в кавычках (<code>«Gooi de rommel weg!»</code>).</li>
+</ul>
+<hr />
+<p><strong>Готово!</strong> Перед сдачей пройди по чек-листу:
+1. <strong>Отделяемый глагол?</strong> → глагол на 2-е место, приставку — в конец (<code>Ik ruim … op</code>);
+   в <code>om … te</code> частица <code>te</code> — <strong>внутри</strong> (<code>op te ruimen</code>).
+2. <strong>Число «примерно»?</strong> → оборот, а не точное число (<code>een stuk of vijf</code>, <code>tegen zessen</code>).
+3. <strong>Прилагательное?</strong> → перед сущ. с <code>-e</code> (<code>de schone kamer</code>); после <code>is/zijn</code> — без <code>-e</code>
+   (<code>De kamer is schoon</code>).
+4. <strong>Перфект?</strong> → причастие в самый конец; движение/состояние (<code>gaan, komen, worden</code>) → с <code>zijn</code>.
+5. <strong>Отрицание?</strong> → в предложении только <strong>одно</strong> отрицательное слово.
+6. <strong>Просят перевести/ответить?</strong> → пиши <strong>целое предложение</strong>, а не одно слово.</p></div></body>
+</html>
