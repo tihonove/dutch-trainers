@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Тренажёр 5 · Nederlands (рассказ о прошлом · имперфект и перфект)</title>
+<style>
+:root {
+  --bg: #fdfdfc; --fg: #1c1b19; --muted: #6b6862; --rule: #e3e0d8;
+  --accent: #9a3412; --card: #f6f4ef; --code-bg: #efece4;
+  --warn: #b45309; --warn-bg: #fef6e7; --tip: #0369a1; --tip-bg: #eaf4fb;
+  --star: #7c3aed; --star-bg: #f3eefe; --audio: #0f766e; --audio-bg: #e8f5f3;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16150f; --fg: #e8e4da; --muted: #a09a8c; --rule: #33302a;
+    --accent: #fb923c; --card: #1f1d16; --code-bg: #24211a;
+    --warn: #fbbf24; --warn-bg: #2a2114; --tip: #7dd3fc; --tip-bg: #12222c;
+    --star: #c4b5fd; --star-bg: #201a2e; --audio: #5eead4; --audio-bg: #10241f;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 17px/1.65 -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap { max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem; }
+h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 .4em; letter-spacing: -.01em; }
+h2 {
+  font-size: 1.35rem; margin: 2.6em 0 .7em; padding-top: .8em;
+  border-top: 2px solid var(--rule); letter-spacing: -.01em;
+}
+h3 { font-size: 1.1rem; margin: 2em 0 .5em; color: var(--accent); }
+p, li { overflow-wrap: break-word; }
+a { color: var(--accent); }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5em 0; }
+code {
+  background: var(--code-bg); padding: .12em .38em; border-radius: 4px;
+  font: 0.88em/1.4 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  white-space: nowrap;
+}
+u { text-decoration-color: var(--accent); text-underline-offset: 2px; }
+/* таблицы (словарные блоки) — на узком экране скроллятся сами, страница нет */
+.tw { overflow-x: auto; margin: 1.2em 0; }
+table { border-collapse: collapse; width: 100%; font-size: .95em; }
+th, td { text-align: left; padding: .45em .7em; border-bottom: 1px solid var(--rule); }
+th { font-size: .8em; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+tbody tr:nth-child(odd) { background: var(--card); }
+/* цитаты-плашки */
+blockquote {
+  margin: 1.2em 0; padding: .7em 1em; border-left: 3px solid var(--rule);
+  background: var(--card); border-radius: 0 6px 6px 0;
+}
+blockquote p { margin: .4em 0; }
+blockquote.warn { border-color: var(--warn); background: var(--warn-bg); }
+blockquote.tip { border-color: var(--tip); background: var(--tip-bg); }
+blockquote.star { border-color: var(--star); background: var(--star-bg); }
+blockquote.audio, blockquote.note, blockquote.img {
+  border-color: var(--audio); background: var(--audio-bg);
+}
+/* пропуски для ответов */
+.blank {
+  display: inline-block; min-width: 5.5em; border-bottom: 1.5px solid var(--muted);
+  vertical-align: baseline;
+}
+.meta { color: var(--muted); font-size: .9em; margin: -.2em 0 2em; }
+.home { display: inline-block; margin-bottom: 1.5rem; font-size: .9em; }
+.idx { list-style: none; padding: 0; }
+.idx li { margin: .5em 0; padding: .8em 1em; background: var(--card); border-radius: 8px; }
+.idx a { font-weight: 600; text-decoration: none; }
+@media print {
+  :root { --bg: #fff; --fg: #000; --card: #fff; --code-bg: #f2f2f2; }
+  .wrap { max-width: none; padding: 0; }
+  .home { display: none; }
+  h2 { page-break-after: avoid; } blockquote, table { page-break-inside: avoid; }
+}
+</style>
+</head>
+<body><div class="wrap"><a class="home" href="index.html">← ко всем материалам</a><h1>Тренажёр 5 · Nederlands (рассказ о прошлом · имперфект и перфект)</h1>
+<p>Пятый тренажёр — <strong>большой</strong> (5 сессий по ~50–60 минут, всего часов на пять). Темы — те же,
+что в тренажёре 4 (придаточные, союзы, <code>die/dat</code>, окончание <code>-e</code>), но главный упор теперь —
+на <strong>прошедшее время</strong>: <strong>имперфект</strong> и <strong>перфект</strong>. Именно здесь ты теряешь больше всего
+баллов уже три работы подряд, и пора это добить.</p>
+<hr />
+<h2>⚠️ Прочитай это первым. На что жать в этом тренажёре</h2>
+<p>По прошлой работе три темы остались <strong>красными</strong> — то есть не усвоенными. Говорю прямо, без
+смягчений, потому что это важно:</p>
+<ol>
+<li><strong>Прошлое ты пишешь настоящим временем.</strong> Раз за разом: «Когда я проснулся, я <strong>встаю</strong>…»
+   вместо «<strong>проснулся</strong> / <strong>встал</strong>». Рассказ о том, что уже было, — это <strong>прошедшее время</strong>,
+   и никак иначе. Это тема №1.</li>
+<li><strong><code>of</code> («ли») ты в речи теряешь.</strong> В упражнении «вставь <code>of</code> или <code>dat</code>» — узнаёшь, а как
+   доходит до своего предложения — союз просто пропадает: «Ik vraag ⌀ hij komt» вместо
+   «Ik vraag <strong>of</strong> hij komt». Это тема №2.</li>
+<li><strong>Глагол не уходит в конец придаточного, когда ты строишь фразу сам.</strong> Во «вставь слово» —
+   держишь, в переводе — забываешь: «die ik <strong>heb gisteren gezien</strong>» вместо «die ik gisteren
+   <strong>gezien heb</strong>». Это тема №3.</li>
+</ol>
+<blockquote>
+<p>🔴 <strong>Если ты читаешь это и не понимаешь, о чём речь, — с этим надо что-то сделать
+прямо сейчас, до начала тренажёра.</strong> Не «потом разберусь». Перечитай раздел «Как писать
+рассказ» ниже, посмотри разбор своей прошлой работы (<code>Проверка и оценка.md</code>), спроси меня —
+но не садись выполнять, пока три пункта выше не станут понятны хотя бы в теории. Иначе
+тренажёр снова уйдёт в те же ошибки, и это будет впустую потраченный вечер. Разберись —
+это не стыдно, стыдно оставлять дыру четвёртую работу подряд.</p>
+</blockquote>
+<p><strong>Что закрепляем (это у тебя уже пошло, держим планку):</strong> <code>die/dat</code> по роду, окончание <code>-e</code>
+(включая <code>het + een → без -e</code>), инверсию после <code>(ook) al</code>, <code>wanneer ≠ toen</code>.</p>
+<p><strong>Как выполнять:</strong>
+- Пиши ответы <strong>на отдельном листе</strong>, перед каждым — номер задания и пункта (<code>3.2</code>).
+- Где просят построить/перевести предложение — пиши предложение <strong>целиком</strong>.
+- <strong>Словарём</strong> пользоваться можно; грамматику (времена, порядок слов, союзы) — по памяти.
+- <code>RU→NL</code> — переводишь с русского. Не уверен — ставь <code>?</code>, а не пиши наугад.
+- <code>⚠️</code> — ловушка, <code>💡</code> — подсказка, <code>⭐</code> — задание посложнее.
+- Не спеши: тренажёр длинный, можно разбить на 5 дней по сессии.</p>
+<hr />
+<h1>📖 ГЛАВНОЕ: как писать рассказ и в каком времени</h1>
+<p>Это самый важный раздел всего тренажёра. Прочитай его <strong>дважды</strong> и возвращайся к нему в
+каждой сессии.</p>
+<h2>Правило в одну строку</h2>
+<blockquote>
+<p><strong>Рассказ о том, что уже произошло, пишется ПРОШЕДШИМ временем. Никогда — настоящим.</strong></p>
+</blockquote>
+<p>Если в русском стоит «был», «пошёл», «купил», «сказал» — значит, событие в прошлом, и
+по-нидерландски тоже нужна <strong>прошедшая</strong> форма. Проверь себя простым вопросом: <strong>«это уже
+случилось?»</strong> Да → прошедшее время.</p>
+<h2>Двух прошедших времени, и когда какое</h2>
+<p>В нидерландском два прошедших времени. Оба — про прошлое, но у них разная работа:</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Время</th>
+<th>Как выглядит</th>
+<th>Для чего</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Перфект</strong> (<code>heb/ben</code> + причастие)</td>
+<td><code>Ik **heb** een kaartje **gekocht**</code></td>
+<td><strong>одно завершённое событие</strong> в устном рассказе: «я купил», «я сходил», «фильм закончился»</td>
+</tr>
+<tr>
+<td><strong>Имперфект</strong> (простая форма)</td>
+<td><code>Het **was** laat</code>, <code>ik **ging**</code></td>
+<td><strong>фон, состояние, описание, повторяющееся</strong> действие: «было поздно», «каждую неделю ходил», «шёл дождь»</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Как это работает в живом рассказе (запомни этот шаблон):</strong>
+- <strong>Событие, что случилось</strong> → чаще <strong>перфект</strong>: <code>Ik **ben** naar de bioscoop **gegaan**</code>,
+  <code>Ik **heb** de film **gezien**</code>.
+- <strong>Обстановка вокруг события</strong> (какое было время, погода, настроение, что стояло/лежало,
+  что делал регулярно) → <strong>имперфект</strong>: <code>Het **was** al donker</code>, <code>ik **had** geen geld</code>,
+  <code>de zaal **was** vol</code>, <code>elke week **ging** ik…</code>.
+- Глаголы <code>zijn</code>, <code>hebben</code> и модальные (<code>kunnen, moeten, willen, mogen</code>) в рассказе почти
+  всегда идут <strong>в имперфекте</strong>, даже когда всё остальное — в перфекте:
+  <code>Ik **wilde** de film zien, maar het **was** uitverkocht, dus **ben** ik naar huis **gegaan**</code>.</p>
+<h2>Три железных правила, которые перекрывают всё</h2>
+<ol>
+<li><strong>После <code>toen</code> — ТОЛЬКО имперфект.</strong> Никакого перфекта, никакого настоящего:
+   <code>**Toen** ik **aankwam**, **was** de film al begonnen</code>. Не «toen ik ben aangekomen».</li>
+<li><strong><code>zijn</code> или <code>hebben</code> в перфекте?</strong> <code>zijn</code> — у глаголов <strong>движения и смены состояния</strong>
+   (<code>gaan, komen, worden, blijven, beginnen, aflopen, uitgaan, terugkomen</code>); у остальных —
+   <code>hebben</code>. <code>Ik **ben** gegaan</code>, но <code>Ik **heb** gekocht</code>.</li>
+<li><strong>В придаточном глагол всё равно уходит в конец</strong> — и в прошедшем тоже:
+   <code>Ik weet dat hij de film **gezien heeft**</code>, <code>…dat wij **uitgingen**</code>.</li>
+</ol>
+<h2>Мини-проверка перед тем, как двигаться дальше</h2>
+<p>Переведи вслух (ответы под спойлером мысленно): «Вчера я пошёл в кино. Было поздно. Я купил
+билет».</p>
+<blockquote>
+<p>Правильно: <code>Gisteren **ben** ik naar de bioscoop **gegaan**. Het **was** laat. Ik **heb**
+een kaartje **gekocht**.</code> — событие/событие в перфекте, фон («было поздно») в имперфекте.
+Если ты написал «ga», «is», «koop» — вернись к началу раздела: это ровно та ошибка,
+которую чиним.</p>
+</blockquote>
+<hr />
+<h1>🧠 Выучи это: формы прошедшего времени</h1>
+<p>Без этих форм тренажёр не получится — их надо знать наизусть, как таблицу умножения.</p>
+<h2>Имперфект правильных глаголов: <code>-te</code> / <code>-de</code></h2>
+<p>Основа (инфинитив минус <code>-en</code>) + окончание:
+- <strong><code>-te</code></strong> — если основа кончается на глухой согласный (<code>t, k, f, s, ch, p</code> — «<code>'t kofschip</code>»):
+  <code>werken → **werkte**</code>, <code>koken → **kookte**</code>.
+- <strong><code>-de</code></strong> — во всех остальных случаях: <code>horen → **hoorde**</code>, <code>bezoeken → **bezocht**</code>
+  <em>(искл., см. ниже)</em>, <code>duren → **duurde**</code>.
+- Множественное — то же + <code>-n</code>: <code>werkte**n**</code>, <code>hoorde**n**</code>.</p>
+<h2>Неправильные глаголы (кино, музеи и рассказ) — выучить наизусть</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Инфинитив</th>
+<th>Имперфект</th>
+<th>Перфект</th>
+<th>Вспом.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>zijn</td>
+<td>was / waren</td>
+<td>geweest</td>
+<td><strong>zijn</strong></td>
+</tr>
+<tr>
+<td>hebben</td>
+<td>had / hadden</td>
+<td>gehad</td>
+<td>hebben</td>
+</tr>
+<tr>
+<td>gaan</td>
+<td>ging</td>
+<td>gegaan</td>
+<td><strong>zijn</strong></td>
+</tr>
+<tr>
+<td>komen</td>
+<td>kwam</td>
+<td>gekomen</td>
+<td><strong>zijn</strong></td>
+</tr>
+<tr>
+<td>worden</td>
+<td>werd</td>
+<td>geworden</td>
+<td><strong>zijn</strong></td>
+</tr>
+<tr>
+<td>blijven</td>
+<td>bleef</td>
+<td>gebleven</td>
+<td><strong>zijn</strong></td>
+</tr>
+<tr>
+<td>beginnen</td>
+<td>begon</td>
+<td>begonnen</td>
+<td><strong>zijn</strong></td>
+</tr>
+<tr>
+<td>zien</td>
+<td>zag</td>
+<td>gezien</td>
+<td>hebben</td>
+</tr>
+<tr>
+<td>kopen</td>
+<td>kocht</td>
+<td>gekocht</td>
+<td>hebben</td>
+</tr>
+<tr>
+<td>doen</td>
+<td>deed</td>
+<td>gedaan</td>
+<td>hebben</td>
+</tr>
+<tr>
+<td>zeggen</td>
+<td>zei</td>
+<td>gezegd</td>
+<td>hebben</td>
+</tr>
+<tr>
+<td>vinden</td>
+<td>vond</td>
+<td>gevonden</td>
+<td>hebben</td>
+</tr>
+<tr>
+<td>houden (van)</td>
+<td>hield</td>
+<td>gehouden</td>
+<td>hebben</td>
+</tr>
+<tr>
+<td>schrijven</td>
+<td>schreef</td>
+<td>geschreven</td>
+<td>hebben</td>
+</tr>
+<tr>
+<td>staan</td>
+<td>stond</td>
+<td>gestaan</td>
+<td>hebben</td>
+</tr>
+<tr>
+<td>lopen</td>
+<td>liep</td>
+<td>gelopen</td>
+<td>zijn/hebben</td>
+</tr>
+<tr>
+<td><strong>be</strong>zoeken</td>
+<td>bezocht</td>
+<td>bezocht</td>
+<td>hebben</td>
+</tr>
+<tr>
+<td><strong>be</strong>kijken</td>
+<td>bekeek</td>
+<td>bekeken</td>
+<td>hebben</td>
+</tr>
+<tr>
+<td>kunnen</td>
+<td>kon</td>
+<td>gekund</td>
+<td>hebben</td>
+</tr>
+<tr>
+<td>moeten</td>
+<td>moest</td>
+<td>gemoeten</td>
+<td>hebben</td>
+</tr>
+<tr>
+<td>willen</td>
+<td>wilde / wou</td>
+<td>gewild</td>
+<td>hebben</td>
+</tr>
+<tr>
+<td>mogen</td>
+<td>mocht</td>
+<td>gemogen</td>
+<td>hebben</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Отделяемые в прошедшем (золотая нить)</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Инфинитив</th>
+<th>Имперфект</th>
+<th>Перфект</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>uit</strong>gaan</td>
+<td>ging uit</td>
+<td>uitgegaan</td>
+</tr>
+<tr>
+<td><strong>af</strong>lopen</td>
+<td>liep af</td>
+<td>afgelopen</td>
+</tr>
+<tr>
+<td><strong>terug</strong>komen</td>
+<td>kwam terug</td>
+<td>teruggekomen</td>
+</tr>
+<tr>
+<td><strong>aan</strong>komen</td>
+<td>kwam aan</td>
+<td>aangekomen</td>
+</tr>
+<tr>
+<td><strong>op</strong>bellen</td>
+<td>belde op</td>
+<td>opgebeld</td>
+</tr>
+<tr>
+<td><strong>mee</strong>gaan</td>
+<td>ging mee</td>
+<td>meegegaan</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote class="warn">
+<p>⚠️ У приставки <code>be-</code> (<code>bezoeken</code>, <code>bekijken</code>) причастие идёт <strong>без</strong> <code>ge-</code>: <code>bezocht</code>,
+<code>bekeken</code>. А у отделяемых <code>ge-</code> встаёт <strong>внутрь</strong>: <code>op**ge**beld</code>, <code>uit**ge**gaan</code>.</p>
+</blockquote>
+<hr />
+<h1>Сессия 1 — Имперфект: форма и «фон прошлого»</h1>
+<h2>Задание 1. Имперфект правильных глаголов</h2>
+<p>Дай форму имперфекта (ед. ч.):</p>
+<p>1) werken  2) koken  3) horen  4) wonen  5) duren  6) praten  7) reserveren  8) huren<br />
+9) luisteren  10) lachen  </p>
+<blockquote class="tip">
+<p>💡 Сначала реши: основа кончается на глухой (<code>'t kofschip</code>) → <code>-te</code>, иначе → <code>-de</code>.
+⚠️ <code>wonen → woonde</code> (две <code>o</code>, чтобы гласная осталась долгой), <code>praten → praatte</code>.</p>
+</blockquote>
+<hr />
+<h2>Задание 2. Имперфект неправильных глаголов</h2>
+<p>Дай форму имперфекта (ед. ч.) по памяти:</p>
+<p>1) zijn  2) hebben  3) gaan  4) komen  5) zien  6) kopen  7) worden  8) beginnen<br />
+9) zeggen  10) staan  11) blijven  12) kunnen  </p>
+<blockquote class="warn">
+<p>⚠️ Это те самые формы из таблицы выше. Если больше трёх не вспомнил — <strong>закрой тренажёр и
+выучи таблицу</strong>, иначе дальше нет смысла.</p>
+</blockquote>
+<hr />
+<h2>Задание 3. Настоящее → имперфект (описание, фон)</h2>
+<p>Перепиши предложение в имперфекте. Это фон/описание — значит, именно имперфект:</p>
+<p>1) Het is laat. → <span class="blank"></span><br />
+2) Ik heb geen geld. → <span class="blank"></span><br />
+3) De zaal is vol. → <span class="blank"></span><br />
+4) Er staat een lange rij. → <span class="blank"></span><br />
+5) De film duurt twee uur. → <span class="blank"></span><br />
+6) Ik woon in Amsterdam. → <span class="blank"></span><br />
+7) Het regent. → <span class="blank"></span><br />
+8) Wij hebben geen kaartjes. → <span class="blank"></span>  </p>
+<blockquote class="tip">
+<p>💡 Здесь везде <strong>имперфект</strong>, потому что это состояние/описание, а не одно событие.</p>
+</blockquote>
+<hr />
+<h2>Задание 4. Повторяющееся действие в прошлом ⭐</h2>
+<p>«Каждый раз», «часто», «всегда» в прошлом → <strong>имперфект</strong> (и союз <strong><code>als</code></strong>, не <code>toen</code>!).
+Переведи целиком:</p>
+<p>1) Когда я жил в Утрехте, я каждую неделю ходил в кино.<br />
+2) Раньше он всегда покупал два билета.<br />
+3) Каждый раз, когда шёл дождь, мы оставались дома.  </p>
+<blockquote class="warn">
+<p>⚠️ «Каждый раз, когда» — это <strong><code>als</code></strong> + имперфект, а не <code>toen</code>. <code>toen</code> — только для
+<strong>одного</strong> случая в прошлом.</p>
+</blockquote>
+<hr />
+<h1>Сессия 2 — Перфект: форма, <code>zijn</code> или <code>hebben</code></h1>
+<h2>Задание 5. Причастие</h2>
+<p>Дай причастие (voltooid deelwoord):</p>
+<p>1) maken  2) horen  3) werken  4) zien  5) kopen  6) gaan  7) beginnen  8) bezoeken<br />
+9) opbellen  10) uitgaan  11) schrijven  12) doen  </p>
+<blockquote class="warn">
+<p>⚠️ <code>bezoeken → bezocht</code> (без <code>ge-</code>), <code>opbellen → opgebeld</code> (<code>ge-</code> внутрь),
+<code>uitgaan → uitgegaan</code>.</p>
+</blockquote>
+<hr />
+<h2>Задание 6. <code>zijn</code> или <code>hebben</code>?</h2>
+<p>Впиши нужный вспомогательный глагол (<code>heb/heeft/hebben</code> или <code>ben/is/zijn</code>):</p>
+<p>1) Ik <span class="blank"></span> een kaartje gekocht.<br />
+2) Wij <span class="blank"></span> naar de bioscoop gegaan.<br />
+3) Zij <span class="blank"></span> die film al gezien.<br />
+4) De film <span class="blank"></span> om tien uur afgelopen.<br />
+5) Hij <span class="blank"></span> het museum bezocht.<br />
+6) Jullie <span class="blank"></span> gisteren uitgegaan.<br />
+7) Ik <span class="blank"></span> om zes uur teruggekomen.<br />
+8) Zij <span class="blank"></span> de kaartjes gereserveerd.  </p>
+<blockquote class="tip">
+<p>💡 Движение/смена состояния (<code>gaan, aflopen, uitgaan, terugkomen</code>) → <code>zijn</code>. Всё
+остальное → <code>hebben</code>.</p>
+</blockquote>
+<hr />
+<h2>Задание 7. Настоящее → перфект (одно событие)</h2>
+<p>Перепиши в перфекте. Это <strong>одно завершённое событие</strong>:</p>
+<p>1) Ik koop een kaartje. → <span class="blank"></span><br />
+2) Wij gaan naar het museum. → <span class="blank"></span><br />
+3) Zij ziet de tentoonstelling. → <span class="blank"></span><br />
+4) De voorstelling begint om acht uur. → <span class="blank"></span><br />
+5) Hij belt de kassa op. → <span class="blank"></span><br />
+6) Ik bezoek het Rijksmuseum. → <span class="blank"></span>  </p>
+<hr />
+<h2>Задание 8. Имперфект ИЛИ перфект? ⭐ (ключевое различение)</h2>
+<p>Поставь глагол в скобках в <strong>прошедшее</strong> время — сам реши, имперфект (фон/состояние) или
+перфект (одно событие). Переведи:</p>
+<p>1) Het <span class="blank"></span> (zijn) laat, dus ik <span class="blank"></span> (gaan) naar huis.<br />
+2) Ik <span class="blank"></span> (kopen) een kaartje en <span class="blank"></span> (gaan) naar binnen.<br />
+3) De zaal <span class="blank"></span> (zijn) vol en er <span class="blank"></span> (staan) een lange rij.<br />
+4) Zij <span class="blank"></span> (bellen op) mij en <span class="blank"></span> (vragen) of ik meeging.<br />
+5) Wij <span class="blank"></span> (willen) de film zien, maar hij <span class="blank"></span> (zijn) uitverkocht.  </p>
+<blockquote class="tip">
+<p>💡 <code>zijn</code>, <code>hebben</code>, <code>staan</code>, <code>willen</code> — почти всегда <strong>имперфект</strong> (<code>was, had, stond,
+wilde</code>). Событие («купил», «позвонил», «пошёл») — <strong>перфект</strong> или имперфект, но <strong>не
+настоящее</strong>.</p>
+</blockquote>
+<hr />
+<h1>Сессия 3 — Рассказ о прошлом целиком (RU→NL) ⭐</h1>
+<blockquote>
+<p>Вся сессия — про то, ради чего тренажёр. Каждое предложение — про прошлое. <strong>Ни одного
+глагола в настоящем времени.</strong> Перед тем как писать, задай себе вопрос: «это уже
+случилось?» — да → прошедшее.</p>
+</blockquote>
+<h2>Задание 9. Короткие события (перфект)</h2>
+<p>Переведи целиком, в перфекте:</p>
+<p>1) Вчера я сходил в кино.<br />
+2) Я купил два билета.<br />
+3) Мы посмотрели новый фильм.<br />
+4) Фильм закончился в десять.<br />
+5) Я позвонил Питу.<br />
+6) Мы вышли в свет в субботу.  </p>
+<blockquote class="warn">
+<p>⚠️ Следи за <code>zijn</code>/<code>hebben</code>: «сходил», «закончился», «вышли» → <code>zijn</code>; «купил»,
+«посмотрел», «позвонил» → <code>hebben</code>.</p>
+</blockquote>
+<hr />
+<h2>Задание 10. Фон + событие в одном предложении ⭐</h2>
+<p>Переведи. В каждом предложении есть и описание (имперфект), и событие:</p>
+<p>1) Было уже поздно, поэтому я пошёл домой.<br />
+2) Зал был полный, и мы должны были стоять.<br />
+3) У меня не было денег, так что я не купил билет.<br />
+4) Фильм был скучный, но мы остались до конца.<br />
+5) Шёл дождь, когда мы вышли из музея.  </p>
+<blockquote class="tip">
+<p>💡 «было», «был», «не было», «шёл дождь» → имперфект (<code>was, waren, had, regende</code>).
+«пошёл», «остались», «вышли» → перфект (или имперфект), но не настоящее.</p>
+</blockquote>
+<hr />
+<h2>Задание 11. <code>toen</code> + имперфект ⭐ (главная дыра — добиваем)</h2>
+<p>Переведи целиком. После <code>toen</code> — <strong>только имперфект</strong>:</p>
+<p>1) Когда я проснулся, было уже почти девять. <em>(tegen negenen!)</em><br />
+2) Когда фильм закончился, мы пошли в кафе.<br />
+3) Когда она купила билеты, зал уже был полон.<br />
+4) Когда мы пришли, сеанс уже начался.<br />
+5) Когда мне было двадцать, я часто ходил в музеи. <em>(⚠️ «часто» — какой союз?)</em><br />
+6) Когда он это сказал, все засмеялись.  </p>
+<blockquote class="warn">
+<p>⚠️ Ни в одном пункте не должно быть перфекта после <code>toen</code> и настоящего времени вообще.
+<code>werd, liep af, kocht, kwamen aan, zei, lachten</code>.
+⚠️ Пункт 5 — ловушка: «часто» = многократно → <strong><code>als</code></strong>, не <code>toen</code>.</p>
+</blockquote>
+<hr />
+<h2>Задание 12. Свяжи в рассказ ⭐⭐</h2>
+<p>Переведи связный рассказ. Всё — прошлое. Следи за временем в каждом предложении:</p>
+<p>1) Вчера вечером я пошёл в кино с Питом.<br />
+2) Было холодно, и шёл дождь.<br />
+3) Мы купили билеты и вошли внутрь.<br />
+4) Фильм, который мы посмотрели, был очень захватывающий.<br />
+5) Когда он закончился, мы пошли в кафе.<br />
+6) К одиннадцати я вернулся домой. <em>(tegen elven; «вернулся» — отделяемый!)</em>  </p>
+<blockquote>
+<p><strong>+ Почему:</strong> в пункте 6 объясни <strong>одним словом</strong>, почему <code>ben teruggekomen</code>, а не <code>heb</code>.
+⚠️ Собери сразу: прошедшее время (не настоящее!), <code>die</code> в пункте 4 (сказуемое в конец!),
+инверсия в главном в пункте 5 (<code>Toen hij afliep, **gingen wij**…</code>), часы во мн. ч. в п. 6.</p>
+</blockquote>
+<hr />
+<h1>Сессия 4 — Придаточные о прошлом: <code>of</code>, <code>dat</code>, порядок слов</h1>
+<h2>Задание 13. Косвенный вопрос с <code>of</code> ⭐ (тема №2 — не теряй союз!)</h2>
+<p>Каждый ответ начни с <code>Ik vroeg …</code> (я спросил — <strong>прошедшее</strong>!). В косвенном вопросе «да/нет»
+<strong>обязателен <code>of</code></strong>:</p>
+<p>1) Is de film al begonnen? → Ik vroeg <span class="blank"></span><br />
+2) Heeft zij de kaartjes gekocht? → Ik vroeg <span class="blank"></span><br />
+3) Ging het museum om vijf uur dicht? → Ik vroeg <span class="blank"></span><br />
+4) Wilde hij meegaan? → Ik vroeg <span class="blank"></span><br />
+5) Was de tentoonstelling mooi? → Ik vroeg <span class="blank"></span>  </p>
+<blockquote>
+<p>🔴 Это ровно то место, где ты в прошлый раз <strong>пять раз из шести потерял <code>of</code></strong>. Проверь
+каждое предложение: есть ли в нём слово <code>of</code>? Нет — вернись и вставь.
+⚠️ И глагол — в конец: <code>Ik vroeg **of** de film al begonnen **was**</code>.</p>
+</blockquote>
+<hr />
+<h2>Задание 14. <code>dat</code> или <code>of</code>? (в прошедшем) ⭐</h2>
+<p>Впиши <code>dat</code> или <code>of</code>, поставь глагол в <strong>прошедшее</strong> и переведи:</p>
+<p>1) Ik wist <span class="blank"></span> de film om acht uur <span class="blank"></span> (beginnen).<br />
+2) Ik wist niet <span class="blank"></span> de film al <span class="blank"></span> (beginnen).<br />
+3) Hij zei <span class="blank"></span> het museum <span class="blank"></span> (zijn) gesloten.<br />
+4) Hij vroeg <span class="blank"></span> het museum <span class="blank"></span> (zijn) gesloten.<br />
+5) Ik vroeg me af <span class="blank"></span> zij <span class="blank"></span> (meegaan).  </p>
+<blockquote class="tip">
+<p>💡 «знаю/говорю, <strong>что</strong>» → <code>dat</code>; «не знаю/спрашиваю, … <strong>ли</strong>» → <code>of</code>.
+⚠️ Пары 1–2 и 3–4: одно придаточное, союз разный. И всё — в прошедшем времени.</p>
+</blockquote>
+<hr />
+<h2>Задание 15. Косвенный вопрос со словом (в прошедшем)</h2>
+<p>Начни с <code>Hij vroeg …</code>. Глагол — в конец, время — прошедшее:</p>
+<p>1) Hoe laat begon de film?<br />
+2) Waarom ging je niet mee?<br />
+3) Wanneer kwam zij terug?<br />
+4) Welke film zag jij het laatst?  </p>
+<blockquote class="warn">
+<p>⚠️ Пункт 3 — отделяемый в придаточном: <code>…vroeg wanneer zij **terugkwam**</code>.</p>
+</blockquote>
+<hr />
+<h2>Задание 16. Инверсия в главном после придаточного ⭐ (тема №3 — перенеси в речь)</h2>
+<p>Придаточное стоит <strong>первым</strong> → в главном <strong>инверсия</strong> (глагол сразу после запятой). Переведи
+целиком, в прошедшем:</p>
+<p>1) Когда фильм закончился, мы пошли домой.<br />
+2) Так как у меня не было денег, я не пошёл.<br />
+3) Хотя фильм был скучный, мы остались до конца.<br />
+4) Когда она увидела картину, она очень обрадовалась.  </p>
+<blockquote class="warn">
+<p>⚠️ После запятой — сразу <strong>глагол</strong>, потом подлежащее: <code>Toen de film afliep, **gingen
+wij**…</code> (а не «wij gingen»). Механику ты знаешь — здесь надо её <strong>применить</strong> в живой фразе.</p>
+</blockquote>
+<hr />
+<h2>Задание 17. Глагол в конец придаточного ⭐ (тема №3)</h2>
+<p>Соедини пару в одно предложение через <code>die</code>/<code>dat</code>. <strong>В придаточном сказуемое — в самый
+конец</strong>, время — прошедшее:</p>
+<p>1) De film was spannend. Ik heb hem gisteren gezien.<br />
+2) Het museum was gesloten. Wij hebben het bezocht.<br />
+3) De kaartjes waren te duur. Wij hebben ze niet gekocht.<br />
+4) De schilder was beroemd. Zij heeft over hem een boek geschreven. <em>(⚠️ человек + предлог!)</em>  </p>
+<blockquote class="tip">
+<p>💡 <code>De film **die** ik gisteren **gezien heb**, was spannend</code> — причастие и вспомогательный
+<strong>оба</strong> в конце. Не «die ik heb gezien gisteren».</p>
+</blockquote>
+<hr />
+<h1>Сессия 5 — Всё вместе: <code>die/dat</code>, <code>-e</code> и большой рассказ</h1>
+<h2>Задание 18. <code>die</code> / <code>dat</code> (быстрый прогон)</h2>
+<p>Впиши <code>die</code> или <code>dat</code>:</p>
+<p>1) de film <span class="blank"></span> ik zag  2) het museum <span class="blank"></span> wij bezochten  3) het schilderij <span class="blank"></span> daar hing<br />
+4) de schilderijen <span class="blank"></span> daar hingen  5) de acteur <span class="blank"></span> de hoofdrol speelde<br />
+6) het kaartje <span class="blank"></span> jij kocht  </p>
+<blockquote class="warn">
+<p>⚠️ Мн. число — <strong>всегда</strong> <code>die</code>. <code>het</code> ед. ч. — <code>dat</code>.</p>
+</blockquote>
+<hr />
+<h2>Задание 19. Окончание <code>-e</code> (быстрый прогон)</h2>
+<p>Впиши форму прилагательного:</p>
+<p>1) een <span class="blank"></span> film <em>(spannend)</em>  2) een <span class="blank"></span> museum <em>(beroemd)</em>  3) de <span class="blank"></span> schilder <em>(oud)</em><br />
+4) De film was <span class="blank"></span> <em>(saai)</em>  5) Het schilderij is <span class="blank"></span> <em>(beroemd)</em>  </p>
+<blockquote class="warn">
+<p>⚠️ <code>het</code>-слово + <code>een</code> → <strong>без</strong> <code>-e</code> (<code>een beroemd museum</code>). После <code>is/was</code> → <strong>без</strong> <code>-e</code>.</p>
+</blockquote>
+<hr />
+<h2>Задание 20. Найди ошибку</h2>
+<p>В каждом предложении <strong>одна</strong> ошибка (время, <code>of</code>, порядок слов или <code>die/dat</code>). Выпиши
+<strong>правильный</strong> вариант и переведи:</p>
+<p>1) Toen ik aankwam, de film was al begonnen.<br />
+2) Ik vroeg hij meeging.<br />
+3) Gisteren ik ben naar de bioscoop gegaan.<br />
+4) De film dat ik zag was spannend.<br />
+5) Toen de film afliep, wij gingen naar huis.<br />
+6) Ik weet dat hij de film heeft gezien gisteren.<br />
+7) Toen ik jong was, ik ga vaak naar de bioscoop.  </p>
+<blockquote class="tip">
+<p>💡 Ищи по списку: инверсия в главном после придаточного, пропуск <code>of</code>, порядок в главном
+(<code>Gisteren ben ik…</code>), <code>die/dat</code> по роду, глагол в конец придаточного, настоящее вместо
+прошедшего.</p>
+</blockquote>
+<hr />
+<h2>Задание 21. Большой связный рассказ ⭐⭐ (главное задание)</h2>
+<p>Переведи рассказ целиком. <strong>Это рассказ о прошлом — значит, прошедшее время в каждом
+предложении.</strong> В каждом предложении должно быть <strong>придаточное</strong>.</p>
+<p>1) Вчера, когда я проснулся, было уже почти девять. <em>(toen …, tegen negenen)</em><br />
+2) Я позвонил Питу и спросил, хочет ли он пойти со мной в музей. <em>(of … mee wilde gaan)</em><br />
+3) Он сказал, что выставка, которую мы хотели посмотреть, уже закрыта.<br />
+4) Так что мы пошли в кино, хотя Пит не любит современные фильмы. <em>(zodat … hoewel)</em><br />
+5) Когда мы пришли, сеанс уже начался.<br />
+6) Фильм, который мы посмотрели, был очень захватывающий.<br />
+7) К шести мы вернулись домой, потому что Пит должен был работать. <em>(tegen zessen; omdat)</em>  </p>
+<blockquote>
+<p><strong>+ Почему:</strong> в пункте 7 объясни <strong>одним словом</strong>, почему <code>zijn teruggekomen</code>, а не <code>hebben</code>.
+⚠️ Чек-лист прямо перед сдачей этого задания:
+– везде <strong>прошедшее</strong> время (ни одного «ga», «is», «koop»)?
+– после <code>toen</code> — <strong>имперфект</strong> (не перфект)?
+– в косвенном вопросе п. 2 стоит <strong><code>of</code></strong>?
+– в придаточных сказуемое <strong>в конце</strong>?
+– после придаточного в п. 5 — <strong>инверсия</strong> в главном (<code>…, was de voorstelling…</code>)?
+– <code>die</code>/<code>dat</code> по роду (п. 3, 6)?</p>
+</blockquote>
+<hr />
+<h2>Задание 22. Свой рассказ ⭐ «Toen ik voor het laatst uitging»</h2>
+<p>Напиши <strong>8–10 предложений</strong> о том, как ты в последний раз ходил в кино или в музей.
+<strong>Это рассказ о прошлом — всё в прошедшем времени.</strong> Обязательно должны быть:</p>
+<ul>
+<li><strong>завязка с <code>toen</code></strong> + имперфект (<code>Toen ik aankwam, …</code>);</li>
+<li>одно <strong>событие в перфекте</strong> (<code>Ik heb … gekocht / ben … gegaan</code>);</li>
+<li>одно <strong>описание в имперфекте</strong> (<code>Het was …</code>, <code>de zaal was …</code>);</li>
+<li>одно предложение, где придаточное <strong>впереди</strong>, а в главном — <strong>инверсия</strong>;</li>
+<li>один <strong>косвенный вопрос с <code>of</code></strong> (<code>Ik vroeg of …</code>);</li>
+<li>одно с <strong><code>omdat</code></strong> (сказуемое в конец);</li>
+<li>одно с <strong>относительным <code>die</code></strong> и одно с <strong><code>dat</code></strong> (следи за родом!);</li>
+<li>одни <strong>часы во мн. ч.</strong> (<code>tegen achten</code>, <code>na zessen</code>).</li>
+</ul>
+<blockquote class="warn">
+<p>⚠️ Когда закончишь — перечитай и подчеркни каждый глагол. Если хоть один в настоящем
+времени, а рассказ о прошлом, — исправь. Это и есть та работа, ради которой всё затевалось.</p>
+</blockquote>
+<hr />
+<p><strong>Готово!</strong> Финальный чек-лист (пройди по нему перед сдачей всей работы):</p>
+<ol>
+<li><strong>Рассказ о прошлом?</strong> → <strong>прошедшее время</strong>, не настоящее. Ни одного «ga / is / koop».</li>
+<li><strong>Одно событие</strong> → перфект (<code>heb/ben</code> + причастие). <strong>Фон, состояние, повтор</strong> → имперфект.</li>
+<li><strong>После <code>toen</code></strong> → <strong>имперфект</strong>, не перфект и не настоящее.</li>
+<li><strong><code>zijn</code> или <code>hebben</code>?</strong> → движение/смена состояния → <code>zijn</code> (<code>ben gegaan</code>), иначе <code>hebben</code>.</li>
+<li><strong>Косвенный вопрос «да/нет»?</strong> → <strong><code>of</code></strong>, и не потеряй его.</li>
+<li><strong>Придаточное?</strong> → подлежащее сразу после союза, <strong>сказуемое в самый конец</strong> (и в прошедшем тоже).</li>
+<li><strong>Придаточное впереди?</strong> → в главном <strong>инверсия</strong> (после <code>al</code> — инверсии в главном нет).</li>
+<li><strong><code>die</code>/<code>dat</code></strong> по роду; <strong><code>-e</code></strong> — почти всегда, кроме <code>het + een</code> и после <code>is/was</code>.</li>
+<li><strong>Просят перевести/ответить?</strong> → пиши <strong>целое предложение</strong>.</li>
+</ol></div></body>
+</html>
