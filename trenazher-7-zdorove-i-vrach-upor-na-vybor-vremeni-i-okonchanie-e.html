@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Тренажёр 7 · Nederlands (здоровье и врач · выбор времени и окончание -e)</title>
+<style>
+:root {
+  --bg: #fdfdfc; --fg: #1c1b19; --muted: #6b6862; --rule: #e3e0d8;
+  --accent: #9a3412; --card: #f6f4ef; --code-bg: #efece4;
+  --warn: #b45309; --warn-bg: #fef6e7; --tip: #0369a1; --tip-bg: #eaf4fb;
+  --star: #7c3aed; --star-bg: #f3eefe; --audio: #0f766e; --audio-bg: #e8f5f3;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16150f; --fg: #e8e4da; --muted: #a09a8c; --rule: #33302a;
+    --accent: #fb923c; --card: #1f1d16; --code-bg: #24211a;
+    --warn: #fbbf24; --warn-bg: #2a2114; --tip: #7dd3fc; --tip-bg: #12222c;
+    --star: #c4b5fd; --star-bg: #201a2e; --audio: #5eead4; --audio-bg: #10241f;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 17px/1.65 -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap { max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem; }
+h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 .4em; letter-spacing: -.01em; }
+h2 {
+  font-size: 1.35rem; margin: 2.6em 0 .7em; padding-top: .8em;
+  border-top: 2px solid var(--rule); letter-spacing: -.01em;
+}
+h3 { font-size: 1.1rem; margin: 2em 0 .5em; color: var(--accent); }
+p, li { overflow-wrap: break-word; }
+a { color: var(--accent); }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5em 0; }
+code {
+  background: var(--code-bg); padding: .12em .38em; border-radius: 4px;
+  font: 0.88em/1.4 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  white-space: nowrap;
+}
+u { text-decoration-color: var(--accent); text-underline-offset: 2px; }
+/* таблицы (словарные блоки) — на узком экране скроллятся сами, страница нет */
+.tw { overflow-x: auto; margin: 1.2em 0; }
+table { border-collapse: collapse; width: 100%; font-size: .95em; }
+th, td { text-align: left; padding: .45em .7em; border-bottom: 1px solid var(--rule); }
+th { font-size: .8em; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+tbody tr:nth-child(odd) { background: var(--card); }
+/* цитаты-плашки */
+blockquote {
+  margin: 1.2em 0; padding: .7em 1em; border-left: 3px solid var(--rule);
+  background: var(--card); border-radius: 0 6px 6px 0;
+}
+blockquote p { margin: .4em 0; }
+blockquote.warn { border-color: var(--warn); background: var(--warn-bg); }
+blockquote.tip { border-color: var(--tip); background: var(--tip-bg); }
+blockquote.star { border-color: var(--star); background: var(--star-bg); }
+blockquote.audio, blockquote.note, blockquote.img {
+  border-color: var(--audio); background: var(--audio-bg);
+}
+/* пропуски для ответов */
+.blank {
+  display: inline-block; min-width: 5.5em; border-bottom: 1.5px solid var(--muted);
+  vertical-align: baseline;
+}
+/* аудиоплеер (аудирование) — mp3 вшит в html как data-URI */
+.player { margin: 1.4em 0; }
+.player audio { width: 100%; display: block; }
+.meta { color: var(--muted); font-size: .9em; margin: -.2em 0 2em; }
+.home { display: inline-block; margin-bottom: 1.5rem; font-size: .9em; }
+.idx { list-style: none; padding: 0; }
+.idx li { margin: .5em 0; padding: .8em 1em; background: var(--card); border-radius: 8px; }
+.idx a { font-weight: 600; text-decoration: none; }
+@media print {
+  :root { --bg: #fff; --fg: #000; --card: #fff; --code-bg: #f2f2f2; }
+  .wrap { max-width: none; padding: 0; }
+  .home { display: none; }
+  h2 { page-break-after: avoid; } blockquote, table { page-break-inside: avoid; }
+}
+</style>
+</head>
+<body><div class="wrap"><a class="home" href="index.html">← ко всем материалам</a><h1>Тренажёр 7 · Nederlands (здоровье и врач · выбор времени и окончание <code>-e</code>)</h1>
+<p>Тема слов новая — <strong>тело, болезнь, врач</strong>. Это самая полезная лексика из всех: с ней ты
+сможешь записаться к huisarts и объяснить, что болит.</p>
+<p>Тренажёр устроен <strong>в две половины</strong>, и это важно:</p>
+<ul>
+<li><strong>Первая половина (сессии 1–3)</strong> — с правилами и подсказками. Читай объяснение, потом делай.
+  Подглядывать в правило прямо во время задания — <strong>можно и нужно</strong>.</li>
+<li><strong>Вторая половина (сессии 4–5)</strong> — <strong>самостоятельно</strong>. Никаких подсказок, никаких напоминаний
+  под заданиями. Только ты и лист. Это замер, а не тренировка: мне нужно увидеть, что осталось
+  в голове без опоры.</li>
+</ul>
+<hr />
+<h1>📖 ПЕРВАЯ ПОЛОВИНА · Правила и помощь</h1>
+<p>Прошлый тренажёр ты сдал на 80 % — и главную ошибку (два глагола в одном предложении) починил
+полностью. Здесь чиним то, что осталось. Три вещи.</p>
+<h2>Ошибка 1. Причастие никогда не ходит одно</h2>
+<p>В задании 7 прошлого тренажёра ты написал так:</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Дано</th>
+<th>Ты написал</th>
+<th>А надо</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Het ___ (zijn) al laat, dus iedereen ___ (weggaan).</td>
+<td>was / <strong>weggegaan</strong></td>
+<td>was / <strong>is weggegaan</strong></td>
+</tr>
+<tr>
+<td>De zaal ___ (zijn) versierd en er ___ (staan) …</td>
+<td><strong>zijn</strong> / <strong>gestond</strong></td>
+<td><strong>was</strong> / <strong>stond</strong></td>
+</tr>
+<tr>
+<td>Oma ___ (bakken) … en wij ___ (opeten) …</td>
+<td>bakt / <strong>opgegeten</strong></td>
+<td>bakte / <strong>hebben opgegeten</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>Смотри, что происходит. Когда в задании прямо написано «поставь перфект», ты ставишь его
+правильно. А когда надо <strong>решить самому</strong> — ты пишешь голое причастие: <code>weggegaan</code>,
+<code>opgegeten</code>, без <code>is</code> и без <code>hebben</code>. И один раз выдал <code>gestond</code> — форму, которой в языке
+нет вообще (склеил причастие <code>gestaan</code> и имперфект <code>stond</code>).</p>
+<blockquote>
+<p><strong>Правило в одну строку: причастие (<code>ge-…</code>) НИКОГДА не стоит одно. Либо перед ним
+<code>heb / heeft / hebben / ben / is / zijn</code>, либо это не причастие, а имперфект.</strong></p>
+</blockquote>
+<p>Проверка на два вопроса, делай её после каждого предложения:</p>
+<ol>
+<li>Я написал слово на <code>ge-</code> (или <code>aangekomen / uitgerust / opgebeld</code>)? →
+   <strong>Найди глазами <code>heb/ben</code>.</strong> Нет его — предложение сломано.</li>
+<li>Не хочу вспомогательный глагол? → <strong>Ставь простую форму:</strong> не <code>gegeven</code>, а <code>gaf</code>;
+   не <code>weggegaan</code>, а <code>ging weg</code>; не <code>opgegeten</code>, а <code>at op</code>.</li>
+</ol>
+<p>Оба варианта правильные, выбирай любой — <strong>но целиком</strong>:</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>❌ Сломано</th>
+<th>✅ Перфект</th>
+<th>✅ Имперфект</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ik gebeld de dokter</td>
+<td>ik <strong>heb</strong> de dokter <strong>opgebeld</strong></td>
+<td>ik <strong>belde</strong> de dokter <strong>op</strong></td>
+</tr>
+<tr>
+<td>hij gevallen</td>
+<td>hij <strong>is gevallen</strong></td>
+<td>hij <strong>viel</strong></td>
+</tr>
+<tr>
+<td>wij gewacht</td>
+<td>wij <strong>hebben gewacht</strong></td>
+<td>wij <strong>wachtten</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>И запомни намертво: <strong><code>zijn</code> — это инфинитив</strong> («быть»). В прошедшем он звучит <code>was</code>
+(ед. ч.) и <code>waren</code> (мн. ч.). Никогда не пиши <code>de zaal zijn versierd</code>.</p>
+<h2>Ошибка 2. Окончание <code>-e</code> — два правила, которые откатились</h2>
+<p>Ты их уже знал (в тренажёре 5 было 5/5), а в шестом сделал 2/5 — те же три ошибки, что
+полгода назад: <code>een gezellige feest</code>, <code>een duure cadeau</code>, <code>de ballonnen waren roode</code>.</p>
+<p>Правило простое: прилагательное <strong>почти всегда</strong> получает <code>-e</code>. Кроме <strong>двух</strong> случаев.</p>
+<p><strong>Исключение 1 — <code>het</code>-слово с <code>een</code> (или без артикля): <code>-e</code> НЕ ставим.</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th></th>
+<th>de-слово</th>
+<th>het-слово</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>с <code>de/het</code></td>
+<td>de <strong>grote</strong> arm</td>
+<td>het <strong>grote</strong> oog</td>
+</tr>
+<tr>
+<td>с <code>een</code></td>
+<td>een <strong>grote</strong> arm</td>
+<td>een <strong>groot</strong> oog ⚠️</td>
+</tr>
+</tbody>
+</table></div>
+<p>Крючок для памяти: <code>een</code> + <code>het</code>-слово — <strong>два маленьких слова, окончание убегает</strong>.
+<code>een **ziek** kind</code>, <code>een **gebroken** been</code>, <code>een **goed** medicijn</code>.</p>
+<p><strong>Исключение 2 — после <code>zijn/worden</code> (<code>is, was, waren, wordt</code>): <code>-e</code> НЕ ставим НИКОГДА.</strong></p>
+<p>Прилагательное в конце предложения — это сказуемое, а не определение. Оно голое:</p>
+<ul>
+<li><code>de zieke man</code> (перед словом → с <code>-e</code>) ↔ <code>de man **was ziek**</code> (после <code>was</code> → без)</li>
+<li><code>de rode ogen</code> ↔ <code>zijn ogen **waren rood**</code></li>
+<li><code>een lange dag</code> ↔ <code>de dag **was lang**</code></li>
+</ul>
+<blockquote>
+<p><strong>Правило в одну строку: <code>-e</code> ставим, кроме <code>een</code> + <code>het</code>-слово и кроме позиции после
+<code>is / was / waren / wordt</code>.</strong></p>
+</blockquote>
+<h2>Ошибка 3. Множественное число частей тела</h2>
+<p>Это твоя самая старая красная тема — тянется с первого тренажёра. Ты пишешь по-английски:
+<code>arms</code>, <code>hands</code>. По-нидерландски так нельзя.</p>
+<p><strong>Выучи столбиком, это надо знать наизусть:</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Один</th>
+<th>Много</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>de arm</td>
+<td>de <strong>armen</strong></td>
+</tr>
+<tr>
+<td>de hand</td>
+<td>de <strong>handen</strong></td>
+</tr>
+<tr>
+<td>het been (нога)</td>
+<td>de <strong>benen</strong></td>
+</tr>
+<tr>
+<td>de voet</td>
+<td>de <strong>voeten</strong></td>
+</tr>
+<tr>
+<td>het oog</td>
+<td>de <strong>ogen</strong></td>
+</tr>
+<tr>
+<td>het oor</td>
+<td>de <strong>oren</strong></td>
+</tr>
+<tr>
+<td>de tand</td>
+<td>de <strong>tanden</strong></td>
+</tr>
+<tr>
+<td>de vinger</td>
+<td>de <strong>vingers</strong> ⚠️</td>
+</tr>
+<tr>
+<td>de knie</td>
+<td>de <strong>knieën</strong> ⚠️ (две точки, чтобы <code>ie</code> и <code>ё</code> не слились)</td>
+</tr>
+<tr>
+<td>de schouder</td>
+<td>de <strong>schouders</strong> ⚠️</td>
+</tr>
+</tbody>
+</table></div>
+<p>Общее правило: короткое слово с одной гласной удлиняет её — <code>been → **be**nen</code>,
+<code>voet → **voe**ten</code>. А слова на <code>-er/-el</code> и на <code>-ie</code> берут <code>-s</code>: <code>vingers</code>, <code>schouders</code>.</p>
+<h2>Напоминание: отделяемый глагол</h2>
+<p>В прошлый раз ты один раз ошибся наоборот — склеил там, где надо рвать:
+<code>uitgeblazen zij kaarsjes</code> вместо <code>blies zij … uit</code>. Держи все три позиции разом,
+на глаголе <code>opbellen</code> (позвонить):</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Где</th>
+<th>Как</th>
+<th>Пример</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Главное предложение</strong></td>
+<td><strong>рвём</strong>, приставка в конец</td>
+<td>Ik <strong>bel</strong> de dokter <strong>op</strong></td>
+</tr>
+<tr>
+<td><strong>Придаточное</strong> (<code>dat, omdat, toen, of</code>)</td>
+<td><strong>склеиваем</strong></td>
+<td>…omdat ik de dokter <strong>opbel</strong></td>
+</tr>
+<tr>
+<td><strong>Причастие</strong></td>
+<td>приставка перед <code>ge-</code></td>
+<td>Ik heb de dokter <strong>op</strong>ge<strong>beld</strong></td>
+</tr>
+<tr>
+<td><strong><code>om … te</code></strong></td>
+<td><code>te</code> <strong>между</strong> приставкой и глаголом</td>
+<td>…<strong>om</strong> de dokter <strong>op te bellen</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>Последняя строчка — твоя старая дыра (<code>was te af</code> вместо <code>af te wassen</code>). Смотри: приставка
+<code>op</code>, потом <code>te</code>, потом <code>bellen</code>. Три слова подряд: <strong>op te bellen</strong>, <strong>in te nemen</strong>,
+<strong>uit te rusten</strong>.</p>
+<hr />
+<h1>Новые слова: здоровье и врач (<code>de dokter</code> · <code>het lichaam</code>)</h1>
+<p><strong>Тело</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Nederlands</th>
+<th>Русский</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>het lichaam</td>
+<td>тело</td>
+</tr>
+<tr>
+<td>het hoofd</td>
+<td>голова</td>
+</tr>
+<tr>
+<td>de keel</td>
+<td>горло</td>
+</tr>
+<tr>
+<td>de buik</td>
+<td>живот</td>
+</tr>
+<tr>
+<td>de rug</td>
+<td>спина</td>
+</tr>
+<tr>
+<td>de arm (-en)</td>
+<td>рука (от плеча)</td>
+</tr>
+<tr>
+<td>de hand (handen)</td>
+<td>кисть руки</td>
+</tr>
+<tr>
+<td>het been (benen)</td>
+<td>нога</td>
+</tr>
+<tr>
+<td>de voet (voeten)</td>
+<td>ступня</td>
+</tr>
+<tr>
+<td>het oog (ogen)</td>
+<td>глаз</td>
+</tr>
+<tr>
+<td>het oor (oren)</td>
+<td>ухо</td>
+</tr>
+<tr>
+<td>de tand (-en)</td>
+<td>зуб</td>
+</tr>
+<tr>
+<td>de knie (knieën)</td>
+<td>колено</td>
+</tr>
+<tr>
+<td>de schouder (-s)</td>
+<td>плечо</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Болезнь и самочувствие</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Nederlands</th>
+<th>Русский</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ziek / beter</td>
+<td>больной / здоровее, лучше</td>
+</tr>
+<tr>
+<td>de pijn</td>
+<td>боль</td>
+</tr>
+<tr>
+<td>pijn hebben aan</td>
+<td>болеть (о части тела)</td>
+</tr>
+<tr>
+<td>de koorts</td>
+<td>температура, жар</td>
+</tr>
+<tr>
+<td>de griep</td>
+<td>грипп</td>
+</tr>
+<tr>
+<td>verkouden zijn</td>
+<td>быть простуженным</td>
+</tr>
+<tr>
+<td>hoesten</td>
+<td>кашлять</td>
+</tr>
+<tr>
+<td>niezen</td>
+<td>чихать</td>
+</tr>
+<tr>
+<td>misselijk</td>
+<td>тошнит</td>
+</tr>
+<tr>
+<td>duizelig</td>
+<td>голова кружится</td>
+</tr>
+<tr>
+<td>moe</td>
+<td>усталый</td>
+</tr>
+<tr>
+<td>de wond</td>
+<td>рана</td>
+</tr>
+<tr>
+<td>bloeden</td>
+<td>кровоточить</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Врач и лечение</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Nederlands</th>
+<th>Русский</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>de huisarts</td>
+<td>семейный врач</td>
+</tr>
+<tr>
+<td>de tandarts</td>
+<td>зубной врач</td>
+</tr>
+<tr>
+<td>de afspraak (afspraken)</td>
+<td>приём, договорённость</td>
+</tr>
+<tr>
+<td>de wachtkamer</td>
+<td>приёмная</td>
+</tr>
+<tr>
+<td>het spreekuur</td>
+<td>часы приёма</td>
+</tr>
+<tr>
+<td>de apotheek</td>
+<td>аптека</td>
+</tr>
+<tr>
+<td>het recept</td>
+<td>рецепт</td>
+</tr>
+<tr>
+<td>de pil (-len)</td>
+<td>таблетка</td>
+</tr>
+<tr>
+<td>het medicijn (-en)</td>
+<td>лекарство</td>
+</tr>
+<tr>
+<td>de zalf</td>
+<td>мазь</td>
+</tr>
+<tr>
+<td>het ziekenhuis</td>
+<td>больница</td>
+</tr>
+<tr>
+<td>de verzekering</td>
+<td>страховка</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Действия</strong> <em>(жирным — отделяемая приставка; <code>z</code> — перфект с <code>zijn</code>)</em></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Nederlands</th>
+<th>Русский</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>zich voelen (voelde — gevoeld)</td>
+<td>чувствовать себя</td>
+</tr>
+<tr>
+<td>onderzoeken (onderzocht — onderzocht)</td>
+<td>осматривать</td>
+</tr>
+<tr>
+<td>genezen (genas — genezen, <em>z</em>)</td>
+<td>выздоравливать</td>
+</tr>
+<tr>
+<td>breken (brak — gebroken)</td>
+<td>сломать</td>
+</tr>
+<tr>
+<td>vallen (viel — gevallen, <em>z</em>)</td>
+<td>упасть</td>
+</tr>
+<tr>
+<td>wachten (wachtte — gewacht)</td>
+<td>ждать</td>
+</tr>
+<tr>
+<td>helpen (hielp — geholpen)</td>
+<td>помогать</td>
+</tr>
+<tr>
+<td><strong>op</strong>bellen (belde op — opgebeld)</td>
+<td>позвонить</td>
+</tr>
+<tr>
+<td><strong>af</strong>spreken (sprak af — afgesproken)</td>
+<td>договориться</td>
+</tr>
+<tr>
+<td><strong>in</strong>nemen (nam in — ingenomen)</td>
+<td>принимать (лекарство)</td>
+</tr>
+<tr>
+<td><strong>uit</strong>rusten (rustte uit — uitgerust)</td>
+<td>отдыхать</td>
+</tr>
+<tr>
+<td><strong>op</strong>knappen (knapte op — opgeknapt, <em>z</em>)</td>
+<td>поправляться</td>
+</tr>
+<tr>
+<td><strong>terug</strong>komen (kwam terug — teruggekomen, <em>z</em>)</td>
+<td>вернуться</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote class="tip">
+<p>💡 «У меня болит горло» — <code>Ik heb pijn aan mijn keel</code> или короче <code>Mijn keel doet pijn</code>.
+«Мне плохо» — <code>Ik voel me niet lekker</code> (буквально «я чувствую себя невкусно»).</p>
+<p>⚠️ Три формы, которые ты <strong>не дал</strong> в прошлый раз. Выучи заново, они будут в задании 1:
+<code>zingen — **zong** — **gezongen**</code> · <code>vergeten — **vergat** — **vergeten**</code> ·
+<code>meebrengen — bracht mee — **meegebracht**</code> · <code>versieren — **versierde** — versierd</code>.</p>
+</blockquote>
+<p><strong>Как выполнять:</strong>
+- Пиши ответы <strong>на отдельном листе</strong>, перед каждым — номер задания и пункта (<code>5.3</code>).
+- <strong>Словарём</strong> пользоваться можно; грамматику — по памяти.
+- В первой половине подглядывай в правила выше. Во второй — <strong>не подглядывай</strong>.
+- Не уверен — ставь <code>?</code>, а не пиши наугад. Пустая строка = ноль, кривая = половина.</p>
+<hr />
+<h1>Сессия 1 — Формы и части тела (с подсказками)</h1>
+<h2>Задание 1. Три формы глагола</h2>
+<p>Дай <strong>имперфект</strong> и <strong>причастие</strong>. Первые четыре — долги с прошлого раза:</p>
+<p>1) zingen  2) vergeten  3) meebrengen  4) versieren<br />
+5) vallen  6) breken  7) helpen  8) wachten  9) opbellen  10) innemen  </p>
+<blockquote class="tip">
+<p>💡 Образец: <code>zingen — zong — gezongen</code>. У отделяемых: <code>opbellen — belde op — opgebeld</code>.</p>
+</blockquote>
+<h2>Задание 2. Множественное число (части тела)</h2>
+<p>1) de arm  2) de hand  3) het been  4) de voet  5) het oog  6) het oor<br />
+7) de tand  8) de knie  9) de vinger  10) de schouder  </p>
+<blockquote class="warn">
+<p>⚠️ Ни одного английского слова. <code>knieën</code> — с двумя точками.</p>
+</blockquote>
+<h2>Задание 3. Окончание <code>-e</code>: вставь прилагательное в скобках</h2>
+<p>1) een <span class="blank"></span> kind <em>(ziek)</em> — ⚠️ <code>het kind</code>!<br />
+2) de <span class="blank"></span> man <em>(ziek)</em><br />
+3) een <span class="blank"></span> been <em>(gebroken)</em> — ⚠️ <code>het been</code>!<br />
+4) de <span class="blank"></span> pil <em>(kleine)</em><br />
+5) Mijn keel was <span class="blank"></span> <em>(rood)</em><br />
+6) een <span class="blank"></span> wond <em>(diep)</em> — <code>de wond</code><br />
+7) het <span class="blank"></span> ziekenhuis <em>(groot)</em><br />
+8) De wachtkamer was <span class="blank"></span> <em>(vol)</em><br />
+9) een <span class="blank"></span> medicijn <em>(goed)</em> — ⚠️ <code>het medicijn</code>!<br />
+10) De kinderen waren <span class="blank"></span> <em>(moe)</em>  </p>
+<blockquote class="tip">
+<p>💡 Проверяй по двум исключениям: <code>een</code> + <code>het</code>-слово → без <code>-e</code>; после <code>was/waren</code> → без <code>-e</code>.
+Всё остальное — с <code>-e</code>.</p>
+</blockquote>
+<h2>Задание 4. Перфект или имперфект — но <strong>целиком</strong> ⭐</h2>
+<p>Поставь глагол в скобках в прошедшее. <strong>Выбирай сам</strong>, но пиши форму до конца: либо
+<code>heb/ben</code> + причастие, либо простая форма. Голых причастий быть не должно.</p>
+<p>1) Ik <span class="blank"></span> (vallen) van mijn fiets.<br />
+2) Mijn knie <span class="blank"></span> (bloeden) heel erg.<br />
+3) De dokter <span class="blank"></span> (onderzoeken) mijn been.<br />
+4) Ik <span class="blank"></span> (wachten) een uur in de wachtkamer.<br />
+5) Zij <span class="blank"></span> (opbellen) de huisarts.<br />
+6) Het <span class="blank"></span> (zijn) heel druk in de apotheek.<br />
+7) Wij <span class="blank"></span> (terugkomen) om vijf uur.<br />
+8) Hij <span class="blank"></span> (innemen) twee pillen.  </p>
+<blockquote class="warn">
+<p>⚠️ После каждого пункта проверь: если написал <code>ge-…</code>, стоит ли перед ним <code>heb</code>/<code>ben</code>?
+Движение и смена состояния (<code>vallen, terugkomen, opknappen, genezen</code>) → <code>zijn</code>.</p>
+</blockquote>
+<hr />
+<h1>Сессия 2 — Отделяемые и <code>om … te</code> (с подсказками)</h1>
+<h2>Задание 5. Один глагол — четыре позиции</h2>
+<p>Возьми глагол <code>innemen</code> (принимать лекарство) и напиши <strong>четыре</strong> предложения:</p>
+<p>1) Главное, настоящее время: «Я принимаю таблетку». → <code>Ik <span class="blank"></span> een pil <span class="blank"></span></code><br />
+2) Придаточное: «Врач говорит, что я принимаю таблетку». → <code>De dokter zegt dat ik een pil <span class="blank"></span></code><br />
+3) Перфект: «Я принял таблетку». → <code>Ik <span class="blank"></span> een pil <span class="blank"></span></code><br />
+4) <code>om … te</code>: «У меня нет воды, чтобы принять таблетку». → <code>Ik heb geen water om een pil <span class="blank"></span></code>  </p>
+<blockquote class="tip">
+<p>💡 Смотри таблицу с <code>opbellen</code> в правилах. Главное — рвём, придаточное — склеиваем,
+причастие — <code>in**ge**nomen</code>, <code>om … te</code> — <code>in **te** nemen</code>.</p>
+</blockquote>
+<h2>Задание 6. То же самое с <code>uitrusten</code> и <code>opbellen</code> ⭐</h2>
+<p>Переведи:</p>
+<p>1) Я отдыхаю дома. <em>(главное, настоящее)</em><br />
+2) Врач сказал, что я должен отдыхать. <em>(придаточное; «должен» — <code>moet</code>)</em><br />
+3) Вчера я хорошо отдохнул. <em>(перфект)</em><br />
+4) У меня нет времени, чтобы отдохнуть. <em>(<code>om … te</code>)</em><br />
+5) Я позвонил в аптеку. <em>(перфект)</em><br />
+6) Я забыл позвонить в аптеку. <em>(<code>vergeten</code> + <code>om … te</code>)</em>  </p>
+<blockquote class="warn">
+<p>⚠️ П. 2 и 4 — самые важные. <code>dat ik moet **uitrusten**</code> (склеили) ·
+<code>om **uit te rusten**</code> (<code>te</code> внутри).</p>
+</blockquote>
+<h2>Задание 7. Собери фразу о боли</h2>
+<p>По образцу <code>Ik heb pijn aan mijn keel</code> / <code>Mijn keel doet pijn</code>:</p>
+<p>1) У меня болит голова. <em>(два способа)</em><br />
+2) У неё болят зубы. <em>(мн. ч.!)</em><br />
+3) У него болела спина. <em>(прошедшее)</em><br />
+4) У детей болели уши. <em>(мн. ч. + прошедшее)</em><br />
+5) Мои ноги очень устали. <em>(<code>benen</code>, после <code>waren</code> — без <code>-e</code>!)</em>  </p>
+<blockquote class="tip">
+<p>💡 <code>pijn hebben aan</code> + притяжательное: <code>aan mijn/zijn/haar</code> + часть тела.</p>
+</blockquote>
+<hr />
+<h1>Сессия 3 — Придаточные и рассказ (с подсказками)</h1>
+<h2>Задание 8. <code>toen</code> или <code>als</code>? + прошедшее ⭐</h2>
+<p>1) Когда я упал с велосипеда, я сломал колено. <em>(один случай)</em><br />
+2) Каждый раз, когда у меня болело горло, мама варила чай. <em>(повтор!)</em><br />
+3) Когда врач осмотрел меня, он выписал рецепт.<br />
+4) Раньше, когда я был маленьким, я часто болел. <em>(повтор!)</em><br />
+5) Когда я вернулся домой, я сразу лёг спать. <em>(«лечь спать» — <code>naar bed gaan</code>)</em>  </p>
+<blockquote class="warn">
+<p>⚠️ «Каждый раз / всегда / раньше» → <code>als</code>. Один случай → <code>toen</code>. После обоих — глагол
+в конец придаточного, а в главном — <strong>инверсия</strong> (<code>Toen ik viel, **brak ik** mijn knie</code>).</p>
+</blockquote>
+<h2>Задание 9. Косвенный вопрос с <code>of</code> ⭐</h2>
+<p>Начни каждый с <code>Ik vroeg …</code> — и не потеряй <code>of</code>:</p>
+<p>1) Heeft u vanmiddag spreekuur?<br />
+2) Moet ik de pillen met water innemen?<br />
+3) Was de wond diep?<br />
+4) Komt de dokter vandaag terug?<br />
+5) Kan ik een nieuwe afspraak maken?  </p>
+<blockquote>
+<p>🔴 Проверь каждое: есть ли слово <code>of</code>? И глагол — в самый конец.</p>
+</blockquote>
+<h2>Задание 10. Фон + событие ⭐</h2>
+<p>В каждом есть описание (имперфект) и событие:</p>
+<p>1) Приёмная была полная, поэтому я ждал час.<br />
+2) У меня была температура, так что я позвонил врачу.<br />
+3) Врач был очень добрый и помог мне быстро.<br />
+4) Было часов восемь, когда я вернулся из больницы. <em>(⚠️ оборот!)</em><br />
+5) Моя рука болела, но я не хотел идти к врачу.  </p>
+<blockquote class="tip">
+<p>💡 «была», «болела», «хотел» → имперфект. «позвонил», «вернулся», «помог» → событие.
+«часов восемь» — <code>een uur of acht</code>.</p>
+</blockquote>
+<hr />
+<h1>✋ ВТОРАЯ ПОЛОВИНА · Самостоятельно</h1>
+<p>Дальше подсказок нет. Ни одной. Не листай назад к правилам — сделай так, как помнишь, а где
+не помнишь, поставь <code>?</code>. Мне важнее увидеть честную картину, чем красивый лист: если ты
+подсмотришь, я это не замерю, и мы будем чинить не то.</p>
+<p>Перед сдачей второй половины пройди своими глазами:
+подчеркни каждый глагол → все ли в прошедшем → нет ли причастия без <code>heb/ben</code> →
+проверь <code>-e</code> → проверь мн. ч.</p>
+<hr />
+<h1>Сессия 4 — Замер</h1>
+<h2>Задание 11. Переведи (прошедшее время)</h2>
+<p>1) Вчера я упал на улице и сломал руку.<br />
+2) Моя рука очень болела, поэтому я позвонил в больницу.<br />
+3) Медсестра спросила, есть ли у меня страховка.<br />
+4) Я ждал в приёмной полчаса.<br />
+5) Врач осмотрел мою руку и сказал, что она сломана.<br />
+6) Он выписал мне лекарство и сказал, что я должен отдыхать.<br />
+7) Я забыл принять таблетки вечером.<br />
+8) Через неделю я вернулся, и врач сказал, что всё хорошо.  </p>
+<h2>Задание 12. Вставь окончание, если нужно</h2>
+<p>1) een <span class="blank"></span> hoofd <em>(zwaar)</em><br />
+2) de <span class="blank"></span> tanden <em>(wit)</em><br />
+3) Zijn ogen waren <span class="blank"></span> <em>(blauw)</em><br />
+4) een <span class="blank"></span> afspraak <em>(nieuw)</em> — <code>de afspraak</code><br />
+5) het <span class="blank"></span> recept <em>(oud)</em><br />
+6) De wachtkamer is <span class="blank"></span> <em>(klein)</em><br />
+7) een <span class="blank"></span> kind <em>(gezond)</em> — <code>het kind</code><br />
+8) de <span class="blank"></span> apotheek <em>(dichtstbijzijnd)</em>  </p>
+<h2>Задание 13. Найди ошибку</h2>
+<p>В каждом предложении <strong>одна</strong> ошибка. Выпиши правильный вариант:</p>
+<p>1) Toen ik viel, ik brak mijn arm.<br />
+2) Ik vroeg de dokter hij tijd had.<br />
+3) De zaal zijn vol en wij gewacht een uur.<br />
+4) Ik heb een pil ingenomen om beter te wordt.<br />
+5) Mijn handen waren koude.<br />
+6) Gisteren ik heb de tandarts opgebeld.<br />
+7) Vroeger, toen ik klein was, ik ben vaak ziek.<br />
+8) De dokter zei dat ik moet rust uit.  </p>
+<h2>Задание 14. Соедини в одно предложение (<code>die</code> / <code>dat</code>)</h2>
+<p>1) Het medicijn was duur. Ik heb het gekregen.<br />
+2) De dokter was aardig. Wij hebben hem gebeld.<br />
+3) De pillen waren klein. Ik heb ze ingenomen.<br />
+4) Het ziekenhuis was groot. Zij heeft er gewerkt.  </p>
+<hr />
+<h1>Сессия 5 — Своя речь</h1>
+<h2>Задание 15. Три коротких рассказа ⭐⭐</h2>
+<p>Каждый — <strong>три предложения</strong>, всё в прошедшем.</p>
+<p><strong>А — зубной</strong><br />
+1) На прошлой неделе у меня заболел зуб.<br />
+2) Когда я пришёл к зубному, приёмная была полная.<br />
+3) Врач, который осмотрел меня, сказал, что зуб надо удалить (<code>trekken</code>).  </p>
+<p><strong>Б — грипп</strong><br />
+4) В январе я неделю болел гриппом.<br />
+5) У меня была температура и болели все мышцы.<br />
+6) Мама принесла лекарство, и через несколько дней я поправился.  </p>
+<p><strong>В — травма</strong><br />
+7) Я спросил брата, поедет ли он со мной в больницу.<br />
+8) Так как рана была глубокая, врач наложил четыре шва (<code>vier hechtingen</code>).<br />
+9) Когда я вышел из больницы, было часов одиннадцать.  </p>
+<h2>Задание 16. Свой рассказ ⭐ (8–10 предложений)</h2>
+<p>Расскажи <strong>о прошлом</strong> — выбери одну тему:</p>
+<ul>
+<li><strong>A.</strong> Как ты в последний раз болел.</li>
+<li><strong>B.</strong> Как ты или кто-то из близких попал к врачу / в больницу.</li>
+<li><strong>C.</strong> Поход к зубному.</li>
+</ul>
+<p>В рассказе должны быть:</p>
+<ul>
+<li>завязка с <code>toen</code> + имперфект;</li>
+<li>одно событие в перфекте (полностью: <code>heb/ben</code> + причастие);</li>
+<li>одно описание в имперфекте;</li>
+<li>одно предложение, где придаточное впереди, а в главном инверсия;</li>
+<li>один косвенный вопрос с <code>of</code>;</li>
+<li>одно с <code>omdat</code>;</li>
+<li>одно <code>om … te</code> с отделяемым глаголом;</li>
+<li>одна часть тела <strong>во множественном числе</strong>;</li>
+<li>одни часы «примерно» (<code>een uur of …</code>, <code>tegen …</code>);</li>
+<li>одно прилагательное после <code>was/waren</code> (без <code>-e</code>) и одно перед <code>het</code>-словом с <code>een</code> (тоже без <code>-e</code>).</li>
+</ul>
+<hr />
+<p><strong>Готово!</strong> Чек-лист перед сдачей:</p>
+<ol>
+<li>Причастие без <code>heb/ben</code> — есть? Убери или дополни.</li>
+<li><code>zijn</code> вместо <code>was/waren</code> — есть? Замени.</li>
+<li><code>-e</code> после <code>was/waren</code> — убери. <code>-e</code> при <code>een</code> + <code>het</code>-слово — убери.</li>
+<li>Части тела: <code>armen, handen, benen, voeten, ogen, oren, tanden, knieën</code>.</li>
+<li>Отделяемый: главное — рвём, придаточное — склеиваем, <code>om … te</code> — <code>te</code> внутри.</li>
+<li>Косвенный вопрос «да/нет» → <code>of</code> на месте.</li>
+<li>Придаточное впереди → в главном инверсия.</li>
+<li>Рассказ о прошлом → ни одного глагола в настоящем.</li>
+</ol></div></body>
+</html>
